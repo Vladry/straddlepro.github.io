@@ -15,5 +15,25 @@
   "bugs": {
     "url": "https://github.com/Vladry/straddle/issues"
   },
-  "homepage": "https://github.com/Vladry/straddle#readme"
+  "homepage": "https://github.com/Vladry/straddle#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "browser-sync": "^2.26.14",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-js-minify": "0.0.3",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "cssnano": "^5.0.11",
+    "del": "^6.0.0"
+  }
 }
