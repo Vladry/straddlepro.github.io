@@ -1,17 +1,15 @@
 const gulp = require('gulp'),
     scss = require('gulp-sass'),
-    clean = require('gulp-clean'),
-    del =   require('del'),  //новое!  https://www.npmjs.com/package/del
-    // cleanCss = require('gulp-clean-css'), //вместо него брать cssnano
-    cssnano = require('cssnano'), //новое!
-    autoprefixer = require('gulp-autoprefixer'),
+    del = require('del'),  //новое!  https://www.npmjs.com/package/del
+    // cleanCss = require('gulp-clean-css'), //вместо него брать: postcss + cssnano
+    postcss = require('gulp-postcss'), //новое! использовать вместо gulp-clean-css
     concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
-    imagemin = require('gulp-imagemin'),
+    // uglify = require('gulp-uglify'),
+    // imagemin = require('gulp-imagemin'),
     babel = require('gulp-babel'),
-    browserSync = require('browser-sync').create();
+    browserSync = require('browser-sync').create();  //https://browsersync.io/docs/api
 
-sass.compiler = require('node-sass');
+scss.compiler = require('node-sass');
 
 const path = {
     html: "./index.html",
@@ -38,14 +36,14 @@ const finalCssFilename = 'styles.css';
 const buildCss = () => (
     gulp.src(path.src.scss)
         .pipe(scss().on("error", scss.logError))
-        .pipe(autoprefixer({cascade: false}))
-        .pipe(cssnano({compatibility: 'ie8'}))
+        // .pipe(cleanCss({ compatibility: 'ie8' }))
+        .pipe(postcss()) //новое!  https://github.com/postcss/gulp-postcss
         .pipe(concat(finalCssFilename))
         .pipe(gulp.dest(path.dist.css))
         .pipe(browserSync.stream({stream: true}))
 );
 
-const buildJs = ()=> (
+const buildJs = () => (
     gulp.src(path.src.js)
         .pipe(concat(finalJsfileName))
         .pipe(babel({presets: ['@babel/env']}))
@@ -54,8 +52,37 @@ const buildJs = ()=> (
         .pipe(browserSync.stream({stream: true}))
 );
 
-const cleanDist = async ()=> {
+const clean = async () => {
     const deletedFiles = await del([path.dist.cssDel, path.dist.jsDel]);
     console.log(`удалены файлы: ${deletedFiles}`);
 };
+
+const build = async () => {
+    await clean();
+    buildJs();
+    buildCss();
+};
+
+const dev = () => {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    })
+};
+
+const watch = ()=>
+{
+    // gulp.watch(path.src.js, buildJs).on("change", browserSync.reload);
+    gulp.watch(path.src.scss, buildCss).on("change", browserSync.reload);
+    gulp.watch(path.html).on("change", browserSync.reload);
+};
+
+gulp.task("watch", watch);
+gulp.task("buildJs", buildJs);
+gulp.task("buildCss", buildCss);
+gulp.task("default", build);
+gulp.task("clean", clean);
+gulp.task("dev", dev);
+
 
