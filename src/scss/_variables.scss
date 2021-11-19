@@ -1,11 +1,15 @@
 $breakpoint_Desktop: 1920px;
 $breakpoint_smartphone: 325px;
 $sectionHeight: 1082px;
+$textColor: white;
+$textColorDemo: goldenrod;
+$onHoverTextColor: red;
 
 @mixin sectionsCommonSetting {
-  //background-color: #060115;
   background-position: center;
   background-repeat: no-repeat;
   background-size: $breakpoint_Desktop auto;
   height: $sectionHeight;
+  max-width: $breakpoint_Desktop;
+  margin: 0 auto;
 }

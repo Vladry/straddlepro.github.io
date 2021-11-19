@@ -1,0 +1,7 @@
+@media (min-width: $breakpoint_smartphone) and (max-width: $breakpoint_Desktop) {
+  .wrapper {
+    max-width: $breakpoint_Desktop;
+  }
+}
+
+/*# sourceMappingURL=media_selector.css.map */

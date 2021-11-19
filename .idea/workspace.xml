@@ -2,30 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca490e1-66f1-420c-a3c4-f00daaf7812d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_sections.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/sections/_section1.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/sections/_section2.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/sections/_section3.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/sections/_section4.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/sections/_section5.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/sections/_section6.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/sections/_section7.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/sections/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/6.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_sections.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_sections.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/media_selector.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/media_selector.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/media_selector.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/media_selector.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/media_selector.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_media_selector.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/media_selector.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_media_selector.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/media_selector.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_media_selector.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section1.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section3.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section4.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section5.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section6.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section6.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section7.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section7.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +85,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637066047548</updated>
-      <workItem from="1637066049510" duration="34424000" />
+      <workItem from="1637066049510" duration="35060000" />
+      <workItem from="1637251385464" duration="18000" />
+      <workItem from="1637255590912" duration="24000" />
+      <workItem from="1637325722004" duration="11036000" />
     </task>
     <servers />
   </component>
@@ -103,7 +100,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
