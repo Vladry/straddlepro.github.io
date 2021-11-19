@@ -1,12 +1,7 @@
 .section1{
   @include sectionsCommonSetting;
-  background-image: url("../src/img/1.png");
+  background-image: url("../src/img/1.jpg");
 
-  .logo-container {
-    margin-left: 110px;
-    padding-top: 60px;
-
-  }
   .logo-img{
     width: 60px;
     height: 71px;
@@ -23,17 +18,16 @@
 
   .menu {
     position: absolute;
-    top: 80px;
-    right: 100px;
+    top: 100px;
+    right: 80px;
     width: 60px;
     height: 60px;
     display: block;
-    opacity: 0;
+    //opacity: 0;
     &:hover {
-      display:block;
       opacity: 1;
-      top: 0;
-      right: 0;
+      top: 15px;
+      right: 15px;
       width: 440px;
       height: $sectionHeight;
     }
