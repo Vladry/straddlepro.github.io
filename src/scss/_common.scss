@@ -8,6 +8,13 @@ h2 {
   align-items: center;
   text-align: center;
 }
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 88px;
+  text-align: left;
+}
 
 .wrapper {
   max-width: $breakpoint_Desktop; //это должно управляться из медиазапросов -пофиксить
@@ -22,16 +29,7 @@ h2 {
 }
 
 .--shadowed {
-  opacity: 0.4;
-}
-
-
-.section3 {
-  background-image: url("../src/img/3.png");
-}
-
-.section4 {
-  background-image: url("../src/img/4.png");
+  opacity: 0.1;
 }
 
 .section5 {
