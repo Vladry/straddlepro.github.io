@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eca490e1-66f1-420c-a3c4-f00daaf7812d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/iPhone.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iPhone.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section2.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section3.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section4.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +72,7 @@
       <workItem from="1637251385464" duration="18000" />
       <workItem from="1637255590912" duration="24000" />
       <workItem from="1637325722004" duration="12935000" />
-      <workItem from="1637360372250" duration="11910000" />
+      <workItem from="1637360372250" duration="13020000" />
     </task>
     <servers />
   </component>
