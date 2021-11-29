@@ -29,7 +29,10 @@ h3 {
 }
 
 .--shadowed {
-  opacity: 0.1;
+  opacity: 0.6;
+}
+.--invisible {
+  opacity: 0;
 }
 
 //.section2 {
@@ -47,7 +50,7 @@ h3 {
 //  background-image: url("../src/img/6.png");
 //}
 
-.section7 {
-  background-image: url("../src/img/7.png");
-}
+//.section7 {
+//  background-image: url("../src/img/7.png");
+//}
 

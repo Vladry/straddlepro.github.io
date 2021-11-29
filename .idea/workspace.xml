@@ -5,12 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section1.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/sections/_section2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section2.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/sections/_section3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section3.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section4.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/sections/_section5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section5.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section6.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section6.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/sections/_section7.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section7.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +88,7 @@
       <workItem from="1637625618952" duration="1538000" />
       <workItem from="1637677451569" duration="24000" />
       <workItem from="1638100791782" duration="219000" />
-      <workItem from="1638186927101" duration="9616000" />
+      <workItem from="1638186927101" duration="16095000" />
     </task>
     <servers />
   </component>

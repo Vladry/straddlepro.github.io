@@ -1,24 +1,49 @@
 .section7{
   @include sectionsCommonSetting;
-  background-color: #19091C;
+  //background-color: #19091C;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 120px;
   align-items: center;
+  background: radial-gradient(35% 30% at 50% 56%, #46073e 0%, #19091C 100%);
 }
 
 .section7__h3 {
-transform: translateY(-10px);
+transform: translateY(3px);
 }
 .email-input-field {
 transform: translateY(-54px);
   padding: 34px 340px;
-
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: $textColorMinor;
+  border: 3px solid #8D039E;
+  border-radius: 6px;
+  background: #34052e;
+  &:hover {
+    cursor: pointer;
+    background: #44152e;
+  }
 }
+
+.email-input-field::placeholder {
+  color:    $textColorMinor;
+  transform: translateX(70px);
+}
+
 .submit-btn {
   transform: translateY(-46px);
   padding: 44px 173px;
   border-radius: 50px;
-
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: $textColorMinor;
+  background: linear-gradient(270deg, #EC1B59 0%, #72147E 100%);
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(270deg, #72147E 0%, #EC1B59 100%);
+  }
 }

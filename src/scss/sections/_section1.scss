@@ -1,7 +1,11 @@
 .section1{
   @include sectionsCommonSetting;
   background-image: url("../src/img/1.jpg");
-
+  .logo-container {
+    &:hover {
+      cursor: pointer;
+    }
+  }
   .logo-img{
     width: 60px;
     height: 71px;
@@ -15,7 +19,11 @@
     vertical-align: top;
     padding-top: 21px;
   }
-
+  .menu__burger {
+    &:hover {
+      cursor: pointer;
+    }
+  }
   .menu {
     position: absolute;
     top: 100px;
@@ -49,6 +57,7 @@
     text-decoration: none;
     &:hover {
       color: $onHoverTextColor;
+      cursor: pointer;
     }
     font-weight: 600;
     font-style: normal;

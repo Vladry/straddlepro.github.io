@@ -34,6 +34,7 @@
   height: 730px;
   &:hover {
     opacity: 1;
+    cursor: pointer;
   }
 }
 .submenu2 {
@@ -54,4 +55,7 @@ padding-top: 20px;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
+  &:hover {
+    cursor: pointer;
+  }
 }

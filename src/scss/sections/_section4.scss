@@ -33,6 +33,7 @@
   height: 830px;
   &:hover {
     opacity: 1;
+    cursor: pointer;
   }
 }
 .submenu4 {
@@ -44,6 +45,9 @@
   flex-flow: row nowrap;
 }
 .submenu4__item {
+  &:hover {
+    cursor: pointer;
+  }
   border: 1px solid #48025E;
 padding-top: 20px;
   padding-bottom: 20px;
