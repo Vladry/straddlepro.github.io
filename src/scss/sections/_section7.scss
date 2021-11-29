@@ -1,3 +1,24 @@
 .section7{
   @include sectionsCommonSetting;
+  background-color: #19091C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 120px;
+  align-items: center;
+}
+
+.section7__h3 {
+transform: translateY(-10px);
+}
+.email-input-field {
+transform: translateY(-54px);
+  padding: 34px 340px;
+
+}
+.submit-btn {
+  transform: translateY(-46px);
+  padding: 44px 173px;
+  border-radius: 50px;
+
 }

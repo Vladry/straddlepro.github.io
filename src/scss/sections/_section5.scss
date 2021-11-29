@@ -1,3 +1,26 @@
 .section5{
   @include sectionsCommonSetting;
+  background-color: #19091C;
+  position: relative;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: space-around;
+  align-items: center;
+}
+.section5__right-part {
+  position: relative;
+  top: -36px;
+  left: -95px;
+}
+.section5__image1 {
+  position: relative;
+  left: 20px;
+  width: 650px;
+  height: 800px;
+}
+.section5__image2 {
+  position: relative;
+  top: 66px;
+  width: 510px;
+  height: 60px;
 }

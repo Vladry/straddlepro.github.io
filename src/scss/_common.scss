@@ -22,8 +22,8 @@ h3 {
   padding: 10px 10px;
   margin: 0 auto;
   opacity: 1;
-  //color: $textColor;
-  color: $textColorDemo;
+  color: $textColor;
+  //color: $textColorDemo;
   box-sizing: border-box;
   font-family: 'Monserrat', serif;
 }
@@ -32,13 +32,20 @@ h3 {
   opacity: 0.1;
 }
 
-.section5 {
-  background-image: url("../src/img/5.png");
-}
-
-.section6 {
-  background-image: url("../src/img/6.png");
-}
+//.section2 {
+//   background-image: url("../src/img/2.png");
+// }.section3 {
+//    background-image: url("../src/img/3.png");
+//  }.section4 {
+//     background-image: url("../src/img/4.png");
+//   }
+//.section5 {
+//  background-image: url("../src/img/5.png");
+//}
+//
+//.section6 {
+//  background-image: url("../src/img/6.png");
+//}
 
 .section7 {
   background-image: url("../src/img/7.png");

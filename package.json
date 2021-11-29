@@ -40,7 +40,6 @@
     "postcss-plugin": "^1.0.0",
     "sugarss": "^4.0.1"
   },
-  "dependencies": {},
   "postcss": {
     "parser": false,
     "map": false,

@@ -1,3 +1,19 @@
 .section6{
   @include sectionsCommonSetting;
+  background-color: #19091C;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.section6__h3{
+  padding-top: 120px;
+}
+.section6__image1 {
+  position: relative;
+  top: 100px;
+  width: 1270px;
+  height: 480px;
+  transform: translate(260px, -155px);
+  align-self: flex-start;
 }

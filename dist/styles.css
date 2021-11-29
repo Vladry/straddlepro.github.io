@@ -151,18 +151,12 @@ h3 {
   padding: 10px 10px;
   margin: 0 auto;
   opacity: 1;
-  color: goldenrod;
+  color: white;
   box-sizing: border-box;
   font-family: 'Monserrat', serif; }
 
 .--shadowed {
   opacity: 0.1; }
-
-.section5 {
-  background-image: url("../src/img/5.png"); }
-
-.section6 {
-  background-image: url("../src/img/6.png"); }
 
 .section7 {
   background-image: url("../src/img/7.png"); }
@@ -299,7 +293,7 @@ header {
   height: 1082px;
   max-width: 1920px;
   margin: 0 auto;
-  background-color: #19091C; }
+  background-color: #0f0014; }
 
 .section3__flex-contrainer {
   display: flex;
@@ -413,7 +407,30 @@ header {
   background-size: 1920px auto;
   height: 1082px;
   max-width: 1920px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #19091C;
+  position: relative;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: space-around;
+  align-items: center; }
+
+.section5__right-part {
+  position: relative;
+  top: -36px;
+  left: -95px; }
+
+.section5__image1 {
+  position: relative;
+  left: 20px;
+  width: 650px;
+  height: 800px; }
+
+.section5__image2 {
+  position: relative;
+  top: 66px;
+  width: 510px;
+  height: 60px; }
 
 .section6 {
   background-position: center;
@@ -421,7 +438,23 @@ header {
   background-size: 1920px auto;
   height: 1082px;
   max-width: 1920px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #19091C;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.section6__h3 {
+  padding-top: 120px; }
+
+.section6__image1 {
+  position: relative;
+  top: 100px;
+  width: 1270px;
+  height: 480px;
+  transform: translate(260px, -155px);
+  align-self: flex-start; }
 
 .section7 {
   background-position: center;
@@ -429,7 +462,25 @@ header {
   background-size: 1920px auto;
   height: 1082px;
   max-width: 1920px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #19091C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 120px;
+  align-items: center; }
+
+.section7__h3 {
+  transform: translateY(-10px); }
+
+.email-input-field {
+  transform: translateY(-54px);
+  padding: 34px 340px; }
+
+.submit-btn {
+  transform: translateY(-46px);
+  padding: 44px 173px;
+  border-radius: 50px; }
 
 @media (min-width: 325px) and (max-width: 1920px) {
   .wrapper {

@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="eca490e1-66f1-420c-a3c4-f00daaf7812d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section3.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section5.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section6.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section6.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/_section7.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/_section7.scss" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,14 +35,21 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/scss/sections" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -46,18 +61,7 @@
       <recent name="C:\Users\DELL\WebstormProjects\Straddle\src\scss" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -73,23 +77,33 @@
       <workItem from="1637255590912" duration="24000" />
       <workItem from="1637325722004" duration="12935000" />
       <workItem from="1637360372250" duration="13020000" />
+      <workItem from="1637614844910" duration="78000" />
+      <workItem from="1637617552332" duration="1207000" />
+      <workItem from="1637622500695" duration="42000" />
+      <workItem from="1637622565414" duration="241000" />
+      <workItem from="1637622812204" duration="934000" />
+      <workItem from="1637623755213" duration="387000" />
+      <workItem from="1637624158070" duration="1017000" />
+      <workItem from="1637625618952" duration="1538000" />
+      <workItem from="1637677451569" duration="24000" />
+      <workItem from="1638100791782" duration="219000" />
+      <workItem from="1638186927101" duration="9616000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
