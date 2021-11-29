@@ -6,7 +6,7 @@
   justify-content: center;
   gap: 120px;
   align-items: center;
-  background: radial-gradient(35% 30% at 50% 56%, #46073e 0%, #19091C 100%);
+  background: radial-gradient(38% 33% at 50% 60%, #46073e 0%, #0f0510 100%);
 }
 
 .section7__h3 {
@@ -22,9 +22,11 @@ transform: translateY(-54px);
   border: 3px solid #8D039E;
   border-radius: 6px;
   background: #34052e;
+  transition: background 0.2s;
   &:hover {
     cursor: pointer;
     background: #44152e;
+    transition: background 0.2s;
   }
 }
 
@@ -42,8 +44,11 @@ transform: translateY(-54px);
   line-height: 22px;
   color: $textColorMinor;
   background: linear-gradient(270deg, #EC1B59 0%, #72147E 100%);
+  transition: filter 0.4s;
   &:hover {
     cursor: pointer;
     background: linear-gradient(270deg, #72147E 0%, #EC1B59 100%);
+    filter: brightness(150%);
+    transition: filter 0.6s;
   }
 }

@@ -2,8 +2,11 @@
   @include sectionsCommonSetting;
   background-image: url("../src/img/1.jpg");
   .logo-container {
+    transition: color 0.3s;
     &:hover {
       cursor: pointer;
+      color: red;
+      transition: color 0.1s;
     }
   }
   .logo-img{
