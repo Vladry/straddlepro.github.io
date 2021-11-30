@@ -1,6 +1,6 @@
 footer{
-  border-top: 1px solid #72147E;
   @include sectionsCommonSetting;
+  border-top: 1px solid #72147E;
   height: $footerHeight;
   background-color: #101010;
   display: flex;

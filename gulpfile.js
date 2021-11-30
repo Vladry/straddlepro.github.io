@@ -15,7 +15,7 @@ const path = {
     html: "./index.html",
     src: {
         fonts: "./src/fonts/**/*",
-        img: "./src/img/*",
+        img: "./src/img/**/*",
         scss: "./src/scss/**/*.scss",
         js: "./src/*.js"
     },

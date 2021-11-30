@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  padding-top: 60px;
+
+}
+
+.menu__burger {
+  position: relative;
+  height: 20px;
+  width: 30px;
+  top: 13px;
+  right: 100px;
+}
