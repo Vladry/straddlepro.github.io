@@ -4,13 +4,12 @@
 }
 
 .team__section2-flex-contrainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transform: translate(1%, 83%);
+  gap: 250px;
 }
 
 .team__section2-image {
-  width: 600px;
+  width: 450px;
 }
 
 .team__section2-text-container {
@@ -25,4 +24,5 @@
   font-size: 24px;
   line-height: 48px;
   color: $textColorMinor;
+  margin-top: 70px;
 }

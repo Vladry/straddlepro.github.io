@@ -737,18 +737,18 @@ footer {
   background-color: #19091C; }
 
 .team__section2-flex-contrainer {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  transform: translate(1%, 83%);
+  gap: 250px; }
 
 .team__section2-image {
-  width: 600px; }
+  width: 450px; }
 
 .team__section2-text {
   font-weight: 600;
   font-size: 24px;
   line-height: 48px;
-  color: #DADADA; }
+  color: #DADADA;
+  margin-top: 70px; }
 
 .team__section3 {
   background-position: center;
@@ -759,17 +759,58 @@ footer {
   margin: 0 auto;
   background-color: #19091C; }
 
-.team__section3-test {
+.team__section3-h3 {
+  padding-top: 110px;
+  margin-bottom: 100px;
+  text-align: center; }
+
+.team__section3-slider-contrainer {
+  margin: 0 auto;
+  width: 79%;
+  justify-content: space-around;
+  gap: 12px;
+  align-items: baseline; }
+
+.team__section3-slider-contrainer:before {
+  content: "";
+  width: 26px;
+  height: 42px;
+  transform: translateX(-90px);
+  background-image: url("../../src/img/team/left.svg");
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.team__section3-slider-contrainer:after {
+  content: "";
+  width: 26px;
+  height: 42px;
+  transform: translateX(90px);
+  background-image: url("../../src/img/team/right.svg");
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.team__section3-slider-contrainer:hover:before {
+  opacity: 0.7; }
+
+.team__section3-slider-contrainer:hover:after {
+  opacity: 0.7; }
+
+.team__section3-text {
   font-weight: 600;
   font-size: 18px;
-  line-height: 30px; }
+  line-height: 30px;
+  margin-top: 40px; }
 
 .team__section3-slider-icons-container {
-  justify-content: space-around;
-  gap: 40px; }
+  justify-content: flex-start;
+  gap: 50px;
+  margin-top: 187px; }
 
 .team_section3-slider-icon-item {
   fill: #DADADA; }
+
+.--drop {
+  transform: translateY(30px); }
 
 .about__section4 {
   background-position: center;
@@ -817,12 +858,6 @@ footer {
   padding: 37px 133px; }
   .about__submit-btn2:hover {
     background: linear-gradient(270deg, #2f0938 0%, #461531 100%); }
-
-.team__section2 {
-  background-image: url("../../src/img/team/2_bg.png"); }
-
-.team__section4 {
-  background-image: url("../../src/img/team/4_bg.png"); }
 
 @media (min-width: 325px) and (max-width: 1920px) {
   .wrapper {
