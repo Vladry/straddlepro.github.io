@@ -1,0 +1,35 @@
+.team__section3 {
+  @include sectionsCommonSetting;
+  background-color: #19091C;
+}
+
+.team__section3 {
+
+}
+.team__section3-slider-contrainer {
+
+}
+.team__section3-slider-item {
+
+}
+.team__section3-image {
+
+}
+.team__section3-text-container {
+
+}
+.team__section3-h4 {
+
+}
+.team__section3-test {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+}
+.team__section3-slider-icons-container {
+  justify-content: space-around;
+  gap: 40px;
+}
+.team_section3-slider-icon-item {
+  fill: $textColorMinor;
+}

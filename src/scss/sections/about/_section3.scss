@@ -1,33 +1,35 @@
 .about__section3 {
   @include sectionsCommonSetting;
   background-color: #19091C;
-  border: 3px solid red;
 }
-
-.about__section3-flex-contrainer {
+.about__section3_central-flex-contrainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(-2%, 31%);
+  transform: translate(-4%, 2%);
+  gap: 170px;
 }
-
-.about__section3-image {
-  transform: translate(1px, 30px);
-  width: 600px;
-}
-
-.about__section3-text-container {
+.about__section3-left-container {
   margin-left: 190px;
+  transform: translateY(-42px);
 }
-
 .about__section3-h3 {
 
 }
-
 .about__section3-text {
   font-weight: 600;
   font-size: 24px;
   line-height: 48px;
   color: $textColorMinor;
   margin-top: 55px;
+}
+.smile-svg1 {
+  transform: translateY(66px);
+}
+.smile-svg2 {
+  transform: translateY(-12px);
+}
+.about__section3-image {
+  transform: translate(1px, 30px);
+  width: 600px;
 }

@@ -1,0 +1,14 @@
+@import "./sections/team/_section1";
+@import "./sections/team/_section2";
+@import "./sections/team/_section3";
+@import "./sections/team/_section4";
+
+.team__section2 {
+  background-image: url("../../src/img/team/2_bg.png");
+}
+//.team__section3 {
+//  background-image: url("../../src/img/team/3_bg.png");
+//}
+.team__section4 {
+  background-image: url("../../src/img/team/4_bg.png");
+}

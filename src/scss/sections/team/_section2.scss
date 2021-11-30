@@ -1,0 +1,28 @@
+.team__section2 {
+  @include sectionsCommonSetting;
+  background-color: #19091C;
+}
+
+.team__section2-flex-contrainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__section2-image {
+  width: 600px;
+}
+
+.team__section2-text-container {
+}
+
+.team__section2-h3 {
+
+}
+
+.team__section2-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 48px;
+  color: $textColorMinor;
+}
