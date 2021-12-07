@@ -7,13 +7,15 @@ const gulp = require('gulp'),
     // uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
     babel = require('gulp-babel'),
+    replace = require('gulp-replace'),
+    rename = require('gulp-rename'),  //https://www.npmjs.com/package/gulp-rename#usage
     browserSync = require('browser-sync').create();  //https://browsersync.io/docs/api
 
 scss.compiler = require('node-sass');
 
 const path = {
-    html: "./index.html",
     src: {
+        html: "./src/html/**/*",
         fonts: "./src/fonts/**/*",
         img: "./src/img/**/*",
         scss: "./src/scss/**/*.scss",
@@ -21,6 +23,7 @@ const path = {
     },
     dist: {
         self: "./assets/",
+        html: "./assets/templates/",
         fonts: "./assets/fonts/",
         img: "./assets/img/",
         css: "./assets/",
@@ -43,6 +46,16 @@ const buildImg = () => (
 const buildFonts = () => (
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.dist.fonts))
+);
+
+const buildHtml = () => (
+    gulp.src(path.src.html)
+        .pipe(rename(function (path) {
+            path.extname = ".ftl";
+        }))
+        .pipe(replace('href="./', 'href="../'))
+        .pipe(replace('src="./', 'src="../'))
+        .pipe(gulp.dest(path.dist.html))
 );
 
 const buildCss = () => (
@@ -70,11 +83,13 @@ const clean = async () => {
 };
 
 const build = async () => {
-    await clean();
+    // await
+        // clean();
     buildJs();
     buildCss();
-    buildFonts();
-    buildImg();
+    buildHtml();
+    // buildFonts();
+    // buildImg();
 };
 
 const dev = () => {
@@ -87,19 +102,20 @@ const dev = () => {
 
 const watch = ()=>
 {
-    // gulp.watch(path.src.js, buildJs).on("change", browserSync.reload);
+    gulp.watch(path.src.js, buildJs).on("change", browserSync.reload);
     gulp.watch(path.src.scss, buildCss).on("change", browserSync.reload);
-    gulp.watch(path.html).on("change", browserSync.reload);
+    gulp.watch(path.src.html).on("change", browserSync.reload);
 };
 
+gulp.task("default", build);
 gulp.task("watch", watch);
 gulp.task("buildJs", buildJs);
 gulp.task("buildCss", buildCss);
-gulp.task("default", build);
 gulp.task("clean", clean);
 gulp.task("buildImg", buildImg);
 gulp.task("buildFonts", buildFonts);
 gulp.task("build", build);
+gulp.task("buildHtml", buildHtml);
 gulp.task("dev", dev);
 
 

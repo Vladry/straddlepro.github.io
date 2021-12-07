@@ -1,4 +1,5 @@
 .about__section1 {
   @include sectionsCommonSetting;
-  background-image: url("../../src/img/about/1.jpg");
+  background-image: url("../assets/img/about/1.jpg");
+  //background-image: url("assets/img/about/1.jpg");
 }

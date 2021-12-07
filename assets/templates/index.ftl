@@ -6,30 +6,30 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Straddle</title>
-    <link type="text/css" rel="stylesheet" href="./dist/styles.css"/>
+    <link type="text/css" rel="stylesheet" href="../assets/styles.css"/>
 </head>
 <body>
 <div class="wrapper">
     <div class="section1">
         <header>
             <div class="logo-container">
-                <img class="logo-img" src="./src/img/home/logo.png" alt="logo"/>
+                <img class="logo-img" src="../assets/img/home/logo.png" alt="logo"/>
                 <p class="logo-text">STRADDLE</p>
             </div>
             <div class="menu__burger">
-                <img src="./src/img/home/menu_button.png" alt="burger"/>
+                <img src="../assets/img/home/menu_button.png" alt="burger"/>
             </div>
         </header>
 
         <menu class="menu --invisible">
-            <li class="menu__item"><a class="menu__ref" href="#">HOME</a></li>
-            <li class="menu__item"><a class="menu__ref" href="#">TEAM</a></li>
-            <li class="menu__item"><a class="menu__ref" href="#">ABOUT</a></li>
+            <li class="menu__item"><a class="menu__ref" href="/">HOME</a></li>
+            <li class="menu__item"><a class="menu__ref" href="/team">TEAM</a></li>
+            <li class="menu__item"><a class="menu__ref" href="/about">ABOUT</a></li>
         </menu>
-        <h2 class="section1__title">Straddle is your trusted gaming assistant</h2>
+        <h2 class="section1__title">Straddle is your trusted<br/> gaming assistant</h2>
     </div>
     <div class="section2">
-        <div class="section2__flex-contrainer">
+        <div class="section2__flex-container">
             <div class="section2__left-part">
                 <h3>Players find best game</h3>
                 <div class="submenu2">
@@ -41,18 +41,18 @@
                 </div>
             </div>
             <div class="section2__right-part">
-                <img class="section2__image1" src="./src/img/home/mobile1_screen1.png" alt="mobile1-screen1"/>
-                <img class="section2__image2 --invisible" src="./src/img/home/iPhone.png" alt="mobile2-screen1"/>
+                <img class="section2__image1" src="../assets/img/home/mobile1_screen1.png" alt="mobile1-screen1"/>
+                <img class="section2__image2 --invisible" src="../assets/img/home/iPhone.png" alt="mobile2-screen1"/>
             </div>
 
         </div>
     </div>
     <div class="section3">
-        <div class="section3__flex-contrainer">
+        <div class="section3__flex-container">
 
             <div class="section3__left-part">
-                <img class="section3__image1" src="./src/img/home/mobile2_screen1.png" alt="mobile"/>
-                <img class="section3__image2 --invisible" src="./src/img/home/iPhone.png" alt="mobile"/>
+                <img class="section3__image1" src="../assets/img/home/mobile2_screen1.png" alt="mobile"/>
+                <img class="section3__image2 --invisible" src="../assets/img/home/iPhone.png" alt="mobile"/>
             </div>
             <div class="section3__right-part">
                 <h3 class="section3__h3">Organizers create games</h3>
@@ -65,7 +65,7 @@
         </div>
     </div>
     <div class="section4">
-        <div class="section4__flex-contrainer">
+        <div class="section4__flex-container">
             <div class="section4__left-part">
                 <h3>Professional players get funds for their games</h3>
                 <div class="submenu4">
@@ -76,23 +76,23 @@
                 </div>
             </div>
             <div class="section4__right-part">
-                <img class="section4__image1" src="./src/img/home/mobile3_screen1.png" alt="mobile1-screen1"/>
-                <img class="section4__image2 --invisible" src="./src/img/home/iPhone.png" alt="mobile2-screen1"/>
+                <img class="section4__image1" src="../assets/img/home/mobile3_screen1.png" alt="mobile1-screen1"/>
+                <img class="section4__image2 --invisible" src="../assets/img/home/iPhone.png" alt="mobile2-screen1"/>
             </div>
 
         </div>
     </div>
     <div class="section5">
-        <img class="section5__image1" src="./src/img/home/5.jpg" alt="mobile"/>
-        <img class="section5__image3 --invisible" src="./src/img/home/iPhone.png" alt="mobile2-screen1"/>
+        <img class="section5__image1" src="../assets/img/home/5.jpg" alt="mobile"/>
+        <img class="section5__image3 --invisible" src="../assets/img/home/iPhone.png" alt="mobile2-screen1"/>
         <div class="section5__right-part">
             <h3>Facilitate match<br/> Manage finance<br/> Ensure trust</h3>
-            <img class="section5__image2" src="./src/img/home/5_1.jpg" alt="cash-in-out"/>
+            <img class="section5__image2" src="../assets/img/home/5_1.jpg" alt="cash-in-out"/>
         </div>
     </div>
     <div class="section6">
         <H3 class="section6__h3">Games & Series enable ecosystem</H3>
-        <img class="section6__image1" src="./src/img/home/6.jpg" alt="scheme"/>
+        <img class="section6__image1" src="../assets/img/home/6.jpg" alt="scheme"/>
     </div>
     <div class="section7">
         <H3 class="section7__h3">Join the beta</H3>
@@ -121,7 +121,7 @@
         </div>
 
         <div class="footer__logo-container">
-            <img class="logo-img" src="./src/img/home/logo.png" alt="logo"/>
+            <img class="logo-img" src="../assets/img/home/logo.png" alt="logo"/>
             <p class="footer__logo-text">STRADDLE</p>
         </div>
         <div class="footer__copyright">
@@ -132,6 +132,6 @@
 
 </div>
 
-<script src="./src/main.js"></script>
+<script src="../assets/main.js"></script>
 </body>
 </html>
