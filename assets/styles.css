@@ -200,7 +200,7 @@ header {
   height: 1082px;
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url("../src/img/1.jpg"); }
+  background-image: url("../../src/img/home/1.jpg"); }
   .section1 .logo-container {
     transition: color 0.3s; }
   .section1 .logo-img {
@@ -603,7 +603,7 @@ footer {
   height: 1082px;
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url("../src/img/1.jpg"); }
+  background-image: url("../../src/img/about/1.jpg"); }
 
 .about__section2 {
   background-position: center;
@@ -725,7 +725,7 @@ footer {
   height: 1082px;
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url("../src/img/1.jpg"); }
+  background-image: url("../../src/img/team/1.jpg"); }
 
 .team__section2 {
   background-position: center;

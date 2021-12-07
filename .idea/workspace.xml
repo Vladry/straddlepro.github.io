@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca490e1-66f1-420c-a3c4-f00daaf7812d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/img/home/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/team/1_1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/team/_section2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/team/_section2.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/team/_section3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/team/_section3.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/about/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/team/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/team/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/about/_section1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/about/_section1.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section1.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/team/_section1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/team/_section1.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/team.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/scss/sections" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Сданные Работы/Степ-Проекты/forkio" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -48,18 +57,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\img\team" />
+      <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\img\home" />
       <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\scss\sections" />
       <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\scss" />
       <recent name="C:\Users\Vlad\WebstormProjects\Straddle" />
-      <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\scss\sections\about" />
-      <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\img\about" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\img\about" />
       <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\scss\sections\about" />
       <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\img" />
       <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\img\home" />
       <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\scss\sections\home" />
-      <recent name="C:\Users\DELL\WebstormProjects\Straddle\src\scss" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -89,7 +98,9 @@
       <workItem from="1637677451569" duration="24000" />
       <workItem from="1638100791782" duration="219000" />
       <workItem from="1638186927101" duration="25739000" />
-      <workItem from="1638285782827" duration="23962000" />
+      <workItem from="1638285782827" duration="24316000" />
+      <workItem from="1638792709326" duration="3450000" />
+      <workItem from="1638858874425" duration="4871000" />
     </task>
     <servers />
   </component>

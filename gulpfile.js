@@ -5,7 +5,7 @@ const gulp = require('gulp'),
     postcss = require('gulp-postcss'), //новое! использовать вместо gulp-clean-css
     concat = require('gulp-concat'),
     // uglify = require('gulp-uglify'),
-    // imagemin = require('gulp-imagemin'),
+    imagemin = require('gulp-imagemin'),
     babel = require('gulp-babel'),
     browserSync = require('browser-sync').create();  //https://browsersync.io/docs/api
 
@@ -20,18 +20,30 @@ const path = {
         js: "./src/*.js"
     },
     dist: {
-        self: "./dist/",
-        fonts: "./dist/fonts/",
-        img: "./dist/img/",
-        css: "./dist/",
-        js: "./dist/",
-        cssDel: "./dist/*.css", //указание путей удаляемых файлов при чистке dist
-        jsDel: "./dist/*.js"    //указание путей удаляемых файлов при чистке dist
+        self: "./assets/",
+        fonts: "./assets/fonts/",
+        img: "./assets/img/",
+        css: "./assets/",
+        js: "./assets/",
+        cssDel: "./assets/*.css", //указание путей удаляемых файлов при чистке dist
+        jsDel: "./assets/*.js"    //указание путей удаляемых файлов при чистке dist
     }
 };
 
 const finalJsfileName = "main.js";
 const finalCssFilename = 'styles.css';
+
+const buildImg = () => (
+    gulp.src(path.src.img)
+        .pipe(imagemin())
+        .pipe(gulp.dest(path.dist.img))
+        .pipe(browserSync.reload({stream: true}))
+);
+
+const buildFonts = () => (
+    gulp.src(path.src.fonts)
+        .pipe(gulp.dest(path.dist.fonts))
+);
 
 const buildCss = () => (
     gulp.src(path.src.scss)
@@ -40,7 +52,7 @@ const buildCss = () => (
         .pipe(postcss()) //новое!  https://github.com/postcss/gulp-postcss
         .pipe(concat(finalCssFilename))
         .pipe(gulp.dest(path.dist.css))
-        .pipe(browserSync.stream({stream: true}))
+        .pipe(browserSync.reload({stream: true}))
 );
 
 const buildJs = () => (
@@ -49,7 +61,7 @@ const buildJs = () => (
         .pipe(babel({presets: ['@babel/env']}))
         // .pipe(uglify({toplevel: true}))
         .pipe(gulp.dest(path.dist.js))
-        .pipe(browserSync.stream({stream: true}))
+        .pipe(browserSync.reload({stream: true}))
 );
 
 const clean = async () => {
@@ -61,6 +73,8 @@ const build = async () => {
     await clean();
     buildJs();
     buildCss();
+    buildFonts();
+    buildImg();
 };
 
 const dev = () => {
@@ -83,6 +97,9 @@ gulp.task("buildJs", buildJs);
 gulp.task("buildCss", buildCss);
 gulp.task("default", build);
 gulp.task("clean", clean);
+gulp.task("buildImg", buildImg);
+gulp.task("buildFonts", buildFonts);
+gulp.task("build", build);
 gulp.task("dev", dev);
 
 
