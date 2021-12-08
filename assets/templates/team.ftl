@@ -153,6 +153,18 @@
         </div>
     </div>
 
+
+
+    <div class="section7">
+        <H3 class="section7__h3">Ask us anythings!</H3>
+        <label for="email-input"></label>
+        <input id="email-input" class="section7__email-form email-input-field" name="email-input" type="email"
+               placeholder="Your question"/>
+        <button class="submit-btn" type="submit">Send</button>
+    </div>
+
+
+
     <footer>
         <div class="footer__social-icon-container --flex-row">
             <svg class="footer__social-icon-item" width="24" height="20" viewBox="0 0 24 20" fill="none"

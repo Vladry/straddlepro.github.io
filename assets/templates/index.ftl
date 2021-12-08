@@ -100,8 +100,9 @@
         <input id="email-input" class="section7__email-form email-input-field" name="email-input" type="email"
                placeholder="Your e-mail"/>
         <button class="submit-btn" type="submit">REQUEST</button>
-
     </div>
+
+
     <footer>
         <div class="footer__social-icon-container --flex-row">
             <svg class="footer__social-icon-item" width="24" height="20" viewBox="0 0 24 20" fill="none"
@@ -129,7 +130,6 @@
             <p>All rights reserved</p>
         </div>
     </footer>
-
 </div>
 
 <script src="../assets/main.js"></script>

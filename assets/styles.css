@@ -668,10 +668,12 @@ footer {
   margin-top: 55px; }
 
 .smile-svg1 {
-  transform: translateY(66px); }
+  transform: translateY(66px);
+  fill: #DADADA; }
 
 .smile-svg2 {
-  transform: translateY(-12px); }
+  transform: translateY(-12px);
+  fill: #DADADA; }
 
 .about__section3-image {
   transform: translate(1px, 30px);
@@ -817,53 +819,6 @@ footer {
 
 .--drop {
   transform: translateY(30px); }
-
-.about__section4 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1920px auto;
-  height: 1082px;
-  max-width: 1920px;
-  margin: 0 auto;
-  gap: 240px;
-  background: radial-gradient(38% 33% at 50% 60%, #46073e 0%, #0f0510 100%); }
-
-.section4__h3 {
-  transform: translate(10px, 20px); }
-
-.about__section4-container {
-  gap: 40px;
-  transform: translate(8px, -20px); }
-
-.about__section4-text {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px; }
-
-.about__btn {
-  padding: 40px 140px;
-  border-radius: 46px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  color: #DADADA;
-  transition: filter 0.4s; }
-  .about__btn:hover {
-    cursor: pointer;
-    filter: brightness(150%);
-    transition: filter 0.6s; }
-
-.about__submit-btn1 {
-  background: linear-gradient(270deg, #EC1B59 0%, #72147E 100%); }
-  .about__submit-btn1:hover {
-    background: linear-gradient(270deg, #72147E 0%, #EC1B59 100%); }
-
-.about__submit-btn2 {
-  background: rgba(255, 255, 255, 0);
-  border: 2px solid #EC1B59;
-  padding: 37px 133px; }
-  .about__submit-btn2:hover {
-    background: linear-gradient(270deg, #2f0938 0%, #461531 100%); }
 
 @media (min-width: 325px) and (max-width: 1920px) {
   .wrapper {

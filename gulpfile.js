@@ -54,8 +54,8 @@ const buildHtml = () => (
         .pipe(rename(function (path) {
             path.extname = ".ftl";
         }))
-        .pipe(replace('href="./', 'href="../'))
-        .pipe(replace('src="./', 'src="../'))
+        .pipe(replace('href="../../', 'href="../'))
+        .pipe(replace('src="../../', 'src="../'))
         .pipe(gulp.dest(path.dist.html))
 );
 
@@ -90,8 +90,8 @@ const _build = async () => {
     buildJs();
     buildCss();
     buildHtml();
-    // buildFonts();
-    // buildImg();
+    buildFonts();
+    buildImg();
 };
 
 const dev = () => {
@@ -115,7 +115,6 @@ gulp.task("js", buildJs);
 gulp.task("css", buildCss);
 gulp.task("img", buildImg);
 gulp.task("fonts", buildFonts);
-gulp.task("build", build);
 gulp.task("html", buildHtml);
 gulp.task("dev", dev);
 
