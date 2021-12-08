@@ -29,7 +29,8 @@ const path = {
         css: "./assets/",
         js: "./assets/",
         cssDel: "./assets/*.css", //указание путей удаляемых файлов при чистке dist
-        jsDel: "./assets/*.js"    //указание путей удаляемых файлов при чистке dist
+        jsDel: "./assets/*.js",
+        htmlDel: "./assets/templates/*.ftl"
     }
 };
 
@@ -78,13 +79,14 @@ const buildJs = () => (
 );
 
 const clean = async () => {
-    const deletedFiles = await del([path.dist.cssDel, path.dist.jsDel]);
+    const deletedFiles = await del([path.dist.cssDel, path.dist.jsDel, path.dist.htmlDel]);
     console.log(`удалены файлы: ${deletedFiles}`);
 };
 
-const build = async () => {
-    // await
-        // clean();
+const build = gulp.series(clean, gulp.parallel(buildJs, buildCss, buildHtml));
+
+const _build = async () => {
+    await clean();
     buildJs();
     buildCss();
     buildHtml();
@@ -100,22 +102,21 @@ const dev = () => {
     })
 };
 
-const watch = ()=>
-{
+const watch = () => {
     gulp.watch(path.src.js, buildJs).on("change", browserSync.reload);
     gulp.watch(path.src.scss, buildCss).on("change", browserSync.reload);
     gulp.watch(path.src.html).on("change", browserSync.reload);
 };
 
+gulp.task("clean", clean);
 gulp.task("default", build);
 gulp.task("watch", watch);
-gulp.task("buildJs", buildJs);
-gulp.task("buildCss", buildCss);
-gulp.task("clean", clean);
-gulp.task("buildImg", buildImg);
-gulp.task("buildFonts", buildFonts);
+gulp.task("js", buildJs);
+gulp.task("css", buildCss);
+gulp.task("img", buildImg);
+gulp.task("fonts", buildFonts);
 gulp.task("build", build);
-gulp.task("buildHtml", buildHtml);
+gulp.task("html", buildHtml);
 gulp.task("dev", dev);
 
 
