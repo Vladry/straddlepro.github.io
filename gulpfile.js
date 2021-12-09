@@ -26,10 +26,10 @@ const path = {
         html: "./assets/templates/",
         fonts: "./assets/fonts/",
         img: "./assets/img/",
-        css: "./assets/",
-        js: "./assets/",
-        cssDel: "./assets/*.css", //указание путей удаляемых файлов при чистке dist
-        jsDel: "./assets/*.js",
+        css: "./assets/css/",
+        js: "./assets/js/",
+        cssDel: "./assets/css/*.css", //указание путей удаляемых файлов при чистке dist
+        jsDel: "./assets/js/*.js",
         htmlDel: "./assets/templates/*.ftl"
     }
 };

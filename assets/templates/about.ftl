@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About</title>
-    <link rel="stylesheet" href="../assets/styles.css"/>
+    <link rel="stylesheet" href="../assets/css/styles.css"/>
 </head>
 <body>
 <div class="wrapper">
@@ -145,6 +145,6 @@
 
 </div>
 
-<script src="../assets/main.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>

@@ -1,7 +1,6 @@
 .section1{
   @include sectionsCommonSetting;
-  background-image: url("../assets/img/home/1.jpg");
-  //background-image: url("assets/img/home/1.jpg");
+  background-image: url("../img/home/1.jpg");
   .logo-container {
     transition: color 0.3s;
     //&:hover {
@@ -10,12 +9,7 @@
     //  transition: color 0.1s;
     //}
 
-  }/*.section1 {*/
-  /*  background-image: -webkit-image-set(*/
-  /*          url("/assets/img/home/1.jpg") 1x url("/assets/img/home/1.jpg") 2x  type("image/avif"),*/
-  /*          url("/assets/img/home/1.jpg") 1x url("/assets/img/home/1.jpg") 2x  type("image/jpeg"),*/
-  /*  );*/
-  /*}*/
+  }
 
   .logo-img{
     width: 60px;
