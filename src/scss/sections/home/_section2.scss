@@ -21,16 +21,19 @@
   margin-top: -20px;
   margin-left: 120px;
 }
+
+
 .section2__image1 {
-  width: 640px;
-  height: 730px;
+  width: $HomeMobile1BlockWidth;
+  height: $HomeMobile1BlockHeight;
 }
 .section2__image2 {
+  display: none;
   position: relative;
-  top: -730px;
-  left: 120px;
-  width: 390px;
-  height: 730px;
+  top: -716px;
+  left: 125px;
+  width: $HomeMobile1BlockWidth - 241;
+  height: $HomeMobile1BlockHeight - 50;
   &:hover {
     opacity: 1;
     cursor: pointer;
@@ -38,7 +41,6 @@
 }
 .submenu2 {
   margin-top: 70px;
-  //margin-left: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -7,6 +7,11 @@ $textColorMinor: #DADADA;
 $textColorDemo: goldenrod;
 $onHoverTextColor: red;
 
+//размеры блоковМобильныхКартинок:
+$HomeMobile1BlockWidth:  600px;
+$HomeMobile1BlockHeight: 730px;
+
+
 @mixin sectionsCommonSetting {
   background-position: center;
   background-repeat: no-repeat;

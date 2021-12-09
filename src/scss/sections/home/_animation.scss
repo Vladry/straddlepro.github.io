@@ -1,0 +1,21 @@
+.section2__image1-container {
+  position: relative;
+  overflow: hidden;
+}
+.home-section2__animated-container {
+  position: absolute;
+  top: 30px;
+  left: 146px;
+
+}
+
+.animated-item {
+  height: $HomeMobile1BlockHeight + 550;
+  width: $HomeMobile1BlockWidth - 288;
+  transition: all 2s;
+  border-radius: 20px;
+  &:hover {
+    transform: translateY(-600px);
+    transition: all 4s;
+  }
+}
