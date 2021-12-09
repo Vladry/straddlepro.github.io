@@ -27,18 +27,7 @@
   width: $HomeMobile1BlockWidth;
   height: $HomeMobile1BlockHeight;
 }
-.section2__image2 {
-  display: none;
-  position: relative;
-  top: -716px;
-  left: 125px;
-  width: $HomeMobile1BlockWidth - 241;
-  height: $HomeMobile1BlockHeight - 50;
-  &:hover {
-    opacity: 1;
-    cursor: pointer;
-  }
-}
+
 .submenu2 {
   margin-top: 70px;
   display: flex;
