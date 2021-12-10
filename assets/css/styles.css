@@ -391,7 +391,7 @@ header {
 
 .section4__image1 {
   width: 838px;
-  height: 880px; }
+  height: 830px; }
 
 .section4__image2 {
   display: none;
@@ -447,7 +447,7 @@ header {
 .section5__image1 {
   position: relative;
   left: 140px;
-  width: 642px;
+  width: 634px;
   height: 774px; }
 
 .section5__image3 {
@@ -590,13 +590,15 @@ footer {
   color: #DADADA; }
 
 .section2__image1-container {
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
 
 .section2__animated-container {
   position: absolute;
   top: 30px;
-  left: 146px; }
+  left: 146px;
+  overflow: hidden;
+  border-radius: 50px;
+  height: 680px; }
 
 .section2__animated-screen {
   transition: all 2s;
@@ -616,6 +618,7 @@ footer {
   top: 176px;
   left: 378px;
   overflow: hidden;
+  border-radius: 50px;
   height: 720px; }
 
 .section3__animated-screen {
@@ -633,10 +636,11 @@ footer {
 
 .section4__animated-container {
   position: absolute;
-  top: 156px;
+  top: 144px;
   left: 1227px;
   overflow: hidden;
-  height: 720px; }
+  border-radius: 50px;
+  height: 700px; }
 
 .section4__animated-screen {
   transition: all 2s;
@@ -654,8 +658,9 @@ footer {
 .section5__animated-container {
   position: absolute;
   top: 185px;
-  left: 347px;
+  left: 328px;
   overflow: hidden;
+  border-radius: 50px;
   height: 720px; }
 
 .section5__animated-screen {

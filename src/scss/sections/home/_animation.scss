@@ -1,11 +1,13 @@
 .section2__image1-container {
   position: relative;
-  overflow: hidden;
 }
 .section2__animated-container {
   position: absolute;
   top: 30px;
   left: 146px;
+  overflow: hidden;
+  border-radius: 50px;
+  height: 680px;
 }
 
 .section2__animated-screen {
@@ -25,6 +27,7 @@
   top: 176px;
   left: 378px;
   overflow: hidden;
+  border-radius: 50px;
 height: 720px;
 }
 .section3__animated-screen {
@@ -42,10 +45,11 @@ height: 720px;
 }
 .section4__animated-container {
   position: absolute;
-  top: 156px;
+  top: 144px;
   left: 1227px;
   overflow: hidden;
-  height: 720px;
+  border-radius: 50px;
+  height: 700px;
 }
 .section4__animated-screen {
   @include animatedScreens;
@@ -64,8 +68,9 @@ height: 720px;
 .section5__animated-container {
   position: absolute;
   top: 185px;
-  left: 347px;
+  left: 328px;
   overflow: hidden;
+  border-radius: 50px;
   height: 720px;
 }
 .section5__animated-screen {

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca490e1-66f1-420c-a3c4-f00daaf7812d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/about.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/about.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/templates/team.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/team.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_animation.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +93,7 @@
       <workItem from="1638958332956" duration="5194000" />
       <workItem from="1639058131472" duration="4030000" />
       <workItem from="1639063629804" duration="18028000" />
-      <workItem from="1639126714556" duration="4594000" />
+      <workItem from="1639126714556" duration="6131000" />
     </task>
     <servers />
   </component>
