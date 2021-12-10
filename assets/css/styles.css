@@ -162,10 +162,8 @@ h4 {
   font-family: 'Monserrat', serif; }
 
 .--shadowed {
-  opacity: 0.6; }
-
-.--invisible {
-  opacity: 0; }
+  filter: brightness(50%);
+  z-index: -1; }
 
 .--flex-row {
   display: flex;
@@ -179,25 +177,55 @@ h4 {
   justify-content: center;
   align-items: center; }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 100px;
-  padding-top: 60px; }
-
 .menu__burger {
-  position: relative;
-  height: 20px;
-  width: 30px;
-  top: 13px;
+  position: absolute;
+  height: 30px;
+  width: 40px;
+  top: 100px;
   right: 100px;
+  z-index: 1; }
+  .menu__burger:hover {
+    cursor: pointer; }
+
+.menu__burger-image {
   z-index: 2; }
 
 .menu__burger-image--close {
-  width: 50px;
-  height: 50px;
-  transform: translate(-6px, -13px); }
+  width: 40px;
+  height: 40px;
+  transform: translate(-2px, -9px); }
+
+.menu {
+  position: absolute;
+  top: 100px;
+  right: 80px;
+  width: 0;
+  height: 0;
+  background-color: #222;
+  list-style-type: none; }
+
+.--menu-active {
+  top: 11px;
+  right: 15px;
+  width: 440px;
+  height: 1081px;
+  z-index: 1; }
+
+.menu__item {
+  margin: 60px 180px 60px 140px; }
+  .menu__item:first-child {
+    margin-top: 309px; }
+
+.menu__ref {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 64px; }
+  .menu__ref:hover {
+    color: red;
+    cursor: pointer; }
 
 .section1 {
   background-position: center;
@@ -208,7 +236,8 @@ header {
   margin: 0 auto;
   background-image: url("../img/home/1.jpg"); }
   .section1 .logo-container {
-    transition: color 0.3s; }
+    margin-left: 100px;
+    padding-top: 60px; }
   .section1 .logo-img {
     width: 60px;
     height: 71px; }
@@ -220,40 +249,6 @@ header {
     font-size: 30px;
     vertical-align: top;
     padding-top: 21px; }
-  .section1 .menu__burger:hover {
-    cursor: pointer; }
-  .section1 .menu {
-    position: absolute;
-    top: 100px;
-    right: 80px;
-    width: 60px;
-    height: 60px;
-    display: block;
-    background-color: #222;
-    list-style-type: none; }
-    .section1 .menu:first-child {
-      margin-top: 309px;
-      color: goldenrod; }
-  .section1 .--menu-active {
-    opacity: 1;
-    top: 15px;
-    right: 15px;
-    width: 440px;
-    height: 1082px; }
-  .section1 .menu__item {
-    margin: 60px 180px 60px 140px; }
-    .section1 .menu__item:first-child {
-      margin-top: 309px; }
-  .section1 .menu__ref {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 64px; }
-    .section1 .menu__ref:hover {
-      color: red;
-      cursor: pointer; }
   .section1 .section1__title {
     width: 85%;
     margin: 290px auto; }
@@ -594,15 +589,14 @@ footer {
 
 .section2__animated-container {
   position: absolute;
-  top: 30px;
+  top: 26px;
   left: 146px;
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: 30px;
   height: 680px; }
 
 .section2__animated-screen {
   transition: all 2s;
-  border-radius: 50px;
   height: 1280px;
   width: 312px; }
   .section2__animated-screen:hover {
@@ -618,12 +612,11 @@ footer {
   top: 176px;
   left: 378px;
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: 30px;
   height: 720px; }
 
 .section3__animated-screen {
   transition: all 2s;
-  border-radius: 50px;
   height: 1440px;
   width: 349px; }
   .section3__animated-screen:hover {
@@ -639,12 +632,11 @@ footer {
   top: 144px;
   left: 1227px;
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: 30px;
   height: 700px; }
 
 .section4__animated-screen {
   transition: all 2s;
-  border-radius: 50px;
   height: 1440px;
   width: 349px; }
   .section4__animated-screen:hover {
@@ -660,12 +652,11 @@ footer {
   top: 185px;
   left: 328px;
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: 30px;
   height: 720px; }
 
 .section5__animated-screen {
   transition: all 2s;
-  border-radius: 50px;
   height: 1440px;
   width: 349px; }
   .section5__animated-screen:hover {
@@ -890,7 +881,3 @@ footer {
 
 .--drop {
   transform: translateY(30px); }
-
-@media (min-width: 325px) and (max-width: 1920px) {
-  .wrapper {
-    max-width: 1920px; } }

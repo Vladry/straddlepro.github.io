@@ -15,11 +15,11 @@ scss.compiler = require('node-sass');
 
 const path = {
     src: {
-        html: "./src/html/**/*",
+        html: "./src/html/**/*.html",
         fonts: "./src/fonts/**/*",
         img: "./src/img/**/*",
         scss: "./src/scss/**/*.scss",
-        js: "./src/*.js"
+        js: "./src/**/*.js"
     },
     dist: {
         self: "./assets/",
@@ -51,12 +51,12 @@ const buildFonts = () => (
 
 const buildHtml = () => (
     gulp.src(path.src.html)
+        .pipe(replace('../../', '../'))
+        // .pipe(replace('href="../../', 'href="../'))
+        // .pipe(replace('src="../../', 'src="../'))
         .pipe(rename(function (path) {
             path.extname = ".ftl";
         }))
-        .pipe(replace('href="../../', 'href="../'))
-        .pipe(replace('src="../../', 'src="../'))
-        .pipe(replace('../../assets/', '../assets/'))
         .pipe(gulp.dest(path.dist.html))
 );
 
@@ -106,7 +106,7 @@ const dev = () => {
 const watch = () => {
     gulp.watch(path.src.js, buildJs).on("change", browserSync.reload);
     gulp.watch(path.src.scss, buildCss).on("change", browserSync.reload);
-    gulp.watch(path.src.html).on("change", browserSync.reload);
+    gulp.watch(path.src.html, buildHtml).on("change", browserSync.reload);
 };
 
 gulp.task("clean", clean);

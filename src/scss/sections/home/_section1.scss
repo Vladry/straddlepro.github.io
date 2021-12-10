@@ -1,14 +1,10 @@
 .section1{
   @include sectionsCommonSetting;
   background-image: url("../img/home/1.jpg");
-  .logo-container {
-    transition: color 0.3s;
-    //&:hover {
-    //  cursor: pointer;
-    //  color: red;
-    //  transition: color 0.1s;
-    //}
 
+  .logo-container {
+    margin-left: 100px;
+    padding-top: 60px;
   }
 
   .logo-img{
@@ -23,58 +19,6 @@
     font-size: 30px;
     vertical-align: top;
     padding-top: 21px;
-  }
-  .menu__burger {
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  .menu {
-    position: absolute;
-    top: 100px;
-    right: 80px;
-    width: 60px;
-    height: 60px;
-    display: block;
-    //opacity: 0;
-    &:hover {
-      //opacity: 1;
-      //top: 15px;
-      //right: 15px;
-      //width: 440px;
-      //height: $sectionHeight;
-    }
-    background-color: #222;
-    list-style-type: none;
-    &:first-child {
-      margin-top: 309px;
-      color: goldenrod;
-    }
-  }
-  .--menu-active {
-    opacity: 1;
-    top: 15px;
-    right: 15px;
-    width: 440px;
-    height: $sectionHeight;
-  }
-  .menu__item {
-    margin: 60px 180px 60px 140px;
-    &:first-child {
-      margin-top: 309px;
-    }
-  }
-  .menu__ref {
-    color: $textColor;
-    text-decoration: none;
-    &:hover {
-      color: $onHoverTextColor;
-      cursor: pointer;
-    }
-    font-weight: 600;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 64px;
   }
 
   .section1__title {

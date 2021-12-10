@@ -3,10 +3,10 @@
 }
 .section2__animated-container {
   position: absolute;
-  top: 30px;
+  top: 26px;
   left: 146px;
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: $animatedContainerBorderRadius;
   height: 680px;
 }
 
@@ -27,7 +27,7 @@
   top: 176px;
   left: 378px;
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: $animatedContainerBorderRadius;
 height: 720px;
 }
 .section3__animated-screen {
@@ -48,7 +48,7 @@ height: 720px;
   top: 144px;
   left: 1227px;
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: $animatedContainerBorderRadius;
   height: 700px;
 }
 .section4__animated-screen {
@@ -70,7 +70,7 @@ height: 720px;
   top: 185px;
   left: 328px;
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: $animatedContainerBorderRadius;
   height: 720px;
 }
 .section5__animated-screen {
