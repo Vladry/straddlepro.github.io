@@ -2,16 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca490e1-66f1-420c-a3c4-f00daaf7812d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/img/about/burger-menu-close-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/burger-menu-close-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/burger-menu-close-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/burger-menu-open-tab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/about/burger-menu-close-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/about/burger-menu-open-tab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/home/burger-menu-close-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/home/burger-menu-open-tab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/team/burger-menu-close-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/team/burger-menu-open-tab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_burger_menu_switch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/about/menu_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/menu_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/about.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/about.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/templates/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/index.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/team.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/team.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_animation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section2.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section3.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section4.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section5.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/about/menu_button.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/about/burger-menu-open-tab.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/home/menu_button.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/home/burger-menu-open-tab.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_header_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_header_menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section1.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/scss/sections/home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -53,10 +71,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\scss\sections\home" />
-      <recent name="C:\Users\Vlad\WebstormProjects\Straddle\assets\img\home" />
-      <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\img\home" />
+      <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src" />
       <recent name="C:\Users\Vlad\WebstormProjects\Straddle\assets\img\team" />
+      <recent name="C:\Users\Vlad\WebstormProjects\Straddle\assets\img\home" />
+      <recent name="C:\Users\Vlad\WebstormProjects\Straddle\assets\img\about" />
       <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\img\team" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -99,7 +117,8 @@
       <workItem from="1638858874425" duration="22612000" />
       <workItem from="1638958332956" duration="5194000" />
       <workItem from="1639058131472" duration="4030000" />
-      <workItem from="1639063629804" duration="17351000" />
+      <workItem from="1639063629804" duration="18028000" />
+      <workItem from="1639126714556" duration="4288000" />
     </task>
     <servers />
   </component>

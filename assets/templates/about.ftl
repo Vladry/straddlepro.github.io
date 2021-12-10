@@ -17,7 +17,7 @@
                 <p class="logo-text">STRADDLE</p>
             </div>
             <div class="menu__burger">
-                <img src="../assets/img/about/menu_button.png" alt="burger"/>
+                <img src="../assets/img/about/burger-menu-open-tab.png" alt="burger"/>
             </div>
         </header>
 

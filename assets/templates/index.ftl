@@ -17,7 +17,7 @@
                 <p class="logo-text">STRADDLE</p>
             </div>
             <div class="menu__burger">
-                <img src="../assets/img/home/menu_button.png" alt="burger"/>
+                <img class="menu__burger-image" src="../assets/img/home/burger-menu-open-tab.png" alt="burger"/>
             </div>
         </header>
 
@@ -71,10 +71,6 @@
                  alt="scrolled screen"/>
         </div>
     </div>
-
-
-
-
     <div class="section4">
         <div class="section4__flex-container">
             <div class="section4__left-part">
@@ -96,10 +92,6 @@
                  alt="scrolled screen"/>
         </div>
     </div>
-
-
-
-
     <div class="section5">
         <img class="section5__image1" src="../assets/img/home/5.jpg" alt="mobile"/>
         <img class="section5__image3 --invisible" src="../assets/img/home/iPhone.png" alt="mobile2-screen1"/>
@@ -112,8 +104,6 @@
                  alt="scrolled screen"/>
         </div>
     </div>
-
-
     <div class="section6">
         <H3 class="section6__h3">Games & Series enable ecosystem</H3>
         <img class="section6__image1" src="../assets/img/home/6.jpg" alt="scheme"/>
@@ -125,8 +115,6 @@
                placeholder="Your e-mail"/>
         <button class="submit-btn" type="submit">REQUEST</button>
     </div>
-
-
     <footer>
         <div class="footer__social-icon-container --flex-row">
             <svg class="footer__social-icon-item" width="24" height="20" viewBox="0 0 24 20" fill="none"

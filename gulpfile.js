@@ -56,6 +56,7 @@ const buildHtml = () => (
         }))
         .pipe(replace('href="../../', 'href="../'))
         .pipe(replace('src="../../', 'src="../'))
+        .pipe(replace('../../assets/', '../assets/'))
         .pipe(gulp.dest(path.dist.html))
 );
 

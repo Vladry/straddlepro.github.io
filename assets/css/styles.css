@@ -191,7 +191,13 @@ header {
   height: 20px;
   width: 30px;
   top: 13px;
-  right: 100px; }
+  right: 100px;
+  z-index: 2; }
+
+.menu__burger-image--close {
+  width: 50px;
+  height: 50px;
+  transform: translate(-6px, -13px); }
 
 .section1 {
   background-position: center;
@@ -225,15 +231,15 @@ header {
     display: block;
     background-color: #222;
     list-style-type: none; }
-    .section1 .menu:hover {
-      opacity: 1;
-      top: 15px;
-      right: 15px;
-      width: 440px;
-      height: 1082px; }
     .section1 .menu:first-child {
       margin-top: 309px;
       color: goldenrod; }
+  .section1 .--menu-active {
+    opacity: 1;
+    top: 15px;
+    right: 15px;
+    width: 440px;
+    height: 1082px; }
   .section1 .menu__item {
     margin: 60px 180px 60px 140px; }
     .section1 .menu__item:first-child {
