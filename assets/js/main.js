@@ -23,18 +23,3 @@ var toggleMenu = function toggleMenu() {
 };
 
 menuSwitch.addEventListener('click', toggleMenu);
-var header = document.getElementsByTagName('header')[0];
-var burgerMenuMobile = document.createElement("menu");
-burgerMenuMobile.className = 'burger-menu-mobile';
-var burgerMenuSwitch = document.getElementsByClassName("main-nav__burger-menu-tab")[0];
-var burgerMenu = "    <li class=\"burger-menu-mobile__item\"><a href=\"#\">Overview</a></li>\n    <li class=\"burger-menu-mobile__item\"><a href=\"#\">About Fork</a></li>\n    <li class=\"burger-menu-mobile__item\"><a href=\"#\">Buying Options</a></li>\n    <li class=\"burger-menu-mobile__item\"><a href=\"#\">Support</a></li>";
-
-var showMobileBurgerMenu = function showMobileBurgerMenu() {
-  if (burgerMenuSwitch.getAttribute('src') === 'dist/img/burger-menu-close-tab.svg') burgerMenuSwitch.setAttribute('src', "dist/img/burger-menu-start-tab.png");else burgerMenuSwitch.setAttribute('src', 'dist/img/burger-menu-close-tab.svg');
-  burgerMenuMobile.innerHTML = burgerMenu;
-  header.append(burgerMenuMobile);
-  burgerMenuMobile.classList.toggle('active');
-};
-
-burgerMenuSwitch.addEventListener('click', showMobileBurgerMenu);
-console.log('выполнен 001_burger_menu_switch.js');

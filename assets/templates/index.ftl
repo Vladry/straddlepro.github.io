@@ -22,7 +22,7 @@
         </header>
 
         <menu class="menu --invisible">
-            <li class="menu__item"><a class="menu__ref" href="/">HOME</a></li>
+<!--            <li class="menu__item"><a class="menu__ref" href="/">HOME</a></li>-->
             <li class="menu__item"><a class="menu__ref" href="/team">TEAM</a></li>
             <li class="menu__item"><a class="menu__ref" href="/about">ABOUT</a></li>
         </menu>
