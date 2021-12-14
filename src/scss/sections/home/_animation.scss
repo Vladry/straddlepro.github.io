@@ -3,17 +3,18 @@
 }
 .section2__animated-container {
   position: absolute;
-  top: 26px;
-  left: 146px;
+  top: -7px;
+  left: 165px;
   overflow: hidden;
   border-radius: $animatedContainerBorderRadius;
-  height: 680px;
+  height: 724px;
 }
 
 .section2__animated-screen {
   @include animatedScreens;
-  height: $HomeMobile1BlockHeight + 550;
-  width: $HomeMobile1BlockWidth - 288;
+  height: 1330px;
+  width: 333px;
+  //width: $HomeMobile1BlockWidth - 288;
   &:hover {
     transform: translateY(-600px);
   }
@@ -25,7 +26,7 @@
 .section3__animated-container {
   position: absolute;
   top: 176px;
-  left: 378px;
+  left: 352px;
   overflow: hidden;
   border-radius: $animatedContainerBorderRadius;
 height: 720px;
@@ -33,7 +34,7 @@ height: 720px;
 .section3__animated-screen {
   @include animatedScreens;
   height: 1440px;
-  width: 349px;
+  width: 336px;
   &:hover {
     transform: translateY(-600px);
   }
@@ -45,16 +46,16 @@ height: 720px;
 }
 .section4__animated-container {
   position: absolute;
-  top: 144px;
-  left: 1227px;
+  top: 174px;
+  left: 1221px;
   overflow: hidden;
   border-radius: $animatedContainerBorderRadius;
-  height: 700px;
+  height: 728px;
 }
 .section4__animated-screen {
   @include animatedScreens;
   height: 1440px;
-  width: 349px;
+  width: 340px;
   &:hover {
     transform: translateY(-600px);
   }
@@ -67,16 +68,16 @@ height: 720px;
 }
 .section5__animated-container {
   position: absolute;
-  top: 185px;
-  left: 328px;
+  top: 174px;
+  left: 353px;
   overflow: hidden;
   border-radius: $animatedContainerBorderRadius;
-  height: 720px;
+  height: 730px;
 }
 .section5__animated-screen {
   @include animatedScreens;
   height: 1440px;
-  width: 349px;
+  width: 336px;
   &:hover {
     transform: translateY(-600px);
   }

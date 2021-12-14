@@ -1,6 +1,7 @@
 .section2{
   @include sectionsCommonSetting;
   background-color: #19091C;
+  //background-image: url("../../assets/img/home/2bg.png")
 
 }
 
@@ -24,8 +25,17 @@
 
 
 .section2__image1 {
-  width: $HomeMobile1BlockWidth;
-  height: $HomeMobile1BlockHeight;
+  position: absolute;
+  width: 1060px;
+  height: 1060px;
+  transform: translate(-200px, -170px);
+}
+.section2__image2 {
+  position: relative;
+  width: 380px;
+  height: 760px;
+  top: -22px;
+  left: 140px;
 }
 
 .submenu2 {
@@ -35,9 +45,10 @@
   align-items: center;
   flex-flow: row nowrap;
 }
+
 .submenu2__item {
   border: 1px solid #48025E;
-padding-top: 20px;
+  padding-top: 20px;
   padding-bottom: 20px;
   width: 120px;
   color: rgba(236, 27, 89, 1);
@@ -49,3 +60,45 @@ padding-top: 20px;
     //cursor: pointer;
   }
 }
+@media (min-width: $breakpoint_Large_Screen) {
+  .submenu2 {
+    flex-flow: row nowrap;
+  }
+}
+@media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen){
+  .submenu2 {
+    flex-flow: row wrap;
+  }
+
+  .submenu2__item {
+    width: 90px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop){
+  .submenu2 {
+    flex-flow: row wrap;
+  }
+  .submenu2__item {
+    width: 90px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet){
+  .submenu2 {
+    flex-flow: row nowrap;
+  }
+  .submenu2__item {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+
+

@@ -1,6 +1,7 @@
 .section3{
   @include sectionsCommonSetting;
   background-color: #0f0014;
+  //background-image: url("../../assets/img/home/3bg.png");
 }
 .section3__flex-container {
   display: flex;
@@ -15,26 +16,30 @@
 .section3__right-part {
   width: 55%;
   height: 800px;
-  margin-top: -155px;
-  margin-left: -70px;
+  margin-top: 350px;
+  margin-left: -310px;
 }
 .section3__h3 {
   transform: translateX(-15px);
 }
+
 .section3__image1 {
-  width: 750px;
-  height: 800px;
+  position: relative;
+  top: -150px;
+  left: -246px;
+  width: 1180px;
+  height: 1100px;
 }
 .section3__image2 {
-  position: relative;
-  top: -800px;
-  left: 180px;
-  width: 390px;
-  height: 800px;
-    opacity: 0;
+  position: absolute;
+  top: 158px;
+  left: 330px;
+  width: 380px;
+  height: 760px;
 }
+
 .submenu3 {
-  margin-top: 70px;
+  margin-top: 63px;
   display: flex;
   justify-content: flex-start;
   align-items: center;

@@ -13,7 +13,6 @@
 
     <header>
         <menu class="menu  --invisible">
-            <!--            <li class="menu__item"><a class="menu__ref" href="/">HOME</a></li>-->
             <li class="menu__item"><a class="menu__ref" href="/team">TEAM</a></li>
             <li class="menu__item"><a class="menu__ref" href="/about">ABOUT</a></li>
         </menu>
@@ -47,8 +46,9 @@
                 </div>
                 <div class="section2__right-part">
                     <div class="section2__image1-container">
-                        <img class="section2__image1" src="../assets/img/home/mobile1_screen1.png"
-                             alt="mobile1-screen1"/>
+                        <img class="section2__image1" src="../assets/img/home/circle.png" alt="circle"/>
+                        <img class="section2__image2" src="../assets/img/home/iPhone2.png"
+                        alt="mobile1-frame"/>
                         <div class="section2__animated-container">
                             <img class="section2__animated-screen  "
                                  src="../assets/img/home/mob_scroll_screen.jpg"
@@ -61,8 +61,9 @@
         <div class="section3">
             <div class="section3__flex-container">
                 <div class="section3__left-part">
-                    <img class="section3__image1" src="../assets/img/home/mobile2_screen1.png" alt="mobile"/>
-                    <img class="section3__image2 --invisible" src="../assets/img/home/iPhone.png" alt="mobile"/>
+                    <img class="section3__image1" src="../assets/img/home/triangle.png"   alt="triangle"/>
+                    <img class="section3__image2" src="../assets/img/home/iPhone2.png"  alt="mobile"/>
+
                 </div>
                 <div class="section3__right-part">
                     <h3 class="section3__h3">Organizers create games</h3>
@@ -73,8 +74,7 @@
                 </div>
             </div>
             <div class="section3__animated-container">
-                <img class="section3__animated-screen  " src="../assets/img/home/mob_scroll_screen.jpg"
-                     alt="scrolled screen"/>
+                <img class="section3__animated-screen" src="../assets/img/home/mob_scroll_screen.jpg" alt="scrolled screen"/>
             </div>
         </div>
         <div class="section4">
@@ -89,31 +89,33 @@
                     </div>
                 </div>
                 <div class="section4__right-part">
-                    <img class="section4__image1" src="../assets/img/home/mobile3_screen1.png"
+                    <img class="section4__image1" src="../assets/img/home/rhombus.png"
                          alt="mobile1-screen1"/>
+                    <img class="section4__image2" src="../assets/img/home/iPhone2.png"  alt="mobile"/>
                 </div>
             </div>
-
             <div class="section4__animated-container">
                 <img class="section4__animated-screen  " src="../assets/img/home/mob_scroll_screen.jpg"
                      alt="scrolled screen"/>
             </div>
         </div>
         <div class="section5">
-            <img class="section5__image1" src="../assets/img/home/5.jpg" alt="mobile"/>
-            <img class="section5__image3 --invisible" src="../assets/img/home/iPhone.png" alt="mobile2-screen1"/>
+            <img class="section5__image1" src="../assets/img/home/square.png" alt="mobile"/>
+            <img class="section5__image2" src="../assets/img/home/iPhone2.png" alt="iPhone2.png"/>
             <div class="section5__right-part">
-                <h3>Facilitate match<br/> Manage finance<br/> Ensure trust</h3>
-                <img class="section5__image2" src="../assets/img/home/5_1.jpg" alt="cash-in-out"/>
+                <h3><nobr>Facilitate match</nobr><br/> <nobr>Manage finance</nobr><br/> <nobr>Ensure trust</nobr></h3>
+                <img class="section5__image3" src="../assets/img/home/5_1.jpg" alt="cash-in-out"/>
             </div>
             <div class="section5__animated-container">
                 <img class="section5__animated-screen  " src="../assets/img/home/mob_scroll_screen.jpg"
                      alt="scrolled screen"/>
             </div>
         </div>
+
+
         <div class="section6">
             <H3 class="section6__h3">Games & Series enable ecosystem</H3>
-            <img class="section6__image1" src="../assets/img/home/6.jpg" alt="scheme"/>
+            <img class="section6__image1" src="../assets/img/home/section_6.png" alt="scheme"/>
         </div>
         <div class="section7">
             <H3 class="section7__h3">Join the beta</H3>

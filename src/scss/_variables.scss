@@ -1,4 +1,6 @@
-$breakpoint_Desktop: 1920px;
+$breakpoint_Large_Screen: 1920px;
+$breakpoint_Desktop: 1200px;
+$breakpoint_tabblet: 800px;
 $breakpoint_smartphone: 325px;
 $sectionHeight: 1082px;
 $footerHeight: 274px;
@@ -6,7 +8,7 @@ $textColor: white;
 $textColorMinor: #DADADA;
 $textColorDemo: goldenrod;
 $onHoverTextColor: red;
-$animatedContainerBorderRadius: 30px;
+$animatedContainerBorderRadius: 45px;
 
 //размеры блоковМобильныхКартинок:
 $HomeMobile1BlockWidth:  600px;

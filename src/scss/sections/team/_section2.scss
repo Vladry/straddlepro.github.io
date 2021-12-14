@@ -1,18 +1,22 @@
 .team__section2 {
   @include sectionsCommonSetting;
   background-color: #19091C;
+  //background-image: url('../../assets/img/team/2_bg.png');
 }
 
 .team__section2-flex-container {
   transform: translate(1%, 83%);
-  gap: 250px;
+  gap: 150px;
 }
 
 .team__section2-image {
-  width: 450px;
+  width: 850px;
+  height: 850px;
+  transform: translate(2px, -590px);
 }
 
 .team__section2-text-container {
+  transform: translate(140px, -583px);
 }
 
 .team__section2-h3 {

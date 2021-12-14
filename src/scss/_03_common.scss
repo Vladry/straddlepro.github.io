@@ -1,29 +1,107 @@
 @import "./_variables.scss";
 
-h2 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 96px;
-  line-height: 117px;
-  align-items: center;
-  text-align: center;
+@media (min-width: $breakpoint_Large_Screen) {
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 117px;
+    align-items: center;
+    text-align: center;
+  }
+  h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 88px;
+    text-align: left;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: left;
+  }
 }
-h3 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 72px;
-  line-height: 88px;
-  text-align: left;
+@media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen){
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 88px;
+    align-items: center;
+    text-align: center;
+  }
+  h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: left;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: left;
+  }
 }
-h4 {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 44px;
-  text-align: left;
+@media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop){
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: left;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: left;
+  }
+  h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet){
+  h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: left;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: left;
+  }
+  h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+  }
 }
 
+
+@media (min-width: $breakpoint_Large_Screen) {}
+@media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen){}
+@media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop){}
+@media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet){}
+
+
 .wrapper {
-  max-width: $breakpoint_Desktop; //это должно управляться из медиазапросов -пофиксить
+  max-width: $breakpoint_Large_Screen;
   position: relative;
   padding: 10px 10px;
   margin: 0 auto;

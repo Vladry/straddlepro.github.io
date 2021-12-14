@@ -1,6 +1,7 @@
 .about__section3 {
   @include sectionsCommonSetting;
   background-color: #19091C;
+  //background-image: url("../../assets/img/about/3_bg.png");
 }
 .about__section3_central-flex-container {
   display: flex;
@@ -11,7 +12,7 @@
 }
 .about__section3-left-container {
   margin-left: 190px;
-  transform: translateY(-42px);
+  transform: translate(129px, 34px);
 }
 .about__section3-h3 {
 
@@ -23,15 +24,8 @@
   color: $textColorMinor;
   margin-top: 55px;
 }
-.smile-svg1 {
-  transform: translateY(66px);
-  fill: $textColorMinor;
-}
-.smile-svg2 {
-  transform: translateY(-12px);
-  fill: $textColorMinor;
-}
 .about__section3-image {
-  transform: translate(1px, 30px);
-  width: 600px;
+  transform: translate(12px, -2px);
+  width: 930px;
+  height: 1050px;
 }

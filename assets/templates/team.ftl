@@ -36,7 +36,7 @@
                         developers when they need to quickly fill
                         mock-ups <br/>or prototypes with content.</p>
                 </div>
-                <img class="team__section2-image" src="../assets/img/team/1_1.jpg" alt="figure1"/>
+                <img class="team__section2-image" src="../assets/img/team/icon_money.png" alt="figure1"/>
 
             </div>
         </div>
