@@ -1,24 +1,4 @@
 
-.section4 {
-  position: relative;
-}
-.section4__animated-container {
-  position: absolute;
-  top: 174px;
-  left: 1126px;
-  overflow: hidden;
-  border-radius: $animatedContainerBorderRadiusDesktop;
-  height: $mobileBaseHeightDesktop;
-}
-.section4__animated-screen {
-  @include animatedScreens;
-  width: $mobileBaseWidthDesktop - $DesktopMobWidthCorrection;
-  height: 1440px;
-  &:hover {
-    transform: translateY(-600px);
-  }
-}
-
 .section5 {
   position: relative;
 }
