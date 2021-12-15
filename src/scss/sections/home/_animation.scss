@@ -1,76 +1,11 @@
-.section2__image1-container {
-  position: relative;
-}
-.section2__animated-container {
+.animated-container {
   position: absolute;
-  top: -7px;
-  left: 165px;
   overflow: hidden;
-  border-radius: $animatedContainerBorderRadiusDesktop;
-  height: 724px;
 }
 
-.section2__animated-screen {
-  @include animatedScreens;
-  width: 333px;
-  height: 1330px;
-  &:hover {
-    transform: translateY(-600px);
-  }
-}
-// регулировка размеров мобилки второго экрана страницы home
-@media (min-width: $breakpoint_Large_Screen) {}
-@media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen){}
-@media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop){
-  .section2__animated-container {
-  top: -7px;
-  left: 165px;
-  border-radius: $animatedContainerBorderRadiusDesktop - $mobRadiusReducer;
-  height: 724px;
-}
-  .section2__animated-screen {
-  width: 333px - $mobileWidthReducer;
-  height: 1330px - $mobileHeightReducer;
-  &:hover {
-    transform: translateY(-600px + $mobileHeightReducer);
-  }
-}
-}
-@media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet){
-  .section2__animated-container {
-  top: -7px;
-  left: 165px;
-  border-radius: $animatedContainerBorderRadiusDesktop - $mobRadiusReducer;
-  height: 724px;
-}
-
-  .section2__animated-screen {
-  width: 333px - $mobileWidthReducer;
-  height: 1330px - $mobileHeightReducer;
-  &:hover {
-    transform: translateY(-600px + $mobileHeightReducer);
-  }
-}
-}
 
 .section3 {
   position: relative;
-}
-.section3__animated-container {
-  position: absolute;
-  top: 176px;
-  left: 352px;
-  overflow: hidden;
-  border-radius: $animatedContainerBorderRadiusDesktop;
-height: 720px;
-}
-.section3__animated-screen {
-  @include animatedScreens;
-  width: 336px - $mobileWidthReducer;
-  height: 1440px - $mobileHeightReducer;
-  &:hover {
-    transform: translateY(-600px - $mobileHeightReducer);
-  }
 }
 
 .section4 {
@@ -79,21 +14,19 @@ height: 720px;
 .section4__animated-container {
   position: absolute;
   top: 174px;
-  left: 1221px;
+  left: 1126px;
   overflow: hidden;
   border-radius: $animatedContainerBorderRadiusDesktop;
-  height: 728px;
+  height: $mobileBaseHeightDesktop;
 }
 .section4__animated-screen {
   @include animatedScreens;
-  width: 340px - $mobileWidthReducer;
-  height: 1440px - $mobileHeightReducer;
+  width: $mobileBaseWidthDesktop - $DesktopMobWidthCorrection;
+  height: 1440px;
   &:hover {
-    transform: translateY(-600px - $mobileHeightReducer);
+    transform: translateY(-600px);
   }
 }
-
-
 
 .section5 {
   position: relative;
@@ -104,14 +37,14 @@ height: 720px;
   left: 353px;
   overflow: hidden;
   border-radius: $animatedContainerBorderRadiusDesktop;
-  height: 730px;
+  height: $mobileBaseHeightDesktop;
 }
 .section5__animated-screen {
   @include animatedScreens;
-  width: 336px - $mobileWidthReducer;
-  height: 1440px - $mobileHeightReducer;
+  width: 336px;
+  height: 1440px;
   &:hover {
-    transform: translateY(-600px - $mobileHeightReducer);
+    transform: translateY(-600px);
   }
 }
 
