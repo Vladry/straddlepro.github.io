@@ -256,6 +256,10 @@ button {
     line-height: 20px;
     text-align: left; } }
 
+.animated-container {
+  position: absolute;
+  overflow: hidden; }
+
 @media (max-width: 768px) {
   .section2__flex-container, .section3__flex-container,
   .section4__flex-container, .section5__flex-container, .section5__flex-container,
@@ -461,6 +465,7 @@ button {
     height: 61px; } }
 
 .section2 {
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -469,7 +474,8 @@ button {
 .submenu2 {
   margin-top: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
   align-items: center;
   flex-flow: row nowrap; }
 
@@ -483,6 +489,11 @@ button {
   font-size: 18px;
   line-height: 22px;
   text-align: center; }
+
+.section2__flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 @media (min-width: 1920px) {
   .submenu2 {
@@ -514,19 +525,12 @@ button {
     margin-left: 2px;
     margin-right: 2px; } }
 
-@media (min-width: 1225px) {
-  .section2__flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+@media (min-width: 1920px) {
   .section2__left-part {
-    margin-left: 242px;
-    margin-top: 385px;
-    width: 45%; }
-  .section2__right-part {
-    width: 55%;
-    margin-top: -20px;
-    margin-left: 120px; }
+    width: 40%;
+    position: relative;
+    top: -170px;
+    left: -180px; }
   .section2__image1 {
     position: absolute;
     width: 1060px;
@@ -539,64 +543,128 @@ button {
     top: 150px;
     left: 140px; }
   .section2__animated-container {
-    top: 1240px;
-    left: 1228px;
-    border-radius: 25px;
-    height: 760px; }
+    overflow: hidden;
+    position: relative;
+    top: -592px;
+    left: 160px;
+    border-radius: 45px;
+    height: 720px; }
   .section2__animated-screen {
     transition: all 2s;
     position: absolute;
-    width: 335px;
-    height: 1440px; }
+    width: 336px;
+    height: 1520px; }
+    .section2__animated-screen:hover {
+      transition: all 4s; }
+    .section2__animated-screen:hover {
+      transform: translateY(-800px); } }
+
+@media (min-width: 1225px) and (max-width: 1920px) {
+  .section2__left-part {
+    position: relative;
+    max-width: 40%;
+    top: -310px;
+    left: -140px; }
+  .section2__image1 {
+    position: absolute;
+    width: 1060px;
+    height: 1060px;
+    transform: translate(-300px, -100px); }
+  .section2__image2 {
+    position: relative;
+    width: 380px;
+    height: 760px;
+    top: 44px;
+    left: 36px; }
+  .section2__animated-container {
+    overflow: hidden;
+    position: relative;
+    top: -700px;
+    left: 60px;
+    border-radius: 45px;
+    height: 720px; }
+  .section2__animated-screen {
+    transition: all 2s;
+    position: absolute;
+    width: 336px;
+    height: 1520px; }
+    .section2__animated-screen:hover {
+      transition: all 4s; }
+    .section2__animated-screen:hover {
+      transform: translateY(-800px); } }
+
+@media (min-width: 769px) and (max-width: 1224px) {
+  .section2__left-part {
+    position: relative;
+    max-width: 40%;
+    top: 1px;
+    left: -100px; }
+  .section2__image1 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    transform: translate(-180px, 120px); }
+  .section2__image2 {
+    position: relative;
+    width: 200px;
+    height: 430px;
+    top: 200px;
+    left: 20px; }
+  .section2__animated-container {
+    overflow: hidden;
+    position: relative;
+    top: -222px;
+    left: 31px;
+    border-radius: 25px;
+    height: 410px; }
+  .section2__animated-screen {
+    transition: all 2s;
+    position: absolute;
+    width: 178px;
+    height: 1100px; }
     .section2__animated-screen:hover {
       transition: all 4s; }
     .section2__animated-screen:hover {
       transform: translateY(-600px); } }
 
-@media (min-width: 769px) and (max-width: 1224px) {
+@media (max-width: 768px) {
   .section2__left-part {
     position: relative;
-    top: 30px;
-    left: 100px; }
+    max-width: 40%;
+    top: 80px;
+    left: -50px; }
+  .submenu2 {
+    flex-wrap: wrap; }
   .section2__image1 {
-    position: relative;
-    width: 600px;
-    height: 600px;
-    top: 20px;
-    left: 100px; }
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    transform: translate(-100px, 120px); }
   .section2__image2 {
     position: relative;
-    width: 200px;
-    height: 430px;
-    top: 50px;
-    left: 300px; }
+    width: 120px;
+    height: 260px;
+    top: 166px;
+    left: 11px; }
   .section2__animated-container {
-    position: absolute;
-    top: 20px;
-    left: 1px;
+    overflow: hidden;
+    position: relative;
+    top: -90px;
+    left: 18px;
     border-radius: 25px;
-    height: 430px; }
+    height: 252px; }
   .section2__animated-screen {
+    transition: all 2s;
     position: absolute;
-    width: 200px;
-    height: 860px;
-    z-index: 3; }
+    width: 106px;
+    height: 850px; }
     .section2__animated-screen:hover {
-      transform: translateY(-600px); } }
-
-@media (max-width: 768px) {
-  .section2__animated-container {
-    top: -7px;
-    left: 165px;
-    border-radius: 45px;
-    height: 724px; }
-  .section2__animated-screen {
-    width: 333px;
-    height: 1330px; }
+      transition: all 4s; }
     .section2__animated-screen:hover {
       transform: translateY(-600px); } }
 
 .section3 {
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -628,15 +696,17 @@ button {
 .section3__h3 {
   transform: translateX(-15px); }
 
+.section3__left-part {
+  margin-top: 125px;
+  margin-left: 30px; }
+
+.section3__right-part {
+  width: 45%;
+  height: 800px;
+  margin-top: 200px;
+  margin-left: -310px; }
+
 @media (min-width: 1921px) {
-  .section3__left-part {
-    margin-top: 125px;
-    margin-left: 30px; }
-  .section3__right-part {
-    width: 45%;
-    height: 800px;
-    margin-top: 200px;
-    margin-left: -310px; }
   .section3__image1 {
     position: relative;
     top: -220px;
@@ -656,7 +726,7 @@ button {
     height: 720px; }
   .section3__animated-screen {
     transition: all 2s;
-    width: 335px;
+    width: 336px;
     height: 1440px; }
     .section3__animated-screen:hover {
       transition: all 4s; }
@@ -664,14 +734,6 @@ button {
       transform: translateY(-600px); } }
 
 @media (min-width: 1225px) and (max-width: 1920px) {
-  .section3__left-part {
-    margin-top: 125px;
-    margin-left: 30px; }
-  .section3__right-part {
-    width: 50%;
-    height: 800px;
-    margin-top: 200px;
-    margin-left: -310px; }
   .section3__image1 {
     position: relative;
     top: -220px;
@@ -679,9 +741,9 @@ button {
     width: 1060px;
     height: 1060px; }
   .section3__image2 {
-    position: absolute;
     top: 20px;
     left: 175px;
+    position: absolute;
     width: 380px;
     height: 760px; }
   .section3__animated-container {
@@ -691,7 +753,7 @@ button {
     height: 720px; }
   .section3__animated-screen {
     transition: all 2s;
-    width: 335px;
+    width: 336px;
     height: 1440px; }
     .section3__animated-screen:hover {
       transition: all 4s; }
@@ -700,13 +762,10 @@ button {
 
 @media (min-width: 769px) and (max-width: 1224px) {
   .section3__left-part {
-    margin-top: 125px;
     margin-left: 180px; }
   .section3__right-part {
     width: 55%;
-    height: 800px;
-    margin-top: 350px;
-    margin-left: -310px; }
+    margin-top: 350px; }
   .section3__image1 {
     position: relative;
     top: -150px;
@@ -735,21 +794,16 @@ button {
 
 @media (max-width: 768px) {
   .submenu3__item {
-    padding-top: 20px;
-    padding-bottom: 20px;
     width: 90px;
     font-weight: 300;
     font-size: 14px;
-    line-height: 18px;
-    text-align: center; }
+    line-height: 18px; }
   .section3__left-part {
     margin-top: 125px;
     margin-left: 180px; }
   .section3__right-part {
     width: 40%;
-    height: 800px;
-    margin-top: 350px;
-    margin-left: -310px; }
+    margin-top: 350px; }
   .section3__image1 {
     position: relative;
     top: -150px;
@@ -1009,13 +1063,6 @@ footer {
   line-height: 20px;
   color: #DADADA; }
 
-.animated-container {
-  position: absolute;
-  overflow: hidden; }
-
-.section3 {
-  position: relative; }
-
 .section4 {
   position: relative; }
 
@@ -1029,7 +1076,7 @@ footer {
 
 .section4__animated-screen {
   transition: all 2s;
-  width: 335px;
+  width: 336px;
   height: 1440px; }
   .section4__animated-screen:hover {
     transition: all 4s; }

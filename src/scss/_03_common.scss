@@ -147,6 +147,10 @@
     text-align: left;
   }
 }
+.animated-container {
+  position: absolute;
+  overflow: hidden;
+}
 
 //переключение flex на block для мобильного режима
 @media (max-width: $breakpoint_tabblet) {

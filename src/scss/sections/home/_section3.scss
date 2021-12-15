@@ -1,9 +1,9 @@
 .section3{
+  position: relative;
   @include sectionsCommonSetting;
   background-color: #0f0014;
   //background-image: url("../../assets/img/home/3bg.png");
 }
-
 .section3__flex-container {
   display: flex;
   justify-content: center;
@@ -32,20 +32,21 @@
   transform: translateX(-15px);
 }
 
+.section3__left-part {
+  margin-top: 125px;
+  margin-left: 30px;
+
+}
+.section3__right-part {
+  width: 45%;
+  height: 800px;
+  margin-top: 200px;
+  margin-left: -310px;
+}
 //секция регулировки размеров мобилок
 
 @media (min-width: $breakpoint_Large_Screen + 1px) {
-  .section3__left-part {
-    margin-top: 125px;
-    margin-left: 30px;
 
-  }
-  .section3__right-part {
-    width: 45%;
-    height: 800px;
-    margin-top: 200px;
-    margin-left: -310px;
-  }
 
   .section3__image1 {
     position: relative;
@@ -78,18 +79,6 @@
 }
 
 @media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen) {
-  .section3__left-part {
-    margin-top: 125px;
-    margin-left: 30px;
-
-  }
-  .section3__right-part {
-    width: 50%;
-    height: 800px;
-    margin-top: 200px;
-    margin-left: -310px;
-  }
-
   .section3__image1 {
     position: relative;
     top: -220px;
@@ -98,9 +87,9 @@
     height: $svgFigureSizeDesktop;
   }
   .section3__image2 {
-    position: absolute;
     top: 20px;
     left: 175px;
+    position: absolute;
     width: $mobileBaseWidthDesktop;
     height: $mobileBaseHeightDesktop;
   }
@@ -122,14 +111,11 @@
 }
 @media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop) {
   .section3__left-part {
-    margin-top: 125px;
     margin-left: 180px;
   }
   .section3__right-part {
     width: 55%;
-    height: 800px;
     margin-top: 350px;
-    margin-left: -310px;
   }
    .section3__image1 {
     position: relative;
@@ -162,23 +148,19 @@
 }
 @media (max-width: $breakpoint_tabblet) {
   .submenu3__item {
-    padding-top: 20px;
-    padding-bottom: 20px;
     width: 90px;
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-    text-align: center;
   }
+
   .section3__left-part {
     margin-top: 125px;
     margin-left: 180px;
   }
   .section3__right-part {
     width: 40%;
-    height: 800px;
     margin-top: 350px;
-    margin-left: -310px;
   }
   .section3__image1 {
     position: relative;

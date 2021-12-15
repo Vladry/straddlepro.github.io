@@ -1,4 +1,5 @@
 .section2 {
+  position: relative;
   @include sectionsCommonSetting;
   background-color: #19091C;
   //background-image: url("../../assets/img/home/2bg.png")
@@ -6,7 +7,8 @@
 .submenu2 {
   margin-top: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
   align-items: center;
   flex-flow: row nowrap;
 }
@@ -25,7 +27,11 @@
     //cursor: pointer;
   }
 }
-
+.section2__flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 //секция корректировки суб-менюшек
 @media (min-width: $breakpoint_Large_Screen) {
   .submenu2 {
@@ -38,7 +44,6 @@
   }
 
   .submenu2__item {
-    //width: 90px;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -69,21 +74,12 @@
 
 
 //секция регулировки размеров мобилок
-@media (min-width: $breakpoint_Desktop + 1px) {
-  .section2__flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+@media (min-width: $breakpoint_Large_Screen){
   .section2__left-part {
-    margin-left: 242px;
-    margin-top: 385px;
-    width: 45%;
-  }
-  .section2__right-part {
-    width: 55%;
-    margin-top: -20px;
-    margin-left: 120px;
+    width: 40%;
+    position: relative;
+    top: -170px;
+    left: -180px;
   }
   .section2__image1 {
     position: absolute;
@@ -100,72 +96,138 @@
   }
 
   .section2__animated-container {
-    top: 1240px;
-    left: 1228px;
-    border-radius: $animatedContainerBorderRadiusTablet;
-    height: $mobileBaseHeightDesktop;
+    overflow: hidden;
+    position: relative;
+    top: -592px;
+    left: 160px;
+    border-radius: $animatedContainerBorderRadiusDesktop;
+    height: $mobileBaseHeightDesktop - 40 ;
   }
   .section2__animated-screen {
     @include animatedScreens;
     position: absolute;
     width: $mobileBaseWidthDesktop - $DesktopMobWidthCorrection;
-    height: $mobileBaseHeightDesktop * 2 - 80px;
+    height: $mobileBaseHeightDesktop * 2;
     &:hover {
-      transform: translateY(-600px);
+      transform: translateY(-800px);
+    }
+  }
+}
+@media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen) {
+  .section2__left-part {
+    position: relative;
+    max-width: 40%;
+    top: -310px;
+    left: -140px;
+  }
+  .section2__image1 {
+    position: absolute;
+    width: $svgFigureSizeDesktop;
+    height: $svgFigureSizeDesktop;
+    transform: translate(-300px, -100px);
+  }
+  .section2__image2 {
+    position: relative;
+    width: $mobileBaseWidthDesktop;
+    height: $mobileBaseHeightDesktop;
+    top: 44px;
+    left: 36px;
+  }
+
+  .section2__animated-container {
+    overflow: hidden;
+    position: relative;
+    top: -700px;
+    left: 60px;
+    border-radius: $animatedContainerBorderRadiusDesktop;
+    height: $mobileBaseHeightDesktop - 40 ;
+  }
+  .section2__animated-screen {
+    @include animatedScreens;
+    position: absolute;
+    width: $mobileBaseWidthDesktop - $DesktopMobWidthCorrection;
+    height: $mobileBaseHeightDesktop * 2;
+    &:hover {
+      transform: translateY(-800px);
     }
   }
 }
 @media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop) {
   .section2__left-part {
     position: relative;
-    top: 30px;
-    left: 100px;
+    max-width: 40%;
+    top: 1px;
+    left: -100px;
   }
-  .section2__right-part {}
   .section2__image1 {
-    position: relative;
+    position: absolute;
     width: $svgFigureSizeTablett;
     height: $svgFigureSizeTablett;
-    top: 20px;
-    left: 100px;
+    transform: translate(-180px, 120px);
   }
   .section2__image2 {
     position: relative;
     width: $mobileBaseWidthTablet;
     height: $mobileBaseHeightTablet;
-    top: 50px;
-    left: 300px;
+    top: 200px;
+    left: 20px;
   }
+
   .section2__animated-container {
-    position: absolute;
-    top: 20px;
-    left: 1px;
+    overflow: hidden;
+    position: relative;
+    top: -222px;
+    left: 31px;
     border-radius: $animatedContainerBorderRadiusTablet;
-    height: $mobileBaseHeightTablet;
+    height: $mobileBaseHeightTablet - 20 ;
   }
   .section2__animated-screen {
+    @include animatedScreens;
     position: absolute;
-    width: $mobileBaseWidthTablet;
-    height: $mobileBaseHeightTablet * 2;
-    z-index: 3;
-
+    width: $mobileBaseWidthTablet - $TablettMobWidthCorrection;
+    height: $mobileBaseHeightTablet * 2 + 240px;
     &:hover {
       transform: translateY(-600px);
     }
   }
 }
 @media (max-width: $breakpoint_tabblet) {
-  .section2__animated-container {
-    top: -7px;
-    left: 165px;
-    border-radius: $animatedContainerBorderRadiusDesktop;
-    height: 724px;
+  .section2__left-part {
+    position: relative;
+    max-width: 40%;
+    top: 80px;
+    left: -50px;
+  }
+  .submenu2 {
+    flex-wrap: wrap;
+  }
+  .section2__image1 {
+    position: absolute;
+    width: $svgFigureSizeMobile;
+    height: $svgFigureSizeMobile;
+    transform: translate(-100px, 120px);
+  }
+  .section2__image2 {
+    position: relative;
+    width: $mobileBaseWidthMobSize;
+    height: $mobileBaseHeightMobSize;
+    top: 166px;
+    left: 11px;
   }
 
+  .section2__animated-container {
+    overflow: hidden;
+    position: relative;
+    top: -90px;
+    left: 18px;
+    border-radius: $animatedContainerBorderRadiusTablet;
+    height: $mobileBaseHeightMobSize - 8 ;
+  }
   .section2__animated-screen {
-    width: 333px;
-    height: 1330px;
-
+    @include animatedScreens;
+    position: absolute;
+    width: $mobileBaseWidthMobSize - $mobileBaseWidthCorrection;
+    height: $mobileBaseHeightMobSize * 3 + 70px;
     &:hover {
       transform: translateY(-600px);
     }
