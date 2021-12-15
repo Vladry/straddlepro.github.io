@@ -4,40 +4,6 @@
   //background-image: url("../../assets/img/home/2bg.png")
 
 }
-
-.section2__flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section2__left-part {
-  margin-left: 242px;
-  margin-top: 385px;
-  width: 45%;
-  height: 800px;
-}
-.section2__right-part {
-  width: 55%;
-  height: 800px;
-  margin-top: -20px;
-  margin-left: 120px;
-}
-
-
-.section2__image1 {
-  position: absolute;
-  width: 1060px;
-  height: 1060px;
-  transform: translate(-200px, -170px);
-}
-.section2__image2 {
-  position: relative;
-  width: 380px;
-  height: 760px;
-  top: -22px;
-  left: 140px;
-}
-
 .submenu2 {
   margin-top: 70px;
   display: flex;
@@ -45,7 +11,6 @@
   align-items: center;
   flex-flow: row nowrap;
 }
-
 .submenu2__item {
   border: 1px solid #48025E;
   padding-top: 20px;
@@ -60,6 +25,7 @@
     //cursor: pointer;
   }
 }
+//секция корректировки суб-менюшек
 @media (min-width: $breakpoint_Large_Screen) {
   .submenu2 {
     flex-flow: row nowrap;
@@ -71,7 +37,7 @@
   }
 
   .submenu2__item {
-    width: 90px;
+    //width: 90px;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -100,4 +66,102 @@
   }
 }
 
+//секция регулировки размеров мобилок
+@media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen){}
+@media (min-width: $breakpoint_tabblet + 1px ) and (max-width: $breakpoint_Desktop){}
+@media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet){
+
+}
+
+
+//корректировка flex-items -окошек
+@media (min-width: $breakpoint_Desktop + 1px) {
+  .section2__flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section2__left-part {
+    margin-left: 242px;
+    margin-top: 385px;
+    width: 45%;
+    height: 800px;
+  }
+  .section2__right-part {
+    width: 55%;
+    height: 800px;
+    margin-top: -20px;
+    margin-left: 120px;
+  }
+  .section2__image1 {
+    position: absolute;
+    width: 1060px;
+    height: 1060px;
+    transform: translate(-200px, -170px);
+  }
+  .section2__image2 {
+    position: relative;
+    width: 380px;
+    height: 760px;
+    top: -22px;
+    left: 140px;
+  }
+}
+
+@media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop) {
+  .section2__flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section2__left-part {
+    margin-left: 242px;
+    margin-top: 385px;
+    width: 45%;
+    height: 800px;
+  }
+  .section2__right-part {
+    width: 55%;
+    height: 800px;
+    margin-top: -20px;
+    margin-left: 120px;
+  }
+  .section2__image1 {
+    position: absolute;
+    width: 1060px;
+    height: 1060px;
+    transform: translate(-200px, -170px);
+  }
+  .section2__image2 {
+    position: relative;
+    width: 380px;
+    height: 760px;
+    top: -22px;
+    left: 140px;
+  }
+}
+
+@media (max-width: $breakpoint_tabblet){
+  .section2__left-part,
+  .section2__right-part {
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 95%;
+    height: 800px;
+  }
+  .section2__image1 {
+    position: absolute;
+    width: 1060px;
+    height: 1060px;
+    transform: translate(-200px, -170px);
+  }
+  .section2__image2 {
+    position: relative;
+    width: 380px;
+    height: 760px;
+    top: -22px;
+    left: 140px;
+  }
+
+}
 

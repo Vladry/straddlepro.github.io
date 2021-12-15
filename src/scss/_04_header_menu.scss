@@ -1,5 +1,6 @@
 header {
 }
+
 .menu__burger {
   position: absolute;
   height: 30px;
@@ -7,17 +8,21 @@ header {
   top: 100px;
   right: 100px;
   z-index: 1;
+
   &:hover {
     cursor: pointer;
   }
 }
+
 .menu__burger-image {
   z-index: 2;
 }
+
 .menu__burger-image--close {
   width: 40px;
   height: 40px;
-  transform: translate(-2px, -9px); }
+  transform: translate(-2px, -9px);
+}
 
 .menu {
   position: absolute;
@@ -28,19 +33,23 @@ header {
   background-color: #222;
   list-style-type: none;
 }
+
 .--menu-active {
   top: 11px;
   right: 15px;
   width: 440px;
-  height: $sectionHeight - 1;
+  height: $LargeScreenHeight - 1;
   z-index: 1;
 }
+
 .menu__item {
   margin: 60px 180px 60px 140px;
+
   &:first-child {
     margin-top: 309px;
   }
 }
+
 .menu__ref {
   color: $textColor;
   text-decoration: none;
@@ -48,8 +57,69 @@ header {
   font-style: normal;
   font-size: 24px;
   line-height: 64px;
+
   &:hover {
     color: $onHoverTextColor;
     cursor: pointer;
+  }
+}
+
+@media (min-width: $breakpoint_Large_Screen) {}
+@media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen) {}
+@media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop) {
+  .menu {
+    top: 10px;
+    right: 16px;
+  }
+  .--menu-active {
+    width: 300px;
+    height: $TabletScreenHeight - 1;
+  }
+  .menu__item {
+    &:first-child {
+      margin-top: 409px;
+    }
+  }
+}
+@media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet) {
+  .menu__burger {
+    top: 80px;
+    right: 50px;
+  }
+  .menu {
+    top: 10px;
+    right: 12px;
+  }
+  .--menu-active {
+    width: 200px;
+    height: $MobileScreenHeight - 1;
+  }
+  .menu__item {
+    margin: 60px 44px;
+
+    &:first-child {
+      margin-top: 309px;
+    }
+  }
+}
+@media (max-width: $breakpoint_smartphone) {
+  .menu__burger {
+    top: 80px;
+    right: 30px;
+  }
+  .menu {
+    top: 10px;
+    right: 12px;
+  }
+  .--menu-active {
+    width: 200px;
+    height: $MobileScreenHeight - 1;
+  }
+  .menu__item {
+    margin: 60px 44px;
+
+    &:first-child {
+      margin-top: 309px;
+    }
   }
 }

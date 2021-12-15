@@ -1,5 +1,5 @@
-//@media (min-width: $breakpoint_smartphone) and (max-width: $breakpoint_Desktop) {
-//  .wrapper {
-//    max-width: $breakpoint_Desktop;
-//  }
-//}
+
+@media (min-width: $breakpoint_Large_Screen) {}
+@media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen){}
+@media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop){}
+@media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet){}

@@ -1,26 +1,34 @@
 $breakpoint_Large_Screen: 1920px;
-$breakpoint_Desktop: 1200px;
-$breakpoint_tabblet: 800px;
-$breakpoint_smartphone: 325px;
-$sectionHeight: 1082px;
+$LargeScreenHeight: 1082px;
+$breakpoint_Desktop: 1224px;
+$DeskTopScreenHeight: 800px;
+$breakpoint_tabblet: 768px;
+$TabletScreenHeight: 1082px;
+$breakpoint_smartphone: 480px;
+$MobileScreenHeight: 800px;
 $footerHeight: 274px;
 $textColor: white;
 $textColorMinor: #DADADA;
 $textColorDemo: goldenrod;
 $onHoverTextColor: red;
-$animatedContainerBorderRadius: 45px;
+$animatedContainerBorderRadiusDesktop: 45px;
+$animatedContainerBorderRadiusTablet: 25px;
 
-//размеры блоковМобильныхКартинок:
-$HomeMobile1BlockWidth:  600px;
-$HomeMobile1BlockHeight: 730px;
+//размеры блоковМобилок:
+$mobileBaseWidthDesktop:  600px;
+$mobileBaseHeightDesktop: 730px;
+$mobileBaseWidthTablet:  400px;
+$mobileBaseHeightTablet: 630px;
+$mobileBaseWidthMobSize:  300px;
+$mobileBaseHeightMobSize: 530px;
 
 
 @mixin sectionsCommonSetting {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: $breakpoint_Desktop auto;
-  height: $sectionHeight;
-  max-width: $breakpoint_Desktop;
+  background-size: $breakpoint_Large_Screen auto;
+  height: $LargeScreenHeight;
+  max-width: $breakpoint_Large_Screen;
   margin: 0 auto;
 }
 

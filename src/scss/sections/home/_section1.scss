@@ -1,11 +1,7 @@
 .section1{
   @include sectionsCommonSetting;
   background-image: url("../img/home/1.jpg");
-
-  .logo-container {
-    margin-left: 100px;
-    padding-top: 60px;
-  }
+}
 
   .logo-img{
     width: 60px;
@@ -20,11 +16,73 @@
     vertical-align: top;
     padding-top: 21px;
   }
-
   .section1__title {
     width: 85%;
-    margin: 290px auto;
+    margin: 290px auto 10px;
   }
 
+//адаптация section1  (homepage)
+@media (min-width: $breakpoint_Large_Screen) {
+  .logo-container {
+    margin-left: 100px;
+    padding-top: 60px;
+  }
+}
+@media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen){
+  .logo-container {
+    margin-left: 100px;
+    padding-top: 60px;
+  }
 
+}
+@media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop){
+  .logo-container {
+    margin-left: 40px;
+    padding-top: 60px;
+  }
+  .section1__title {
+    width: 85%;
+    margin: 240px auto;
+    text-align: center;
+  }
+}
+@media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet){
+  .logo-container {
+    margin-left: 20px;
+    padding-top: 40px;
+  }
+  .section1__title {
+    width: 85%;
+    margin: 130px auto 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: $breakpoint_smartphone){
+  .logo-container {
+    margin-left: 15px;
+    padding-top: 40px;
+  }
+  .section1__title {
+    width: 85%;
+    margin: 130px auto 10px;
+    text-align: center;
+  }
+  .logo-container {
+    margin-left: 20px;
+    padding-top: 40px;
+  }
+  .logo-text{
+    margin-left: 25px;
+    display: inline-block;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    vertical-align: top;
+    padding-top: 21px;
+  }
+  .logo-img{
+    width: 50px;
+    height: 61px;
+  }
 }
