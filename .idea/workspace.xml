@@ -4,9 +4,10 @@
     <list default="true" id="eca490e1-66f1-420c-a3c4-f00daaf7812d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_animation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section4.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section5.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section6.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section6.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
