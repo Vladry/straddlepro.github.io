@@ -282,10 +282,8 @@
   .section4{
     height: $MobileScreenHeight;
   }
-  .section4__flex-container {
-    display: block;
-  }
   .submenu4 {
+    margin-top: 30px;
     gap: 10px;
     flex-flow: row wrap;
   }
@@ -296,20 +294,23 @@
     line-height: 20px;
   }
 
+  .section4__flex-container {
+    position: relative;
+    display: block;
+  }
   .section4__left-part {
-    margin-top: 100px;
-    margin-left: 20px;
-    width: 40%;
+    margin: 0 auto;
+    padding-top: 80px;
+    width: 90%;
+    height: auto;
   }
-  .submenu4 {
-    gap: 14px;
-    flex-flow: row wrap;
+  .section4__right-part {
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    top: -180px;
+    left: 20%;
   }
-  .submenu4__item {
-    width: 110px;
-    font-weight: 400;
-  }
-
   .section4__image1 {
     width: $svgFigureSizeMobile;
     height: $svgFigureSizeMobile;
@@ -329,8 +330,8 @@
   }
   .section4__animated-container {
     position: absolute;
-    top: 196px;
-    left: 261px;
+    top: 248px;
+    left: 67px;
     overflow: hidden;
     border-radius: $animatedContainerBorderRadiusMobSize;
     height: $mobileBaseHeightMobSize - 10;
@@ -341,7 +342,7 @@
     height: $mobileBaseHeightMobSize * 2;
 
     &:hover {
-      transform: translateY(-600px);
+      transform: translateY(-270px);
     }
   }
 }

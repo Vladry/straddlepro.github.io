@@ -150,55 +150,15 @@
   }
 }
 
-@media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet) {
-
-  .section5__right-part {
-    position: relative;
-    top: -50px;
-    left: -210px;
-  }
-  .section5__image1 {
-    position: relative;
-    top: -50px;
-    left: 60px;
-    width: $svgFigureSizeTablett;
-    height: $svgFigureSizeTablett;
-  }
-  .section5__image2 {
-    position: relative;
-    top: -50px;
-    left: -340px;
-    width: $mobileBaseWidthTablet -5;
-    height: $mobileBaseHeightTablet;
-  }
-  .section5__image3 {
-    position: relative;
-    top: 56px;
-    width: 280px;
-    height: 40px;
-  }
-
-  .section5__animated-container {
-    position: absolute;
-    top: 286px;
-    left: 89px;
-    overflow: hidden;
-    border-radius: $animatedContainerBorderRadiusTablet;
-    height: $mobileBaseHeightTablet - 20;
-  }
-  .section5__animated-screen {
-    @include animatedScreens;
-    width: $mobileBaseWidthTablet - $TablettMobWidthCorrection;
-    height: $mobileBaseHeightTablet * 2 + 150 ;
-
-    &:hover {
-      transform: translateY(-600px);
-    }
-  }
-}
-
-
 @media (min-width: $breakpoint_smartphone) and (max-width: $breakpoint_tabblet) {
+  .section5 {
+    position: relative;
+    display: flex;
+  }
+.section5__left-part{
+  position: relative;
+
+}
 
   .section5__right-part {
     position: relative;
@@ -246,40 +206,36 @@
 }
 
 @media (max-width: $breakpoint_smartphone) {
-  .section5{
-    height: $MobileScreenHeight;
-  }
-
   .section5__right-part {
     position: relative;
-    top: -340px;
+    top: -280px;
     left: -210px;
   }
   .section5__image1 {
     position: relative;
-    top: -100px;
+    top: 100px;
     left: 200px;
     width: $svgFigureSizeMobile;
     height: $svgFigureSizeMobile;
   }
   .section5__image2 {
     position: relative;
-    top: -100px;
+    top: 100px;
     left: -30px;
     width: $mobileBaseWidthMobSize - 4 ;
     height: $mobileBaseHeightMobSize;
   }
   .section5__image3 {
     position: relative;
-    top: 26px;
+    top: 56px;
     width: 280px;
     height: 40px;
   }
 
   .section5__animated-container {
-    //position: absolute;
-    top: -54px;
-    left: 108px;
+    position: absolute;
+    top: 376px;
+    left: 176px;
     overflow: hidden;
     border-radius: $animatedContainerBorderRadiusMobSize;
     height: $mobileBaseHeightMobSize - 10;
