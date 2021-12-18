@@ -56,7 +56,7 @@
     position: relative;
     top: -1145px;
     left: 346px;
-    width: $mobileBaseWidthDesktop;
+    width: $mobileBaseWidthDesktop - 6 ;
     height: $mobileBaseHeightDesktop;
     &:hover {
       opacity: 1;
@@ -207,7 +207,7 @@
     }
   }
 }
-@media (max-width: $breakpoint_tabblet){
+@media (min-width: $breakpoint_smartphone) and (max-width: $breakpoint_tabblet){
   .section4__flex-container {
     display: flex;
     justify-content: space-between;
@@ -261,7 +261,7 @@
   .section4__animated-container {
     position: absolute;
     top: 196px;
-    left: 258px;
+    left: 261px;
     overflow: hidden;
     border-radius: $animatedContainerBorderRadiusMobSize;
     height: $mobileBaseHeightMobSize - 10;
@@ -278,5 +278,70 @@
 }
 
 
+@media (max-width: $breakpoint_smartphone) {
+  .section4{
+    height: $MobileScreenHeight;
+  }
+  .section4__flex-container {
+    display: block;
+  }
+  .submenu4 {
+    gap: 10px;
+    flex-flow: row wrap;
+  }
+  .submenu4__item {
+    width: 90px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+  }
 
+  .section4__left-part {
+    margin-top: 100px;
+    margin-left: 20px;
+    width: 40%;
+  }
+  .submenu4 {
+    gap: 14px;
+    flex-flow: row wrap;
+  }
+  .submenu4__item {
+    width: 110px;
+    font-weight: 400;
+  }
 
+  .section4__image1 {
+    width: $svgFigureSizeMobile;
+    height: $svgFigureSizeMobile;
+    transform: translate(-50px, 200px);
+  }
+  .section4__image2 {
+    position: relative;
+    top: -100px;
+    left: 60px;
+    width: $mobileBaseWidthMobSize;
+    height: $mobileBaseHeightMobSize;
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  .section4__animated-container {
+    position: absolute;
+    top: 196px;
+    left: 261px;
+    overflow: hidden;
+    border-radius: $animatedContainerBorderRadiusMobSize;
+    height: $mobileBaseHeightMobSize - 10;
+  }
+  .section4__animated-screen {
+    @include animatedScreens;
+    width: $mobileBaseWidthMobSize - $mobileBaseWidthCorrection + 1;
+    height: $mobileBaseHeightMobSize * 2;
+
+    &:hover {
+      transform: translateY(-600px);
+    }
+  }
+}

@@ -29,6 +29,25 @@ transform: translateY(-54px);
   }
 }
 
+@media (min-width: $breakpoint_Large_Screen) {}
+@media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen){
+  .email-input-field { padding: 34px 240px;}
+}
+@media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop){
+  .email-input-field { padding: 34px 240px;}
+}
+
+@media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet){
+  .email-input-field { padding: 34px 40px;}
+}
+@media (max-width: $breakpoint_smartphone){
+  .section7{
+    height: $MobileScreenHeight;
+  }
+  .email-input-field { padding: 34px 10px;}
+}
+
+
 .email-input-field::placeholder {
   color:    $textColorMinor;
   transform: translateX(70px);

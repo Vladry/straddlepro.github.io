@@ -59,6 +59,10 @@
 }
 
 @media (max-width: $breakpoint_smartphone){
+  .section1{
+    height: $MobileScreenHeight;
+  }
+
   .logo-container {
     margin-left: 15px;
     padding-top: 40px;

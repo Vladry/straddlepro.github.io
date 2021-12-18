@@ -6,7 +6,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: solid 3px red;
 }
 .section6__h3{
   padding-top: 356px;
@@ -21,34 +20,55 @@
   align-self: flex-start;
 }
 @media (min-width: $breakpoint_Large_Screen) {}
-@media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen){}
-@media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop){
+@media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen){
+  .section6__h3{
+    padding-top: 256px;
+  }
   .section6__image1 {
     position: relative;
     top: 90px;
+    left: 10px;
     width: 1000px;
     height: 800px;
     transform: translate(80px, -155px);
     align-self: flex-start;
   }
 }
-@media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet){
+@media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop){
+  .section6__h3{
+    padding-top: 220px;
+  }
   .section6__image1 {
     position: relative;
-    top: 90px;
-    width: 660px;
-    height: 200px;
-    transform: translate(-20px, -155px);
+    width: 800px;
+    height: 400px;
+    transform: translate(-40px, -250px);
+    align-self: flex-start;
+  }
+}
+@media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet){
+  .section6__h3{
+    text-align: center;
+    padding-top: 120px;
+  }
+  .section6__image1 {
+    position: relative;
+    width: 500px;
+    height: 260px;
+    transform: translate(-25px, -250px);
     align-self: flex-start;
   }
 }
 @media (max-width: $breakpoint_smartphone){
+  .section6{
+    height: $MobileScreenHeight;
+  }
   .section6__image1 {
     position: relative;
     top: 90px;
     width: 260px;
     height: 100px;
-    transform: translate(-100px, -155px);
+    transform: translate(-500px, -155px);
     align-self: flex-start;
   }
 }

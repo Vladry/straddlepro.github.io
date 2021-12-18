@@ -4,10 +4,148 @@
     <list default="true" id="eca490e1-66f1-420c-a3c4-f00daaf7812d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_animation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/about/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/about/2_.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/about/2_.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/about/2_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/about/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/about/3_.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/about/3_.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/about/3_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/about/4_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/2bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/3bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/4bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/5bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/6bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/MA1 Список событий 1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/home/MA1 Список событий 1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/SVG/1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/SVG/2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/SVG/3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/bg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/bg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/burger-menu-close-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/circle.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/home/circle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/close-btn-round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/iPhone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/mobile1_screen1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/mobile2_screen1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/mobile3_screen1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/rhombus.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/home/rhombus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/section_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/home/section_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/square.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/home/square.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/home/triangle.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/home/triangle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/about/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/about/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/about/2_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/about/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/about/3_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/about/4_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/about/burger-menu-close-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/about/burger-menu-open-tab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/about/close-btn-round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/about/close-btn-square.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/about/menu-close-btn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/about/smile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/5_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/MA1 Список событий 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/SVG/1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/SVG/2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/SVG/3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/Subtract.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/bg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/bg2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/burger-menu-close-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/burger-menu-open-tab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/close-btn-round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/close-btn-square.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/footer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/iPhone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/iPhone2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/menu-close-btn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/mob_scroll_screen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/mobile1_screen1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/mobile2_screen1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/home/mobile3_screen1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/1_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/2_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/3_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/4_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/Screenshot_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/burger-menu-close-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/burger-menu-open-tab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/close-btn-round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/close-btn-square.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/left.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/linkedIn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/menu-close-btn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/right.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/skype.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/slack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/t1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/t2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/t3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/t4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/t5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/tel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/telegram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/viber.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img/team/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/team/1_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/team/2_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/team/3_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/team/4_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/team/close-btn-round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/team/icon_money.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/team/icon_money.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/team/t1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/team/t1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/team/t2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/team/t2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/team/t3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/team/t3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/team/t4.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/team/t4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/team/t5.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/team/t5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/index.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/home/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/home/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/home/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/home/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/home/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/home/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/home/SVG/1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/home/SVG/1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/home/SVG/2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/home/SVG/2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/home/SVG/3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/home/SVG/3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/home/bg1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/home/bg1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/home/bg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/home/bg2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/home/iPhone.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/home/iPhone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/team/2_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/team/2_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/team/3_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/team/3_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/team/4_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/team/4_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/team/Screenshot_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section1.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section3.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section4.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section5.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section6.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section6.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section7.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section7.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +239,7 @@
       <workItem from="1639133895398" duration="15703000" />
       <workItem from="1639405234297" duration="14565000" />
       <workItem from="1639504468180" duration="7576000" />
+      <workItem from="1639827376454" duration="14406000" />
     </task>
     <servers />
   </component>

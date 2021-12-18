@@ -1,9 +1,10 @@
-.section3{
+.section3 {
   position: relative;
   @include sectionsCommonSetting;
   background-color: #0f0014;
   //background-image: url("../../assets/img/home/3bg.png");
 }
+
 .section3__flex-container {
   display: flex;
   justify-content: center;
@@ -17,6 +18,7 @@
   align-items: center;
   flex-flow: row nowrap;
 }
+
 .submenu3__item {
   border: 1px solid #48025E;
   padding-top: 20px;
@@ -28,6 +30,7 @@
   line-height: 22px;
   text-align: center;
 }
+
 .section3__h3 {
   transform: translateX(-15px);
 }
@@ -37,12 +40,14 @@
   margin-left: 30px;
 
 }
+
 .section3__right-part {
   width: 45%;
   height: 800px;
   margin-top: 200px;
   margin-left: -310px;
 }
+
 //секция регулировки размеров мобилок
 
 @media (min-width: $breakpoint_Large_Screen + 1px) {
@@ -66,12 +71,13 @@
     top: 100px;
     left: 330px;
     border-radius: $animatedContainerBorderRadiusDesktop;
-    height: $mobileBaseHeightDesktop - 40 ;
+    height: $mobileBaseHeightDesktop - 40;
   }
   .section3__animated-screen {
     @include animatedScreens;
     width: $mobileBaseWidthDesktop - $DesktopMobWidthCorrection;
     height: 1440px;
+
     &:hover {
       transform: translateY(-600px);
     }
@@ -94,21 +100,23 @@
     height: $mobileBaseHeightDesktop;
   }
   .section3__animated-container {
-    top: 40px;
+    top: 140px;
     left: 200px;
     border-radius: $animatedContainerBorderRadiusDesktop;
-    height: $mobileBaseHeightDesktop - 40 ;
+    height: $mobileBaseHeightDesktop - 40;
   }
   .section3__animated-screen {
     @include animatedScreens;
     width: $mobileBaseWidthDesktop - $DesktopMobWidthCorrection;
     height: 1440px;
+
     &:hover {
       transform: translateY(-600px);
     }
   }
 
 }
+
 @media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop) {
   .section3__left-part {
     margin-left: 180px;
@@ -117,7 +125,7 @@
     width: 55%;
     margin-top: 350px;
   }
-   .section3__image1 {
+  .section3__image1 {
     position: relative;
     top: -150px;
     left: -295px;
@@ -141,19 +149,24 @@
     @include animatedScreens;
     width: $mobileBaseWidthTablet - $TablettMobWidthCorrection;
     height: 1100px;
+
     &:hover {
       transform: translateY(-600px);
     }
   }
 }
-@media (max-width: $breakpoint_tabblet) {
+
+@media (min-width: $breakpoint_smartphone) and (max-width: $breakpoint_tabblet) {
   .submenu3__item {
     width: 90px;
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
   }
-
+  .section3__flex-container {
+    position: relative;
+  top: -130px;
+  }
   .section3__left-part {
     margin-top: 125px;
     margin-left: 180px;
@@ -186,8 +199,83 @@
     @include animatedScreens;
     width: $mobileBaseWidthMobSize - $mobileBaseWidthCorrection;
     height: 700px;
+
     &:hover {
-      transform: translateY(- $mobileBaseHeightMobSize - 140px );
+      transform: translateY(- $mobileBaseHeightMobSize - 140px);
     }
   }
 }
+
+@media (max-width: $breakpoint_smartphone) {
+  .section3{
+    height: $MobileScreenHeight;
+  }
+  .submenu3__item {
+    width: 90px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .section3__h3 {
+    width: 200px;
+  }
+
+  .submenu3 {
+    margin-top: 13px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+  .section3__flex-container {
+    position: relative;
+    flex-flow: column-reverse;
+    justify-content: start;
+  }
+
+  .section3__left-part {
+    position: relative;
+    min-width: 200px;
+    min-height: 20px;
+    left: 30%;
+    top: 120px;
+  }
+  .section3__right-part {
+    position: relative;
+    max-height: 100px;
+    top: -30px;
+    left: 45%;
+  }
+
+  .section3__image1 {
+    position: absolute;
+    top: -150px;
+    left: -180px;
+    width: $svgFigureSizeMobile;
+    height: $svgFigureSizeMobile;
+  }
+  .section3__image2 {
+    position: absolute;
+    top: -100px;
+    left: -70px;
+    width: $mobileBaseWidthMobSize;
+    height: $mobileBaseHeightMobSize;
+  }
+  .section3__animated-container {
+    position: absolute;
+    top: -95px;
+    left: -63px;
+    border-radius: $animatedContainerBorderRadiusMobSize;
+    height: $mobileBaseHeightMobSize - 14;
+  }
+  .section3__animated-screen {
+    @include animatedScreens;
+    width: $mobileBaseWidthMobSize - $mobileBaseWidthCorrection;
+    height: 700px;
+
+    &:hover {
+      transform: translateY(- $mobileBaseHeightMobSize - 140px);
+    }
+  }
+}
+
