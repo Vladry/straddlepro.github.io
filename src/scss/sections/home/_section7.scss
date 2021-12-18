@@ -34,17 +34,17 @@ transform: translateY(-54px);
   .email-input-field { padding: 34px 240px;}
 }
 @media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop){
-  .email-input-field { padding: 34px 240px;}
+  .email-input-field { padding: 34px 40px;}
 }
 
 @media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet){
-  .email-input-field { padding: 34px 40px;}
+  .email-input-field { padding: 24px 10px;}
 }
 @media (max-width: $breakpoint_smartphone){
   .section7{
     height: $MobileScreenHeight;
   }
-  .email-input-field { padding: 34px 10px;}
+  .email-input-field { padding: 14px 6px;}
 }
 
 
@@ -55,7 +55,7 @@ transform: translateY(-54px);
 
 .submit-btn {
   transform: translateY(-46px);
-  padding: 44px 173px;
+  padding: 14px 23px;
   border-radius: 50px;
   font-weight: bold;
   font-size: 18px;

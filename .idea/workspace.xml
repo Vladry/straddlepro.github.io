@@ -6,8 +6,11 @@
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/templates/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/index.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section4.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section1.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section5.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section6.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section6.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section7.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section7.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +104,7 @@
       <workItem from="1639133895398" duration="15703000" />
       <workItem from="1639405234297" duration="14565000" />
       <workItem from="1639504468180" duration="7576000" />
-      <workItem from="1639827376454" duration="18178000" />
+      <workItem from="1639827376454" duration="26347000" />
     </task>
     <servers />
   </component>

@@ -7,40 +7,43 @@
   flex-flow: nowrap row;
   justify-content: space-around;
   align-items: center;
-
 }
 
 @media (min-width: $breakpoint_Large_Screen) {
+  .section5__left-part {
+    position: relative;
+    top: -350px;
+  }
 
   .section5__right-part {
     position: relative;
-    top: 1px;
-    left: -250px;
   }
+
   .section5__image1 {
-    position: relative;
-    left: 60px;
-    width: 1070px;
-    height: 1070px;
+    position: absolute;
+    left: -365px;
+    top: -150px;
+    width: $svgFigureSizeDesktop;
+    height: $svgFigureSizeDesktop;
   }
   .section5__image2 {
-    position: relative;
-    top: -1px;
-    left: -660px;
+    position: absolute;
+    top: -13px;
+    left: -24px;
     width: $mobileBaseWidthDesktop;
     height: $mobileBaseHeightDesktop;
   }
   .section5__image3 {
-    position: relative;
-    top: 66px;
+    position: absolute;
+    //top: 66px;
     width: 510px;
     height: 60px;
   }
 
   .section5__animated-container {
     position: absolute;
-    top: 174px;
-    left: 348px;
+    //top: 174px;
+    //left: 348px;
     overflow: hidden;
     border-radius: $animatedContainerBorderRadiusDesktop;
     height: $mobileBaseHeightDesktop;
@@ -48,207 +51,225 @@
   .section5__animated-screen {
     @include animatedScreens;
     width: $mobileBaseWidthDesktop - $DesktopMobWidthCorrection;
-    height: 1440px;
+    height: $mobileBaseHeightDesktop * 2;
 
     &:hover {
-      transform: translateY(-600px);
+      transform: translateY(- $mobileBaseHeightDesktop);
     }
   }
 
 }
 
 @media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen) {
+  .section5__left-part {
+    position: relative;
+    top: -370px;
+    left: -40px;
+  }
 
   .section5__right-part {
     position: relative;
-    top: 1px;
-    left: -410px;
+    left: 100px;
   }
+
   .section5__image1 {
-    position: relative;
-    left: 160px;
+    position: absolute;
+    left: -365px;
+    top: -150px;
     width: $svgFigureSizeDesktop;
     height: $svgFigureSizeDesktop;
   }
   .section5__image2 {
-    position: relative;
-    top: -1px;
-    left: -560px;
+    position: absolute;
+    top: -13px;
+    left: -24px;
     width: $mobileBaseWidthDesktop;
     height: $mobileBaseHeightDesktop;
   }
   .section5__image3 {
-    position: relative;
-    top: 66px;
+    position: absolute;
+    //top: 66px;
     width: 510px;
     height: 60px;
   }
 
   .section5__animated-container {
     position: absolute;
-    top: 38px;
-    left: 150px;
+    //top: 174px;
+    //left: 348px;
     overflow: hidden;
     border-radius: $animatedContainerBorderRadiusDesktop;
-    height: $mobileBaseHeightDesktop - 30;
+    height: $mobileBaseHeightDesktop;
   }
   .section5__animated-screen {
     @include animatedScreens;
     width: $mobileBaseWidthDesktop - $DesktopMobWidthCorrection;
-    height: 1440px;
+    height: $mobileBaseHeightDesktop * 2;
 
     &:hover {
-      transform: translateY(-600px);
+      transform: translateY(- $mobileBaseHeightDesktop);
     }
   }
+
 }
 
 @media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop) {
-
+  .section5__left-part {
+    position: relative;
+    top: -260px;
+    left: -40px;
+  }
   .section5__right-part {
     position: relative;
-    top: -50px;
-    left: -210px;
+    left: 80px;
   }
   .section5__image1 {
-    position: relative;
-    top: -50px;
-    left: 60px;
+    position: absolute;
+    left: -190px;
+    top: -100px;
     width: $svgFigureSizeTablett;
     height: $svgFigureSizeTablett;
   }
   .section5__image2 {
-    position: relative;
-    top: -50px;
-    left: -340px;
-    width: $mobileBaseWidthTablet -5;
+    position: absolute;
+    top: -13px;
+    left: 10px;
+    width: $mobileBaseWidthTablet;
     height: $mobileBaseHeightTablet;
   }
   .section5__image3 {
-    position: relative;
-    top: 56px;
-    width: 280px;
-    height: 40px;
+    position: absolute;
+    top: 360px;
+    left: -300px;
+    width: 510px;
+    height: 60px;
   }
 
   .section5__animated-container {
     position: absolute;
-    top: 286px;
-    left: 87px;
+    top: -5px;
+    left: 20px;
     overflow: hidden;
     border-radius: $animatedContainerBorderRadiusTablet;
-    height: $mobileBaseHeightTablet - 20;
+    height: $mobileBaseHeightTablet - 15px;
   }
   .section5__animated-screen {
     @include animatedScreens;
-    width: $mobileBaseWidthTablet - $TablettMobWidthCorrection + 13;
-    height: $mobileBaseHeightTablet * 2 + 150 ;
+    width: $mobileBaseWidthTablet - $TablettMobWidthCorrection;
+    height: $mobileBaseHeightTablet * 2 - 10px;
 
     &:hover {
-      transform: translateY(-600px);
+      transform: translateY(- $mobileBaseHeightTablet);
     }
   }
 }
 
 @media (min-width: $breakpoint_smartphone) and (max-width: $breakpoint_tabblet) {
-  .section5 {
+  .section5__left-part {
     position: relative;
-    display: flex;
+    top: -300px;
+    left: 1px;
   }
-.section5__left-part{
-  position: relative;
-
-}
-
   .section5__right-part {
     position: relative;
-    top: -280px;
-    left: -210px;
+    left: 40px;
+    top: 60px;
   }
   .section5__image1 {
-    position: relative;
-    top: 100px;
-    left: 200px;
+    position: absolute;
+    top: -55px;
+    left: -100px;
     width: $svgFigureSizeMobile;
     height: $svgFigureSizeMobile;
   }
   .section5__image2 {
-    position: relative;
-    top: 100px;
-    left: -30px;
-    width: $mobileBaseWidthMobSize - 4 ;
+    position: absolute;
+    top: -13px;
+    left: 10px;
+    width: $mobileBaseWidthMobSize;
     height: $mobileBaseHeightMobSize;
   }
   .section5__image3 {
-    position: relative;
-    top: 56px;
-    width: 280px;
+    position: absolute;
+    top: 260px;
+    left: -100px;
+    width: 310px;
     height: 40px;
   }
-
   .section5__animated-container {
     position: absolute;
-    top: 376px;
-    left: 176px;
+    top: -5px;
+    left: 17px;
     overflow: hidden;
     border-radius: $animatedContainerBorderRadiusMobSize;
-    height: $mobileBaseHeightMobSize - 10;
+    height: $mobileBaseHeightMobSize - 8px;
   }
   .section5__animated-screen {
     @include animatedScreens;
     width: $mobileBaseWidthMobSize - $mobileBaseWidthCorrection;
-    height: $mobileBaseHeightMobSize * 2  ;
+    height: $mobileBaseHeightMobSize * 2 - 6px;
 
     &:hover {
-      transform: translateY(-600px);
+      transform: translateY(- $mobileBaseHeightMobSize);
     }
   }
 }
 
-@media (max-width: $breakpoint_smartphone) {
-  .section5__right-part {
-    position: relative;
-    top: -280px;
-    left: -210px;
-  }
-  .section5__image1 {
-    position: relative;
-    top: 100px;
-    left: 200px;
-    width: $svgFigureSizeMobile;
-    height: $svgFigureSizeMobile;
-  }
-  .section5__image2 {
-    position: relative;
-    top: 100px;
-    left: -30px;
-    width: $mobileBaseWidthMobSize - 4 ;
-    height: $mobileBaseHeightMobSize;
-  }
-  .section5__image3 {
-    position: relative;
-    top: 56px;
-    width: 280px;
-    height: 40px;
-  }
+  @media (max-width: $breakpoint_smartphone) {
+    .section5 {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      height: $MobileScreenHeight;
+    }
+    .section5__left-part {
+      position: relative;
+      top: 300px;
+      left: -60px;
+    }
+    .section5__right-part {
+      position: relative;
+      left: 1px;
+      top: 100px;
+    }
+    .section5__image1 {
+      position: absolute;
+      top: -40px;
+      left: -110px;
+      width: $svgFigureSizeMobile;
+      height: $svgFigureSizeMobile;
+    }
+    .section5__image2 {
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      width: $mobileBaseWidthMobSize;
+      height: $mobileBaseHeightMobSize;
+    }
+    .section5__image3 {
+      position: absolute;
+      top: 130px;
+      left: -16px;
+      width: 210px;
+      height: 30px;
+    }
+    .section5__animated-container {
+      position: absolute;
+      top:  7px;
+      left: 8px;
+      overflow: hidden;
+      border-radius: $animatedContainerBorderRadiusMobSize;
+      height: $mobileBaseHeightMobSize - 8px;
+    }
+    .section5__animated-screen {
+      @include animatedScreens;
+      width: $mobileBaseWidthMobSize - $mobileBaseWidthCorrection;
+      height: $mobileBaseHeightMobSize * 2 - 6px;
 
-  .section5__animated-container {
-    position: absolute;
-    top: 376px;
-    left: 176px;
-    overflow: hidden;
-    border-radius: $animatedContainerBorderRadiusMobSize;
-    height: $mobileBaseHeightMobSize - 10;
-  }
-  .section5__animated-screen {
-    @include animatedScreens;
-    width: $mobileBaseWidthMobSize - $mobileBaseWidthCorrection;
-    height: $mobileBaseHeightMobSize * 2  ;
-
-    &:hover {
-      transform: translateY(-600px);
+      &:hover {
+        transform: translateY(- $mobileBaseHeightMobSize);
+      }
     }
   }
-}
+
 
 

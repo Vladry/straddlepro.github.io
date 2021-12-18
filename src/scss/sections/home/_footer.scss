@@ -40,7 +40,6 @@ footer{
   font-weight: 800;
   font-size: 30px;
   line-height: 37px;
-
 }
 .footer__copyright {
   text-align: right;
@@ -48,4 +47,38 @@ footer{
   font-size: 16px;
   line-height: 20px;
   color: $textColorMinor;
+}
+
+@media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet){
+  .footer__logo-text {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 28px;
+}
+.footer__copyright {
+  text-align: right;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: $textColorMinor;
+}
+}
+@media (max-width: $breakpoint_smartphone){
+  .footer__logo-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+.footer__copyright {
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 16px;
+  color: $textColorMinor;
+}
+  .footer__copyright {
+    font-weight: 200;
+    font-size: 8px;
+    line-height: 10px;
+    color: $textColorMinor;
+  }
 }
