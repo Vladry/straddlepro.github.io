@@ -37,11 +37,9 @@ margin-top: 50px;
     position: relative;
     top: -350px;
   }
-
   .section5__right-part {
     position: relative;
   }
-
   .section5__image1 {
     position: absolute;
     left: -365px;
@@ -62,7 +60,7 @@ margin-top: 50px;
     //left: 348px;
     overflow: hidden;
     border-radius: $animatedContainerBorderRadiusDesktop;
-    height: $mobileBaseHeightDesktop;
+    height: $mobileBaseHeightDesktop - 30;
   }
   .section5__animated-screen {
     @include animatedScreens;
@@ -201,9 +199,9 @@ margin-top: 50px;
   }
   .submenu5 {}
   .submenu5__item {
+    @include tabSizeMobile;
     position: relative;
     top: 400px;
-    @include tabSizeMobile;
     padding-left: 2px;
     padding-right: 2px;
   }

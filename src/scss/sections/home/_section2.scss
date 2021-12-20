@@ -48,9 +48,7 @@
     @include tabSizeDesktop;
   }
 
-  .section2__flex-container {
-    transform: translateY(-20px);
-  }
+
 }
 @media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop) {
   .submenu2 {
@@ -114,6 +112,9 @@
   }
 }
 @media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen) {
+  .section2__flex-container {
+    transform: translateY(-20px);
+  }
   .section2__left-part {
     position: relative;
     max-width: 40%;
@@ -131,8 +132,8 @@
     width: $mobileBaseWidthDesktop;
     height: $mobileBaseHeightDesktop;
     top: 44px;
-    left: 36px;
-  }
+      left: 36px;
+    }
 
   .section2__animated-container {
     overflow: hidden;
@@ -172,7 +173,6 @@
     top: 200px;
     left: 20px;
   }
-
   .section2__animated-container {
     overflow: hidden;
     position: relative;
