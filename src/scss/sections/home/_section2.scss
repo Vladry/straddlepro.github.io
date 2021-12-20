@@ -22,7 +22,6 @@
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-
   &:hover {
     //cursor: pointer;
   }
@@ -42,11 +41,15 @@
   .submenu2 {
     flex-flow: row wrap;
   }
-
+  h3{
+    text-align: center;
+  }
   .submenu2__item {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+    @include tabSizeDesktop;
+  }
+
+  .section2__flex-container {
+    transform: translateY(-20px);
   }
 }
 @media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop) {
@@ -54,10 +57,7 @@
     flex-flow: row wrap;
   }
   .submenu2__item {
-    width: 90px;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 14px;
+  @include tabSizeTablett;
   }
 }
 @media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet) {
@@ -192,15 +192,32 @@
   }
 }
 @media (min-width: $breakpoint_smartphone) and (max-width: $breakpoint_tabblet) {
+  .section2__flex-container{
+    transform: translateY(-100px);
+  }
   .section2__left-part {
     position: relative;
     max-width: 40%;
     top: 80px;
-    left: -50px;
+    left: 60px;
+  }
+  .section2__right-part {
+    position: relative;
+    top: 240px;
+    left: -110px;
   }
   .submenu2 {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    position: relative;
+    top: 330px;
+    left: -30px;
+    gap: 4px;
   }
+
+  .submenu2__item {
+  @include tabSizeMobile;
+  }
+
   .section2__image1 {
     position: absolute;
     width: $svgFigureSizeMobile;
@@ -227,9 +244,10 @@
     @include animatedScreens;
     position: absolute;
     width: $mobileBaseWidthMobSize - $mobileBaseWidthCorrection;
-    height: $mobileBaseHeightMobSize * 3 + 70px;
+    height: $mobileBaseHeightMobSize * 2;
+
     &:hover {
-      transform: translateY(-600px);
+      transform: translateY(- $mobileBaseHeightMobSize);
     }
   }
 }
@@ -251,16 +269,19 @@
   }
   .section2__right-part{
     position: relative;
-    left: 30%;
+    left: 27%;
+    top: -170px;
   }
+
   .submenu2 {
     flex-flow: row wrap;
   }
   .submenu2__item {
+    position: relative;
+    top: 400px;
     width: 80px;
-    font-weight: 200;
-    font-size: 10px;
-    line-height: 14px;
+      @include tabSizeMobile;
+    padding: 10px 7px;
   }
   .section2__image1 {
     position: absolute;
@@ -282,15 +303,16 @@
     top: -90px;
     left: 18px;
     border-radius: $animatedContainerBorderRadiusTablet;
-    height: $mobileBaseHeightMobSize - 8 ;
+    height: $mobileBaseHeightMobSize - 12 ;
   }
   .section2__animated-screen {
     @include animatedScreens;
     position: absolute;
     width: $mobileBaseWidthMobSize - $mobileBaseWidthCorrection;
-    height: $mobileBaseHeightMobSize * 3 + 70px;
+    height: $mobileBaseHeightMobSize * 2;
+
     &:hover {
-      transform: translateY(-600px);
+      transform: translateY(- $mobileBaseHeightMobSize);
     }
   }
 }

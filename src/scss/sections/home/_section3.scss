@@ -51,7 +51,9 @@
 //секция регулировки размеров мобилок
 
 @media (min-width: $breakpoint_Large_Screen + 1px) {
-
+  .section3{
+    height: $LargeScreenHeight;
+  }
 
   .section3__image1 {
     position: relative;
@@ -76,15 +78,18 @@
   .section3__animated-screen {
     @include animatedScreens;
     width: $mobileBaseWidthDesktop - $DesktopMobWidthCorrection;
-    height: 1440px;
+    height: $mobileBaseHeightDesktop * 2;
 
     &:hover {
-      transform: translateY(-600px);
+      transform: translateY(- $mobileBaseHeightDesktop);
     }
   }
 }
 
 @media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen) {
+  .section3{
+    height: $DeskTopScreenHeight;
+  }
   .section3__image1 {
     position: relative;
     top: -220px;
@@ -100,7 +105,7 @@
     height: $mobileBaseHeightDesktop;
   }
   .section3__animated-container {
-    top: 140px;
+    top: 40px;
     left: 200px;
     border-radius: $animatedContainerBorderRadiusDesktop;
     height: $mobileBaseHeightDesktop - 40;
@@ -108,16 +113,19 @@
   .section3__animated-screen {
     @include animatedScreens;
     width: $mobileBaseWidthDesktop - $DesktopMobWidthCorrection;
-    height: 1440px;
+    height: $mobileBaseHeightDesktop * 2;
 
     &:hover {
-      transform: translateY(-600px);
+      transform: translateY(- $mobileBaseHeightDesktop);
     }
   }
 
 }
 
 @media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop) {
+  .section3{
+    height: $TabletScreenHeight;
+  }
   .section3__left-part {
     margin-left: 180px;
   }
@@ -148,105 +156,48 @@
   .section3__animated-screen {
     @include animatedScreens;
     width: $mobileBaseWidthTablet - $TablettMobWidthCorrection;
-    height: 1100px;
+    height: $mobileBaseHeightTablet * 2;
 
     &:hover {
-      transform: translateY(-600px);
+      transform: translateY(- $mobileBaseHeightTablet);
     }
   }
 }
 
 @media (min-width: $breakpoint_smartphone) and (max-width: $breakpoint_tabblet) {
-  .submenu3__item {
-    width: 90px;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .section3__flex-container {
-    position: relative;
-  top: -130px;
-  }
-  .section3__left-part {
-    margin-top: 125px;
-    margin-left: 180px;
-  }
-  .section3__right-part {
-    width: 40%;
-    margin-top: 350px;
-  }
-  .section3__image1 {
-    position: relative;
-    top: -150px;
-    left: -280px;
-    width: $svgFigureSizeMobile;
-    height: $svgFigureSizeMobile;
-  }
-  .section3__image2 {
-    position: absolute;
-    top: 360px;
-    left: 41px;
-    width: $mobileBaseWidthMobSize;
-    height: $mobileBaseHeightMobSize;
-  }
-  .section3__animated-container {
-    top: 366px;
-    left: 48px;
-    border-radius: $animatedContainerBorderRadiusMobSize;
-    height: $mobileBaseHeightMobSize - 14;
-  }
-  .section3__animated-screen {
-    @include animatedScreens;
-    width: $mobileBaseWidthMobSize - $mobileBaseWidthCorrection;
-    height: 700px;
-
-    &:hover {
-      transform: translateY(- $mobileBaseHeightMobSize - 140px);
-    }
-  }
-}
-
-@media (max-width: $breakpoint_smartphone) {
   .section3{
     height: $MobileScreenHeight;
   }
+  .submenu3{
+    position: relative;
+    top: 400px;
+  }
   .submenu3__item {
     width: 90px;
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
   }
-  .section3__h3 {
-    width: 200px;
-  }
 
-  .submenu3 {
-    margin-top: 13px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row nowrap;
-  }
   .section3__flex-container {
     position: relative;
-    flex-flow: column-reverse;
-    justify-content: start;
+    top: 150px;
+    left: 35%;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
   }
-
   .section3__left-part {
-    position: relative;
-    min-width: 200px;
-    min-height: 20px;
-    left: 30%;
-    top: 120px;
+    position: absolute;
+  top: 150px;
+    left: 50px;
   }
   .section3__right-part {
-    position: relative;
+    position: absolute;
     max-height: 100px;
-    top: -30px;
-    left: 45%;
+    top: -270px;
+    //left: 36%;
   }
-
   .section3__image1 {
     position: absolute;
     top: -150px;
@@ -271,10 +222,86 @@
   .section3__animated-screen {
     @include animatedScreens;
     width: $mobileBaseWidthMobSize - $mobileBaseWidthCorrection;
-    height: 700px;
+    height: $mobileBaseHeightMobSize * 2;
 
     &:hover {
-      transform: translateY(- $mobileBaseHeightMobSize - 140px);
+      transform: translateY(- $mobileBaseHeightMobSize);
+    }
+  }
+}
+
+@media (max-width: $breakpoint_smartphone) {
+  .section3{
+    height: $MobileScreenHeight;
+  }
+  .section3__h3 {
+    width: 200px;
+  }
+  .submenu3 {
+    margin-top: 33px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+  .submenu3__item {
+    position: relative;
+    top: 440px;
+    width: 80px;
+    font-weight: 200;
+    font-size: 10px;
+    line-height: 14px;
+    padding: 10px 7px;
+  }
+
+
+  .section3__flex-container {
+    position: relative;
+    top: 180px;
+    left: 35%;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section3__left-part {
+    position: absolute;
+    top: 100px;
+    left: 35px;
+  }
+  .section3__right-part {
+    position: absolute;
+    max-height: 100px;
+    top: -270px;
+    //left: 36%;
+  }
+  .section3__image1 {
+    position: absolute;
+    top: -150px;
+    left: -180px;
+    width: $svgFigureSizeMobile;
+    height: $svgFigureSizeMobile;
+  }
+  .section3__image2 {
+    position: absolute;
+    top: -100px;
+    left: -70px;
+    width: $mobileBaseWidthMobSize;
+    height: $mobileBaseHeightMobSize;
+  }
+  .section3__animated-container {
+    position: absolute;
+    top: -95px;
+    left: -63px;
+    border-radius: $animatedContainerBorderRadiusMobSize;
+    height: $mobileBaseHeightMobSize - 14;
+  }
+  .section3__animated-screen {
+    @include animatedScreens;
+    width: $mobileBaseWidthMobSize - $mobileBaseWidthCorrection;
+    height: $mobileBaseHeightMobSize * 2;
+
+    &:hover {
+      transform: translateY(- $mobileBaseHeightMobSize);
     }
   }
 }

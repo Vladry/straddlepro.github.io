@@ -197,7 +197,7 @@
                 <p class="footer__logo-text">STRADDLE</p>
             </div>
             <div class="footer__copyright">
-                <p>Copyright 2021-2022 by Straddle. </p>
+                <p>Copyright 2021-2022 by<br/> Straddle. </p>
                 <p>All rights reserved</p>
             </div>
         </footer>

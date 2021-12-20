@@ -20,6 +20,11 @@
     width: 85%;
     margin: 290px auto 10px;
   }
+  .menu__ref {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
 //адаптация section1  (homepage)
 @media (min-width: $breakpoint_Large_Screen) {
@@ -33,7 +38,9 @@
     margin-left: 100px;
     padding-top: 60px;
   }
-
+  .section1__title {
+    margin: 180px auto 10px;
+  }
 }
 @media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop){
   .logo-container {

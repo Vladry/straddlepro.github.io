@@ -62,6 +62,9 @@ footer{
   line-height: 12px;
   color: $textColorMinor;
 }
+  .footer__social-icon-container{
+    gap: 20px;
+  }
 }
 @media (max-width: $breakpoint_smartphone){
   .footer__logo-text {
@@ -80,5 +83,19 @@ footer{
     font-size: 8px;
     line-height: 10px;
     color: $textColorMinor;
+  }
+  .footer__social-icon-container{
+    gap: 12px;
+  }
+
+  .footer__social-icon-container, .footer__copyright {
+    padding-left: 10px; padding-right: 10px;
+  }
+
+  .logo-img{
+    width: 40px; height: 40px;
+  }
+  .footer__logo-text {
+    font-size: 12px;
   }
 }
