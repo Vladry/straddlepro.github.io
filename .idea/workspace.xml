@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eca490e1-66f1-420c-a3c4-f00daaf7812d" name="Default Changelist" comment="" />
+    <list default="true" id="eca490e1-66f1-420c-a3c4-f00daaf7812d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section4.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -42,11 +47,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vlad\WebstormProjects\Straddle" />
       <recent name="C:\Users\Vlad\WebstormProjects\Straddle\assets\img" />
       <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\html" />
       <recent name="C:\Users\Vlad\WebstormProjects\Straddle\assets\img\about" />
       <recent name="C:\Users\Vlad\WebstormProjects\Straddle\assets\img\home" />
-      <recent name="C:\Users\Vlad\WebstormProjects\Straddle\assets\img\team" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Vlad\WebstormProjects\Straddle\src\scss" />
@@ -98,7 +103,7 @@
       <workItem from="1639944874687" duration="40235000" />
       <workItem from="1640087491928" duration="18786000" />
       <workItem from="1640106527925" duration="108000" />
-      <workItem from="1640111366964" duration="4729000" />
+      <workItem from="1640111366964" duration="5609000" />
     </task>
     <servers />
   </component>

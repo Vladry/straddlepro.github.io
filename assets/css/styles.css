@@ -1101,9 +1101,6 @@ button {
     left: 112px;
     width: 380px;
     height: 760px; }
-    .section4__image2:hover {
-      opacity: 1;
-      cursor: pointer; }
   .section4__animated-container {
     position: absolute;
     top: 15px;
@@ -1160,9 +1157,6 @@ button {
     left: 150px;
     width: 200px;
     height: 430px; }
-    .section4__image2:hover {
-      opacity: 1;
-      cursor: pointer; }
   .section4__animated-container {
     position: absolute;
     top: 191px;
@@ -1213,9 +1207,6 @@ button {
     left: -61px;
     width: 120px;
     height: 260px; }
-    .section4__image2:hover {
-      opacity: 1;
-      cursor: pointer; }
   .section4__animated-container {
     position: absolute;
     top: 45px;

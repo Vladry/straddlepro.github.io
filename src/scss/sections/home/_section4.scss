@@ -123,11 +123,6 @@
     left: 112px;
     width: $mobileBaseWidthDesktop;
     height: $mobileBaseHeightDesktop;
-
-    &:hover {
-      opacity: 1;
-      cursor: pointer;
-    }
   }
   .section4__animated-container {
     position: absolute;
@@ -195,11 +190,6 @@
     left: 150px;
     width: $mobileBaseWidthTablet;
     height: $mobileBaseHeightTablet;
-
-    &:hover {
-      opacity: 1;
-      cursor: pointer;
-    }
   }
   .section4__animated-container {
     position: absolute;
@@ -257,11 +247,6 @@
     left: -61px;
     width: $mobileBaseWidthMobSize;
     height: $mobileBaseHeightMobSize;
-
-    &:hover {
-      opacity: 1;
-      cursor: pointer;
-    }
   }
   .section4__animated-container {
     position: absolute;
