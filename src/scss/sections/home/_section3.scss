@@ -48,6 +48,15 @@
   .section3 {
     height: $LargeScreenHeight;
   }
+  .submenu3 {
+    position: relative;
+    top: 70px;
+    left: 230px;
+  }
+  .section3__left-part {
+    position: relative;
+    top: 170px;
+  }
   .section3__right-part {
     width: 45%;
     height: 800px;
@@ -57,20 +66,21 @@
   .section3__image1 {
     position: relative;
     top: -220px;
-    left: -199px;
+    left: -195px;
     width: $svgFigureSizeDesktop;
     height: $svgFigureSizeDesktop;
   }
   .section3__image2 {
     position: absolute;
-    top: 80px;
-    left: 308px;
+    top: -100px;
+    left: 150px;
     width: $mobileBaseWidthDesktop;
     height: $mobileBaseHeightDesktop;
   }
   .section3__animated-container {
-    top: 100px;
-    left: 330px;
+    position: absolute;
+    top: -82px;
+    left: 173px;
     border-radius: $animatedContainerBorderRadiusDesktop;
     height: $mobileBaseHeightDesktop - 40;
   }
@@ -89,11 +99,20 @@
   .section3 {
     height: $DeskTopScreenHeight;
   }
+  .submenu3 {
+margin-top: 150px;
+  }
   .section3__right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 45%;
-    height: 800px;
-    margin-top: 200px;
-    margin-left: -310px;
+    margin-top: -400px;
+    margin-left: -410px;
+  }
+  .section3__left-part {
+    position: relative;
   }
   .section3__image1 {
     position: relative;
@@ -103,15 +122,16 @@
     height: $svgFigureSizeDesktop;
   }
   .section3__image2 {
-    top: 20px;
-    left: 175px;
     position: absolute;
+    top: -100px;
+    left: 150px;
     width: $mobileBaseWidthDesktop;
     height: $mobileBaseHeightDesktop;
   }
   .section3__animated-container {
-    top: 40px;
-    left: 200px;
+    position: absolute;
+    top: -82px;
+    left: 173px;
     border-radius: $animatedContainerBorderRadiusDesktop;
     height: $mobileBaseHeightDesktop - 40;
   }
@@ -132,6 +152,7 @@
     height: $TabletScreenHeight;
   }
   .section3__left-part {
+    position: relative;
     margin-left: 180px;
   }
   .section3__right-part {
@@ -149,14 +170,14 @@
   }
   .section3__image2 {
     position: absolute;
-    top: 270px;
-    left: 85px;
+    top: -65px;
+    left: -95px;
     width: $mobileBaseWidthTablet;
     height: $mobileBaseHeightTablet;
   }
   .section3__animated-container {
-    top: 280px;
-    left: 96px;
+    top: -57px;
+    left: -84px;
     border-radius: $animatedContainerBorderRadiusTablet;
     height: $mobileBaseHeightTablet - 20;
   }

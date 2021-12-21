@@ -348,10 +348,20 @@ button {
     color: red;
     cursor: pointer; }
 
+@media (min-width: 1920px) {
+  .menu {
+    top: 0;
+    right: 0; } }
+
+@media (min-width: 1225px) and (max-width: 1920px) {
+  .menu {
+    top: 0;
+    right: 0; } }
+
 @media (min-width: 769px) and (max-width: 1224px) {
   .menu {
-    top: 10px;
-    right: 16px; }
+    top: 0;
+    right: 0; }
   .--menu-active {
     width: 300px;
     height: 1081px; }
@@ -363,8 +373,8 @@ button {
     top: 65px;
     right: 50px; }
   .menu {
-    top: 10px;
-    right: 12px; }
+    top: 0;
+    right: 0; }
   .--menu-active {
     width: 200px;
     height: 799px; }
@@ -374,12 +384,12 @@ button {
       margin-top: 309px; } }
 
 @media (max-width: 480px) {
+  .menu {
+    top: 0;
+    right: 0; }
   .menu__burger {
     top: 50px;
     right: 30px; }
-  .menu {
-    top: 10px;
-    right: 12px; }
   .--menu-active {
     width: 200px;
     height: 799px; }
@@ -417,7 +427,9 @@ button {
 @media (min-width: 1920px) {
   .logo-container {
     margin-left: 100px;
-    padding-top: 60px; } }
+    padding-top: 60px; }
+  .section1 {
+    background-size: 100% 100%; } }
 
 @media (min-width: 1225px) and (max-width: 1920px) {
   .logo-container {
@@ -645,16 +657,20 @@ button {
 
 @media (min-width: 480px) and (max-width: 768px) {
   .section2__flex-container {
-    transform: translateY(-100px); }
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: column; }
+  .section2__right-part {
+    position: relative;
+    left: -10px;
+    top: -140px; }
   .section2__left-part {
     position: relative;
     max-width: 40%;
     top: 80px;
-    left: 60px; }
-  .section2__right-part {
-    position: relative;
-    top: 240px;
-    left: -110px; }
+    left: 10px; }
   .submenu2 {
     flex-wrap: nowrap;
     position: relative;
@@ -702,15 +718,16 @@ button {
     margin: 0 auto;
     position: relative;
     top: 20px;
-    display: block; }
+    display: flex;
+    flex-direction: column; }
+  .section2__right-part {
+    position: relative;
+    left: -10px;
+    top: -180px; }
   .section2__left-part {
     position: relative;
     max-width: 90%;
     top: 80px; }
-  .section2__right-part {
-    position: relative;
-    left: 27%;
-    top: -170px; }
   .submenu2 {
     flex-flow: row wrap; }
   .submenu2__item {
@@ -792,6 +809,13 @@ button {
 @media (min-width: 1921px) {
   .section3 {
     height: 1082px; }
+  .submenu3 {
+    position: relative;
+    top: 70px;
+    left: 230px; }
+  .section3__left-part {
+    position: relative;
+    top: 170px; }
   .section3__right-part {
     width: 45%;
     height: 800px;
@@ -800,18 +824,19 @@ button {
   .section3__image1 {
     position: relative;
     top: -220px;
-    left: -199px;
+    left: -195px;
     width: 1060px;
     height: 1060px; }
   .section3__image2 {
     position: absolute;
-    top: 80px;
-    left: 308px;
+    top: -100px;
+    left: 150px;
     width: 380px;
     height: 760px; }
   .section3__animated-container {
-    top: 100px;
-    left: 330px;
+    position: absolute;
+    top: -82px;
+    left: 173px;
     border-radius: 45px;
     height: 720px; }
   .section3__animated-screen {
@@ -826,11 +851,18 @@ button {
 @media (min-width: 1225px) and (max-width: 1920px) {
   .section3 {
     height: 800px; }
+  .submenu3 {
+    margin-top: 150px; }
   .section3__right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 45%;
-    height: 800px;
-    margin-top: 200px;
-    margin-left: -310px; }
+    margin-top: -400px;
+    margin-left: -410px; }
+  .section3__left-part {
+    position: relative; }
   .section3__image1 {
     position: relative;
     top: -220px;
@@ -838,14 +870,15 @@ button {
     width: 1060px;
     height: 1060px; }
   .section3__image2 {
-    top: 20px;
-    left: 175px;
     position: absolute;
+    top: -100px;
+    left: 150px;
     width: 380px;
     height: 760px; }
   .section3__animated-container {
-    top: 40px;
-    left: 200px;
+    position: absolute;
+    top: -82px;
+    left: 173px;
     border-radius: 45px;
     height: 720px; }
   .section3__animated-screen {
@@ -861,6 +894,7 @@ button {
   .section3 {
     height: 1082px; }
   .section3__left-part {
+    position: relative;
     margin-left: 180px; }
   .section3__right-part {
     width: 55%;
@@ -875,13 +909,13 @@ button {
     height: 600px; }
   .section3__image2 {
     position: absolute;
-    top: 270px;
-    left: 85px;
+    top: -65px;
+    left: -95px;
     width: 200px;
     height: 430px; }
   .section3__animated-container {
-    top: 280px;
-    left: 96px;
+    top: -57px;
+    left: -84px;
     border-radius: 25px;
     height: 410px; }
   .section3__animated-screen {
@@ -1077,9 +1111,6 @@ button {
       transform: translateY(-760px); } }
 
 @media (min-width: 769px) and (max-width: 1224px) {
-  .section4__flex-container {
-    display: flex;
-    justify-content: space-between; }
   .submenu4 {
     margin-top: 100px;
     gap: 10px;
@@ -1099,6 +1130,7 @@ button {
     width: 45%;
     height: 800px; }
   .section4__right-part {
+    position: relative;
     height: 800px;
     margin-top: -200px;
     margin-left: -10px; }
@@ -1123,8 +1155,8 @@ button {
       cursor: pointer; }
   .section4__animated-container {
     position: absolute;
-    top: 242px;
-    left: 420px;
+    top: 191px;
+    left: 156px;
     overflow: hidden;
     border-radius: 45px;
     height: 412px; }
@@ -1150,7 +1182,7 @@ button {
     position: relative;
     top: 1px; }
   .submenu4 {
-    transform: translate(-30px, 350px);
+    transform: translate(-1px, 350px);
     gap: 5px;
     flex-flow: row nowrap; }
   .submenu4__item {
@@ -1471,23 +1503,27 @@ button {
   transform: translate(80px, -155px);
   align-self: flex-start; }
 
+@media (min-width: 1920px) {
+  .section6__image1 {
+    margin: 0 auto;
+    left: -90px;
+    width: 1000px;
+    height: 550px; } }
+
 @media (min-width: 1225px) and (max-width: 1920px) {
   .section6__h3 {
     padding-top: 256px; }
   .section6__image1 {
-    position: relative;
-    top: 90px;
-    left: 10px;
+    margin: 0 auto;
+    left: -90px;
     width: 1000px;
-    height: 800px;
-    transform: translate(80px, -155px);
-    align-self: flex-start; } }
+    height: 600px; } }
 
 @media (min-width: 769px) and (max-width: 1224px) {
   .section6__h3 {
     padding-top: 220px; }
   .section6__image1 {
-    position: relative;
+    margin: 0 auto;
     width: 800px;
     height: 400px;
     transform: translate(-40px, -250px);
@@ -1498,7 +1534,7 @@ button {
     text-align: center;
     padding-top: 120px; }
   .section6__image1 {
-    position: relative;
+    margin: 0 auto;
     width: 500px;
     height: 260px;
     transform: translate(-25px, -250px);

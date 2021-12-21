@@ -39,7 +39,6 @@
   }
 
 
-
   .section4__left-part {
     margin-left: 240px;
     margin-top: 340px;
@@ -150,10 +149,6 @@
 }
 
 @media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop) {
-  .section4__flex-container {
-    display: flex;
-    justify-content: space-between;
-  }
   .submenu4 {
     margin-top: 100px;
     gap: 10px;
@@ -162,7 +157,6 @@
   .submenu4__item {
     @include tabSizeTablett;
   }
-
   .section4__flex-container {
     display: flex;
     justify-content: space-between;
@@ -174,6 +168,7 @@
     height: 800px;
   }
   .section4__right-part {
+    position: relative;
     height: 800px;
     margin-top: -200px;
     margin-left: -10px;
@@ -188,6 +183,8 @@
   }
 
   .section4__image1 {
+    //top: -50px;
+    //left: 100px;
     width: $svgFigureSizeTablett;
     height: $svgFigureSizeTablett;
     transform: translate(-50px, 100px);
@@ -206,8 +203,8 @@
   }
   .section4__animated-container {
     position: absolute;
-    top: 242px;
-    left: 420px;
+    top: 191px;
+    left: 156px;
     overflow: hidden;
     border-radius: $animatedContainerBorderRadiusDesktop;
     height: $mobileBaseHeightTablet - 18;
@@ -240,7 +237,7 @@
     top: 1px;
   }
   .submenu4 {
-    transform: translate(-30px, 350px);
+    transform: translate(-1px, 350px);
     gap: 5px;
     flex-flow: row nowrap;
   }

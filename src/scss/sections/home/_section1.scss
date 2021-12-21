@@ -32,7 +32,11 @@
     margin-left: 100px;
     padding-top: 60px;
   }
+  .section1 {
+    background-size: 100% 100%;
+  }
 }
+
 @media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen){
   .logo-container {
     margin-left: 100px;
@@ -64,7 +68,6 @@
     text-align: center;
   }
 }
-
 @media (max-width: $breakpoint_smartphone){
   .section1{
     height: $MobileScreenHeight;
@@ -97,7 +100,6 @@
     height: 61px;
   }
 }
-
 @media (max-width: $breakpoint_smartphone){
   .logo-text{
     display: none;

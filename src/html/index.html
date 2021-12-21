@@ -32,7 +32,6 @@
             </div>
             <h2 class="section1__title">Straddle is your trusted<br/> gaming assistant</h2>
         </div>
-
         <div class="section2">
             <div class="section2__flex-container">
                 <div class="section2__left-part">
@@ -138,7 +137,6 @@
             </div>
 
         </div>
-
 
         <div class="section6">
             <H3 class="section6__h3">Games & Series enable ecosystem</H3>
