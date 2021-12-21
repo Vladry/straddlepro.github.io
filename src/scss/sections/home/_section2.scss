@@ -213,8 +213,8 @@
   }
   .section2__right-part{
     position: relative;
-    left: -10px;
-    top: -140px;
+    top: -130px;
+    left: -70px;
   }
   .section2__left-part {
     position: relative;
@@ -222,7 +222,6 @@
     top: 80px;
     left: 10px;
   }
-
   .submenu2 {
     flex-wrap: nowrap;
     position: relative;
@@ -230,11 +229,9 @@
     left: -30px;
     gap: 4px;
   }
-
   .submenu2__item {
   @include tabSizeMobile;
   }
-
   .section2__image1 {
     position: absolute;
     width: $svgFigureSizeMobile;
@@ -242,7 +239,7 @@
     transform: translate(-100px, 120px);
   }
   .section2__image2 {
-    position: relative;
+    position: absolute;
     width: $mobileBaseWidthMobSize;
     height: $mobileBaseHeightMobSize;
     top: 166px;
@@ -251,15 +248,14 @@
 
   .section2__animated-container {
     overflow: hidden;
-    position: relative;
-    top: -90px;
+    position: absolute;
+    top: 171px;
     left: 18px;
     border-radius: $animatedContainerBorderRadiusTablet;
     height: $mobileBaseHeightMobSize - 8 ;
   }
   .section2__animated-screen {
     @include animatedScreens;
-    position: absolute;
     width: $mobileBaseWidthMobSize - $mobileBaseWidthCorrection;
     height: $mobileBaseHeightMobSize * 2;
 
@@ -314,17 +310,15 @@
   }
 
   .section2__animated-container {
-    cursor: pointer;
     overflow: hidden;
-    position: relative;
-    top: -90px;
+    position: absolute;
+    top: 172px;
     left: 18px;
     border-radius: $animatedContainerBorderRadiusTablet;
     height: $mobileBaseHeightMobSize - 12 ;
   }
   .section2__animated-screen {
     @include animatedScreens;
-    position: absolute;
     width: $mobileBaseWidthMobSize - $mobileBaseWidthCorrection;
     height: $mobileBaseHeightMobSize * 2;
 

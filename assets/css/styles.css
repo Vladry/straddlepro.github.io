@@ -666,7 +666,7 @@ button {
     position: absolute;
     top: 210px;
     left: 30px;
-    border-radius: 25px;
+    border-radius: 15px;
     height: 410px; }
   .section2__animated-screen {
     transition: all 2s;
@@ -686,8 +686,8 @@ button {
     flex-direction: column; }
   .section2__right-part {
     position: relative;
-    left: -10px;
-    top: -140px; }
+    top: -130px;
+    left: -70px; }
   .section2__left-part {
     position: relative;
     max-width: 40%;
@@ -711,21 +711,20 @@ button {
     height: 340px;
     transform: translate(-100px, 120px); }
   .section2__image2 {
-    position: relative;
+    position: absolute;
     width: 120px;
     height: 260px;
     top: 166px;
     left: 11px; }
   .section2__animated-container {
     overflow: hidden;
-    position: relative;
-    top: -90px;
+    position: absolute;
+    top: 171px;
     left: 18px;
-    border-radius: 25px;
+    border-radius: 15px;
     height: 252px; }
   .section2__animated-screen {
     transition: all 2s;
-    position: absolute;
     width: 106px;
     height: 520px; }
     .section2__animated-screen:hover {
@@ -774,16 +773,14 @@ button {
     top: 166px;
     left: 11px; }
   .section2__animated-container {
-    cursor: pointer;
     overflow: hidden;
-    position: relative;
-    top: -90px;
+    position: absolute;
+    top: 172px;
     left: 18px;
-    border-radius: 25px;
+    border-radius: 15px;
     height: 248px; }
   .section2__animated-screen {
     transition: all 2s;
-    position: absolute;
     width: 106px;
     height: 520px; }
     .section2__animated-screen:hover {
@@ -938,7 +935,7 @@ button {
   .section3__animated-container {
     top: -57px;
     left: -84px;
-    border-radius: 25px;
+    border-radius: 15px;
     height: 410px; }
   .section3__animated-screen {
     transition: all 2s;
@@ -1369,7 +1366,7 @@ button {
     top: -5px;
     left: 20px;
     overflow: hidden;
-    border-radius: 25px;
+    border-radius: 15px;
     height: 415px; }
   .section5__animated-screen {
     transition: all 2s;
