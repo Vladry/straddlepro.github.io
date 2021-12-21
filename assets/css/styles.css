@@ -290,14 +290,25 @@ button {
   .team__section1, .team__section2, .team__section3, .team__section4 {
     height: 800px; } }
 
-@media (max-width: 1224px) {
-  .section2__animated-container {
-    user-select: none;
-    cursor: pointer;
-    touch-action: manipulation; }
-  a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
-    cursor: pointer; } }
+/*
 
+@media (max-width: $breakpoint_Desktop) {
+  .section2__animated-container,
+  //.section2__animated-screen,
+  //.section2__image2
+  {
+    user-select: none; // this sets the element unselectable, unlike texts
+    cursor: pointer; // changes the client's cursor
+    touch-action: manipulation; // disables tap zoom delaying for acting like real button
+  }
+
+  // https://css-tricks.com/snippets/css/give-clickable-elements-a-pointer-cursor/
+  a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+    cursor: pointer;
+  }
+}
+
+*/
 .menu__burger {
   position: absolute;
   height: 30px;
@@ -647,13 +658,12 @@ button {
     height: 410px; }
   .section2__animated-screen {
     transition: all 2s;
-    position: absolute;
     width: 178px;
-    height: 1100px; }
+    height: 860px; }
     .section2__animated-screen:hover {
       transition: all 4s; }
     .section2__animated-screen:hover {
-      transform: translateY(-600px); } }
+      transform: translateY(-430px); } }
 
 @media (min-width: 480px) and (max-width: 768px) {
   .section2__flex-container {

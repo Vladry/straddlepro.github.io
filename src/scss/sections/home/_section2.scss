@@ -179,15 +179,15 @@
     top: -222px;
     left: 31px;
     border-radius: $animatedContainerBorderRadiusTablet;
-    height: $mobileBaseHeightTablet - 20 ;
+    height: $mobileBaseHeightTablet - 20;
   }
   .section2__animated-screen {
     @include animatedScreens;
-    position: absolute;
     width: $mobileBaseWidthTablet - $TablettMobWidthCorrection;
-    height: $mobileBaseHeightTablet * 2 + 240px;
+    height: $mobileBaseHeightTablet * 2;
+
     &:hover {
-      transform: translateY(-600px);
+      transform: translateY(- $mobileBaseHeightTablet);
     }
   }
 }
