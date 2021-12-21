@@ -131,7 +131,8 @@ button {
   font-style: normal; }
 
 .wrapper {
-  max-width: 1920px;
+  width: 100%;
+  min-width: 380px;
   position: relative;
   margin: 0 auto;
   opacity: 1;
@@ -1874,3 +1875,6 @@ footer {
     height: 40px; }
   .footer__logo-text {
     font-size: 12px; } }
+
+body {
+  width: 100%; }

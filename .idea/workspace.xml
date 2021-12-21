@@ -5,12 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_03_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_03_common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section2.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section3.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section4.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section5.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sections/home/_section7.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sections/home/_section7.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +99,8 @@
       <workItem from="1639405234297" duration="14565000" />
       <workItem from="1639504468180" duration="7576000" />
       <workItem from="1639827376454" duration="27390000" />
-      <workItem from="1639944874687" duration="39990000" />
+      <workItem from="1639944874687" duration="40235000" />
+      <workItem from="1640087491928" duration="2038000" />
     </task>
     <servers />
   </component>

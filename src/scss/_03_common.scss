@@ -1,7 +1,10 @@
 @import "./_variables.scss";
 
 .wrapper {
-  max-width: $breakpoint_Large_Screen;
+  width: 100%;
+  //width: 100vw;
+  //max-width: $breakpoint_Large_Screen;
+  min-width: $breakpoint_smartphone - 100;
   position: relative;
   //padding: 10px 10px;
   margin: 0 auto;
