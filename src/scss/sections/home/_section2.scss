@@ -151,20 +151,35 @@
   }
 }
 @media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop) {
+  .submenu2 {
+    margin-top: 400px;
+  }
+  .section2__flex-container {
+    display: flex;
+    justify-content: center;
+  }
   .section2__left-part {
     position: relative;
     max-width: 40%;
-    top: 1px;
+    top: 200px;
     left: -100px;
+  }
+  .section2__right-part{
+    position: relative;
+    top:  -120px;
+    left: 1px;
+    width: 200px;
+    height: 200px;
   }
   .section2__image1 {
     position: absolute;
     width: $svgFigureSizeTablett;
     height: $svgFigureSizeTablett;
-    transform: translate(-180px, 120px);
+    top: 115px;
+    left: -180px;
   }
   .section2__image2 {
-    position: relative;
+    position: absolute;
     width: $mobileBaseWidthTablet;
     height: $mobileBaseHeightTablet;
     top: 200px;
@@ -172,9 +187,9 @@
   }
   .section2__animated-container {
     overflow: hidden;
-    position: relative;
-    top: -222px;
-    left: 31px;
+    position: absolute;
+    top: 210px;
+    left: 30px;
     border-radius: $animatedContainerBorderRadiusTablet;
     height: $mobileBaseHeightTablet - 20;
   }

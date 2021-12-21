@@ -633,27 +633,39 @@ button {
       transform: translateY(-800px); } }
 
 @media (min-width: 769px) and (max-width: 1224px) {
+  .submenu2 {
+    margin-top: 400px; }
+  .section2__flex-container {
+    display: flex;
+    justify-content: center; }
   .section2__left-part {
     position: relative;
     max-width: 40%;
-    top: 1px;
+    top: 200px;
     left: -100px; }
+  .section2__right-part {
+    position: relative;
+    top: -120px;
+    left: 1px;
+    width: 200px;
+    height: 200px; }
   .section2__image1 {
     position: absolute;
     width: 600px;
     height: 600px;
-    transform: translate(-180px, 120px); }
+    top: 115px;
+    left: -180px; }
   .section2__image2 {
-    position: relative;
+    position: absolute;
     width: 200px;
     height: 430px;
     top: 200px;
     left: 20px; }
   .section2__animated-container {
     overflow: hidden;
-    position: relative;
-    top: -222px;
-    left: 31px;
+    position: absolute;
+    top: 210px;
+    left: 30px;
     border-radius: 25px;
     height: 410px; }
   .section2__animated-screen {
