@@ -132,10 +132,10 @@ button {
 
 .wrapper {
   width: 100%;
+  overflow-x: hidden;
   position: relative;
   opacity: 1;
   color: #DADADA;
-  box-sizing: border-box;
   font-family: 'Monserrat', serif; }
 
 .--shadowed {
