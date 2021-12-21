@@ -4,10 +4,10 @@
   width: 100%;
   //width: 100vw;
   //max-width: $breakpoint_Large_Screen;
-  min-width: $breakpoint_smartphone - 100;
+  //min-width: $breakpoint_smartphone - 100;
   position: relative;
   //padding: 10px 10px;
-  margin: 0 auto;
+  //margin: 0 auto;
   opacity: 1;
   color: $textColorMinor;
   box-sizing: border-box;
@@ -174,7 +174,7 @@
     height: $LargeScreenHeight;
   }
   .wrapper {
-    max-width: $breakpoint_Large_Screen;
+    //max-width: $breakpoint_Large_Screen;
   }
 }
 @media (min-width: $breakpoint_Desktop + 1px) and (max-width: $breakpoint_Large_Screen) {
@@ -184,7 +184,7 @@
     height: $DeskTopScreenHeight;
   }
   .wrapper {
-    max-width: $breakpoint_Desktop;
+    //max-width: $breakpoint_Desktop;
   }
 }
 @media (min-width: $breakpoint_tabblet + 1px) and (max-width: $breakpoint_Desktop) {
@@ -194,7 +194,7 @@
     height: $TabletScreenHeight;
   }
   .wrapper {
-    max-width: $breakpoint_tabblet;
+    //max-width: $breakpoint_tabblet;
   }
 }
 @media (min-width: $breakpoint_smartphone + 1px) and (max-width: $breakpoint_tabblet) {
@@ -204,7 +204,7 @@
     height: $MobileScreenHeight;
   }
   .wrapper {
-    max-width: $breakpoint_smartphone;
+    //max-width: $breakpoint_smartphone;
   }
 }
 

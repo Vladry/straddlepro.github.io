@@ -132,9 +132,7 @@ button {
 
 .wrapper {
   width: 100%;
-  min-width: 380px;
   position: relative;
-  margin: 0 auto;
   opacity: 1;
   color: #DADADA;
   box-sizing: border-box;
@@ -272,33 +270,25 @@ button {
   .section1, .section2, .section3, .section4, .section5, .section6, .section7,
   .about__section1, .about__section2, .about__section3, .about__section4,
   .team__section1, .team__section2, .team__section3, .team__section4 {
-    height: 1082px; }
-  .wrapper {
-    max-width: 1920px; } }
+    height: 1082px; } }
 
 @media (min-width: 1225px) and (max-width: 1920px) {
   .section1, .section2, .section3, .section4, .section5, .section6, .section7,
   .about__section1, .about__section2, .about__section3, .about__section4,
   .team__section1, .team__section2, .team__section3, .team__section4 {
-    height: 800px; }
-  .wrapper {
-    max-width: 1224px; } }
+    height: 800px; } }
 
 @media (min-width: 769px) and (max-width: 1224px) {
   .section1, .section2, .section3, .section4, .section5, .section6, .section7,
   .about__section1, .about__section2, .about__section3, .about__section4,
   .team__section1, .team__section2, .team__section3, .team__section4 {
-    height: 1082px; }
-  .wrapper {
-    max-width: 768px; } }
+    height: 1082px; } }
 
 @media (min-width: 481px) and (max-width: 768px) {
   .section1, .section2, .section3, .section4, .section5, .section6, .section7,
   .about__section1, .about__section2, .about__section3, .about__section4,
   .team__section1, .team__section2, .team__section3, .team__section4 {
-    height: 800px; }
-  .wrapper {
-    max-width: 480px; } }
+    height: 800px; } }
 
 .menu__burger {
   position: absolute;
