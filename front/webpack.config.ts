@@ -38,9 +38,11 @@ const webpackConfig = (env): Configuration => ({
                   'style-loader',
                   'css-loader'
                 ]
-            },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif|ico|woff2)$/,
+            },{
+                test: /\.svg$/,
+                use: ['@svgr/webpack'],
+            },{
+                test: /\.(png|jpg|jpeg|gif|ico|woff2)$/,
                 exclude: /node_modules/,
                 include: path.join(__dirname, "/public"),
                 use: ['file-loader?name=[name].[ext]'] // ?name=[name].[ext] is only necessary to preserve the original file name
