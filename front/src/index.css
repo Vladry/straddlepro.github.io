@@ -100,13 +100,22 @@ section {
 
 body {
   line-height: 1;
-  transform: translate3d(0px, 0px, 0px);
-  transition: all 700ms ease;
-  overflow-y: hidden;
-  max-height: 7vh;
 }
-html {
-  max-height: 7vh;
+
+.custom-trigger {
+  transition: background-color 0.3s ease-in-out;
+}
+.custom-trigger--0{
+  background-color: hsl(0,100%,70%);
+}
+.custom-trigger--1{
+  background-color: hsl(120,100%,70%);
+}
+.custom-trigger--2{
+  background-color: hsl(240,100%,70%);
+}
+.custom-trigger--3{
+  background-color: hsl(360,100%,70%);
 }
 
 ol,
@@ -137,7 +146,7 @@ button {
   font-style: normal; }
 
 .wrapper {
-  width: 100%;
+  /* width: 100%; */
   overflow-x: hidden;
   position: relative;
   opacity: 1;
