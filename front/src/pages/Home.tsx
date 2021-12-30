@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import { AppThunkDispatch } from '../types/AppState';
@@ -26,16 +26,34 @@ import {
 } from 'src/styledComponents/Wrapper';
 import { SInput } from 'src/styledComponents/Input';
 import { SButton } from 'src/styledComponents/Button';
+import ReactScrollWheelHandler from 'react-scroll-wheel-handler';
 
 const Home: React.FC = () => {
   const dispatch = useDispatch<AppThunkDispatch>();
-  const scrollHandler = (e) => {
-    console.log('scroll', e.pageY + window.innerHeight, e);
-    window.scrollTo(0, e.pageY + window.innerHeight);
-  };
+  const [currPage, newPage] = useState(0);
+  console.log(currPage);
+  function scrollDown() {
+    if (currPage < 6) {
+      document.body.style.transform =
+        'translate3d(0px, -' + window.innerHeight * (currPage + 1) + 'px, 0px)';
+      newPage(currPage + 1);
+    }
+  }
+  function scrollUp() {
+    if (currPage > 0) {
+      document.body.style.transform =
+        'translate3d(0px, -' + window.innerHeight * (currPage - 1) + 'px, 0px)';
+      newPage(currPage - 1);
+    } else {
+      if (currPage === 0) {
+        document.body.style.transform = 'translate3d(0px, 0px, 0px)';
+        newPage(0);
+      }
+    }
+  }
   return (
-    <>
-      <div className='wrapper' onWheel={scrollHandler}>
+    <ReactScrollWheelHandler upHandler={(e) => scrollUp()} downHandler={(e) => scrollDown()}>
+      <div className='wrapper'>
         <Header />
         <div className='overlay'>
           <TopSection message='Straddle is your trusted gaming assistant' />
@@ -162,7 +180,7 @@ const Home: React.FC = () => {
           </Section>
         </div>
       </div>
-    </>
+    </ReactScrollWheelHandler>
   );
 };
 
