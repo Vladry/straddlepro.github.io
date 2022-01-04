@@ -5,7 +5,17 @@ export const SectionWrapper = styled.div`
   display: flex;
   padding: 40px;
   align-items: center;
-  max-height: inherit;
+  min-height: 100vh;
+  max-height: 100vh;
+`;
+
+export const SegmentWrapper = styled.div`
+  max-width: 40%;
+`;
+
+export const StyledWrapper = styled.div`
+  position: relative;
+  top: 200px;
 `;
 
 export const SectionTwoLeft = styled.div`

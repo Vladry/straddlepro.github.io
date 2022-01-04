@@ -6,6 +6,7 @@ import { AppThunkDispatch } from '../../types/AppState';
 import Logo from 'public/images/home/logo.png';
 import Background from 'public/images/home/1.jpg';
 import { Section } from 'src/styledComponents/Section';
+import Header from 'components/Header';
 
 interface SectionProps {
   image: string;
@@ -19,6 +20,7 @@ const TopSection: React.FC<TopSectionProps> = ({ message }) => {
   const dispatch = useDispatch<AppThunkDispatch>();
   return (
     <StyledSection image={Background}>
+      {/* <Header /> */}
       <div className='logo-container'>
         <a className='menu__ref' href='/home'>
           <img className='logo-img' src={Logo} alt='logo' />

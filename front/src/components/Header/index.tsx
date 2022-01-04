@@ -27,7 +27,7 @@ const Header: React.FC = () => {
     }
   };
   return (
-    <header>
+    <div>
       <menu className='menu  --invisible'>
         <li className='menu__item'>
           <a className='menu__ref' href='/home'>
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
       <div className='menu__burger' onClick={() => toggleMenu()}>
         <img className='menu__burger-image' src={BurgerMenu} alt='burger' />
       </div>
-    </header>
+    </div>
   );
 };
 

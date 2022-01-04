@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 export const SInput = styled.input`
-  padding: 34px 340px;
+  padding: 34px 200px;
+  margin: 60px 0px;
   font-weight: 500;
   font-size: 24px;
+  justify-self: center;
+  display: flex;
   line-height: 29px;
-  margin: 40px;
   color: #DADADA;
   border: 3px solid #8D039E;
   border-radius: 6px;

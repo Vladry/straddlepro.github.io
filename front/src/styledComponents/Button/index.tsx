@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
-export const SButton = styled.div`
+export const SButton = styled.button`
   transform: translateY(-46px);
   padding: 30px 110px;
   border-radius: 50px;
+  margin: 40px;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  max-width: 408px;
+  display: flex;
+  justify-self: center;
   color: #dadada;
   text-align: center;
   background: linear-gradient(270deg, #ec1b59 0%, #72147e 100%);
