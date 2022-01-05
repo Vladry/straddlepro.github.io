@@ -422,25 +422,6 @@ button {
   margin: 0 auto;
   background-color: #19091C; }
 
-.submenu2 {
-  margin-top: 70px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  align-items: center;
-  flex-flow: row nowrap; }
-
-.submenu2__item {
-  border: 1px solid #48025E;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 120px;
-  color: #ec1b59;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center; }
-
 .section2__flex-container {
   display: flex;
   justify-content: center;
@@ -1210,8 +1191,6 @@ button {
       transform: translateY(-760px); } }
 
 @media (min-width: 1225px) and (max-width: 1920px) {
-  .submenu5 {
-    transform: translateX(-60px); }
   .submenu5__item {
     width: 80px;
     font-weight: 400; }
@@ -1257,10 +1236,6 @@ button {
     position: relative;
     top: -240px;
     left: 180px; }
-  .submenu5 {
-    position: relative;
-    top: 550px;
-    left: -280px; }
   .submenu5__item {
     width: 90px; }
   .section5__image1 {
@@ -1311,7 +1286,6 @@ button {
     line-height: 18px;
     padding: 10px;
     position: relative;
-    top: 400px;
     padding-left: 2px;
     padding-right: 2px; }
   .--arrowed {
@@ -1362,8 +1336,8 @@ button {
     left: 1px;
     top: 80px; }
   .submenu5__item {
+    margin-top: 0px;
     position: relative;
-    top: 400px;
     width: 20px;
     width: 90px;
     font-weight: 300;

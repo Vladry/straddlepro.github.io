@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 export const SButton = styled.button`
-  transform: translateY(-46px);
-  padding: 30px 110px;
+  padding: 30px 20px;
   border-radius: 50px;
   margin: 40px;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   display: flex;
-  justify-self: center;
+  width: -webkit-fill-available;
   color: #dadada;
   text-align: center;
+  justify-content: center;
   background: linear-gradient(270deg, #ec1b59 0%, #72147e 100%);
   transition: filter 0.4s;
   :hover {

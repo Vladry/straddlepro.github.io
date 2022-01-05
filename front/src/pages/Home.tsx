@@ -4,10 +4,8 @@ import styled from 'styled-components';
 import { AppThunkDispatch } from '../types/AppState';
 import Grid from '@mui/material/Grid';
 import Logo from 'public/images/home/logo.png';
-import Cirle from 'public/images/home/circle.png';
+import Circle from 'public/images/home/circle.png';
 import Triangle from 'public/images/home/triangle.png';
-import IPhone from 'public/images/home/iPhone2.png';
-import Scroll from 'public/images/home/mob_scroll_screen.jpg';
 import Rhombus from 'public/images/home/rhombus.png';
 import Square from 'public/images/home/square.png';
 import ArrowLeft from 'public/images/home/arrow_left.png';
@@ -17,7 +15,13 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import TopSection from 'components/TopSection';
 import { Section } from 'src/styledComponents/Section';
-import { SectionWrapper, StyledWrapper } from 'src/styledComponents/Wrapper';
+import {
+  PhoneWrapper,
+  SectionWrapper,
+  StyledWrapper,
+  TagElement,
+  TagWrapper
+} from 'src/styledComponents/Wrapper';
 import { SInput } from 'src/styledComponents/Input';
 import { SButton } from 'src/styledComponents/Button';
 import Lobby1 from 'public/images/home/lobby.png';
@@ -50,20 +54,20 @@ const Home: React.FC = () => {
                   <Grid container justifyContent='space-between' alignItems='center'>
                     <Grid item xs={12} md={6}>
                       <h3>Players find best game</h3>
-                      <div className='submenu2'>
-                        <div className='submenu2__item'>CS:GO</div>
-                        <div className='submenu2__item'>POKER</div>
-                        <div className='submenu2__item'>DOTA</div>
-                        <div className='submenu2__item'>FIFA</div>
-                        <div className='submenu2__item'>FORTNITE</div>
-                      </div>
+                      <TagWrapper>
+                        <TagElement>CS:GO</TagElement>
+                        <TagElement>POKER</TagElement>
+                        <TagElement>DOTA</TagElement>
+                        <TagElement>FIFA</TagElement>
+                        <TagElement>FORTNITE</TagElement>
+                      </TagWrapper>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <div style={{ background: `url(${Cirle}) 50% 50% no-repeat` }}>
+                      <PhoneWrapper background={Circle}>
                         <div>
                           <SImg progress={progress} background={Lobby[pageIndex]} />
                         </div>
-                      </div>
+                      </PhoneWrapper>
                     </Grid>
                   </Grid>
                 </SectionWrapper>
@@ -78,19 +82,19 @@ const Home: React.FC = () => {
                 <SectionWrapper>
                   <Grid container justifyContent='space-between' alignItems='center'>
                     <Grid item xs={12} md={6}>
-                      <div style={{ background: `url(${Triangle}) 50% 50% no-repeat` }}>
+                      <PhoneWrapper background={Triangle}>
                         <div>
                           <SImg progress={progress} background={CreateEvent[pageIndex]} />
                         </div>
-                      </div>
+                      </PhoneWrapper>
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <div>
-                        <h3 className='section3__h3'>Organizers create games</h3>
-                        <div className='submenu3'>
-                          <div className='submenu3__item'>ONLINE</div>
-                          <div className='submenu3__item'>OFLINE</div>
-                        </div>
+                        <h3>Organizers create games</h3>
+                        <TagWrapper>
+                          <TagElement>ONLINE</TagElement>
+                          <TagElement>OFLINE</TagElement>
+                        </TagWrapper>
                       </div>
                     </Grid>
                   </Grid>
@@ -108,20 +112,20 @@ const Home: React.FC = () => {
                     <Grid item xs={12} md={6}>
                       <div>
                         <h3>Professional players get funds for their games</h3>
-                        <div className='submenu4'>
-                          <div className='submenu4__item'>0%</div>
-                          <div className='submenu4__item'>CASH-IN</div>
-                          <div className='submenu4__item'>0%</div>
-                          <div className='submenu4__item'>CASH-OUT</div>
-                        </div>
+                        <TagWrapper>
+                          <TagElement>0%</TagElement>
+                          <TagElement>CASH-IN</TagElement>
+                          <TagElement>0%</TagElement>
+                          <TagElement>CASH-OUT</TagElement>
+                        </TagWrapper>
                       </div>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <div style={{ background: `url(${Rhombus}) 50% 50% no-repeat` }}>
+                      <PhoneWrapper background={Rhombus}>
                         <div>
                           <SImg progress={progress} background={Network[pageIndex]} />
                         </div>
-                      </div>
+                      </PhoneWrapper>
                     </Grid>
                   </Grid>
                 </SectionWrapper>
@@ -136,20 +140,21 @@ const Home: React.FC = () => {
                 <SectionWrapper>
                   <Grid container justifyContent='space-between'>
                     <Grid item xs={12} md={6}>
-                      <div style={{ background: `url(${Square}) 50% 50% no-repeat` }}>
+                      <PhoneWrapper background={Square}>
                         <div>
                           <SImg progress={progress} background={Register[pageIndex]} />
                         </div>
-                      </div>
+                      </PhoneWrapper>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <StyledWrapper>
+                      <div>
                         <h3>
-                          <span>Facilitate match</span>
+                          Facilitate match
                           <br />
-                          <span>Manage finance</span>
+                          Manage finance
                           <br />
-                          <span>Ensure trust</span>
+                          Ensure trust
+                          <br />
                         </h3>
                         <div className='submenu5 --flex-row'>
                           <div className='submenu5__item'>
@@ -162,7 +167,7 @@ const Home: React.FC = () => {
                             <span>CASH-OUT</span>
                           </div>
                         </div>
-                      </StyledWrapper>
+                      </div>
                     </Grid>
                   </Grid>
                 </SectionWrapper>
@@ -175,10 +180,14 @@ const Home: React.FC = () => {
             return (
               <Section>
                 <SectionWrapper>
-                  <div>
-                    <h3 className='section6__h3'>Games & Series enable ecosystem</h3>
-                    <img className='section6__image1' src={Section6} alt='scheme' />
-                  </div>
+                  <Grid container justifyContent='center' alignItems='center'>
+                    <Grid item xs={12}>
+                      <h3>Games & Series enable ecosystem</h3>
+                    </Grid>
+                    <Grid item xs={10}>
+                      <StyledImg src={Section6} alt='scheme' />
+                    </Grid>
+                  </Grid>
                 </SectionWrapper>
               </Section>
             );
@@ -209,5 +218,11 @@ const Home: React.FC = () => {
     </>
   );
 };
+
+const StyledImg = styled.img`
+  max-width: 85vw;
+  position: relative;
+  right: 5vw;
+`;
 
 export default Home;

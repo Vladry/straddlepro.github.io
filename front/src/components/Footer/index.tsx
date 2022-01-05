@@ -47,7 +47,7 @@ const StyledFooter = styled.footer`
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
-  height: 274px;
+  height: auto;
   background-color: none;
   flex-flow: row nowrap;
   justify-content: space-around;

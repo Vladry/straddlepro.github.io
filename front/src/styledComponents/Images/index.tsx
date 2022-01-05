@@ -14,7 +14,7 @@ interface ContainerProps {
 export const SImg: React.FC<SImgProps> = ({ progress, background }) => {
   return (
     <StyledContainer offset={progress} background={background}>
-      <img src={IPhone} />
+      <StyledImg src={IPhone} />
     </StyledContainer>
   );
 };
@@ -30,4 +30,14 @@ const StyledContainer = styled.div<ContainerProps>`
   width: 337px;
   border-radius: 45px;
   z-index: 9;
+  @media (max-width: 768px) {
+    width: -webkit-fill-available;
+    min-height: 50vh;
+    max-height: 70vh;
+    left: 0px;
+  }
+`;
+
+const StyledImg = styled.img`
+  max-width: 85vw;
 `;
