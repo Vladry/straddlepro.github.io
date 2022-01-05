@@ -33,6 +33,7 @@ const TopSection: React.FC<TopSectionProps> = ({ message }) => {
 };
 
 const StyledSection = styled(Section)<SectionProps>`
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;

@@ -1684,7 +1684,7 @@ button {
 .team__section3-slider-icons-container {
   justify-content: flex-start;
   gap: 50px;
-  margin-top: 187px; }
+}
 
 .team_section3-slider-icon-item {
   fill: #DADADA; }

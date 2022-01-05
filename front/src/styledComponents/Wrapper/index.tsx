@@ -15,6 +15,16 @@ export const SectionWrapper = styled.div`
     padding-top: 10px;
   }
 `;
+export const SimpleWrapper = styled.div`
+  justify-content: center;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  min-height: 100vh;
+  @media (max-width: 768px) {
+    padding-top: 10px;
+  }
+`;
 
 export const SegmentWrapper = styled.div`
   max-width: 40%;

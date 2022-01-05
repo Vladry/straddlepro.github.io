@@ -15,13 +15,7 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import TopSection from 'components/TopSection';
 import { Section } from 'src/styledComponents/Section';
-import {
-  PhoneWrapper,
-  SectionWrapper,
-  StyledWrapper,
-  TagElement,
-  TagWrapper
-} from 'src/styledComponents/Wrapper';
+import { PhoneWrapper, SectionWrapper, TagElement, TagWrapper } from 'src/styledComponents/Wrapper';
 import { SInput } from 'src/styledComponents/Input';
 import { SButton } from 'src/styledComponents/Button';
 import Lobby1 from 'public/images/home/lobby.png';
@@ -33,7 +27,6 @@ import Create3 from 'public/images/home/create_event_3.png';
 import Create4 from 'public/images/home/create_event_4.png';
 import { Stickyroll } from '@stickyroll/stickyroll';
 import { SImg } from 'src/styledComponents/Images';
-import { url } from 'inspector';
 const CreateEvent = [Create1, Create2, Create3, Create4];
 const Lobby = [Lobby1];
 const Network = [Network1];
