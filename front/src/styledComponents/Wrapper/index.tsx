@@ -52,8 +52,22 @@ export const SectionReverseLeft = styled.div`
   max-width: 40%;
 `;
 
-export const PhoneWrapper = styled.div<WrapperProps>`
-  background: ${(props) => `url(${props.background}) 50% 50% no-repeat`};
+export const PhoneWrapperR = styled.div<WrapperProps>`
+  background: ${(props) => `url(${props.background}) calc(75vw - 533px) 50% no-repeat`};
+  @media (max-width: 768px) {
+    background: none;
+  }
+`;
+
+export const PhoneWrapperL = styled.div<WrapperProps>`
+  background: ${(props) => `url(${props.background}) calc(27vw - 533px) 50% no-repeat`};
+  @media (max-width: 768px) {
+    background: none;
+  }
+`;
+
+export const PhoneWrapperM = styled.div<WrapperProps>`
+  background: ${(props) => `url(${props.background}) calc(50vw - 533px) 50% no-repeat`};
   @media (max-width: 768px) {
     background: none;
   }
