@@ -92,7 +92,7 @@ const Home: React.FC = () => {
                           <h3>Organizers create games</h3>
                           <TagWrapper>
                             <TagElement>ONLINE</TagElement>
-                            <TagElement>OFLINE</TagElement>
+                            <TagElement>OFFLINE</TagElement>
                           </TagWrapper>
                         </div>
                       </Grid>
