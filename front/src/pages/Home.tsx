@@ -5,8 +5,8 @@ import { AppThunkDispatch } from '../types/AppState';
 import Grid from '@mui/material/Grid';
 import Logo from 'public/images/home/logo.png';
 import Circle from 'public/images/home/circle.png';
-import Triangle from 'public/images/home/triangle.png';
-import Rhombus from 'public/images/home/rhombus.png';
+import Triangle from 'public/images/home/triangle_2.png';
+import Rhombus from 'public/images/home/rhombus_2.png';
 import Square from 'public/images/home/square.png';
 import ArrowLeft from 'public/images/home/arrow_left.png';
 import ArrowRight from 'public/images/home/arrow_right.png';
@@ -15,7 +15,14 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 import TopSection from 'components/TopSection';
 import { Section } from 'src/styledComponents/Section';
-import { PhoneWrapper, SectionWrapper, TagElement, TagWrapper } from 'src/styledComponents/Wrapper';
+import {
+  PhoneWrapperR,
+  PhoneWrapperL,
+  SectionWrapper,
+  TagElement,
+  TagWrapper,
+  PhoneWrapperM
+} from 'src/styledComponents/Wrapper';
 import { SInput } from 'src/styledComponents/Input';
 import { SButton } from 'src/styledComponents/Button';
 import Lobby1 from 'public/images/home/lobby.png';
@@ -43,27 +50,27 @@ const Home: React.FC = () => {
           {({ page, pageIndex, pages, progress }) => {
             return (
               <Section>
-                <SectionWrapper>
-                  <Grid container justifyContent='space-between' alignItems='center'>
-                    <Grid item xs={12} md={6}>
-                      <h3>Players find best game</h3>
-                      <TagWrapper>
-                        <TagElement>CS:GO</TagElement>
-                        <TagElement>POKER</TagElement>
-                        <TagElement>DOTA</TagElement>
-                        <TagElement>FIFA</TagElement>
-                        <TagElement>FORTNITE</TagElement>
-                      </TagWrapper>
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                      <PhoneWrapper background={Circle}>
+                <PhoneWrapperR background={Circle}>
+                  <SectionWrapper>
+                    <Grid container justifyContent='space-between' alignItems='center'>
+                      <Grid item xs={12} md={6}>
+                        <h3>Players find best game</h3>
+                        <TagWrapper>
+                          <TagElement>CS:GO</TagElement>
+                          <TagElement>POKER</TagElement>
+                          <TagElement>DOTA</TagElement>
+                          <TagElement>FIFA</TagElement>
+                          <TagElement>FORTNITE</TagElement>
+                        </TagWrapper>
+                      </Grid>
+                      <Grid item xs={12} md={6}>
                         <div>
                           <SImg progress={progress} background={Lobby[pageIndex]} />
                         </div>
-                      </PhoneWrapper>
+                      </Grid>
                     </Grid>
-                  </Grid>
-                </SectionWrapper>
+                  </SectionWrapper>
+                </PhoneWrapperR>
               </Section>
             );
           }}
@@ -72,26 +79,26 @@ const Home: React.FC = () => {
           {({ page, pageIndex, pages, progress }) => {
             return (
               <Section>
-                <SectionWrapper>
-                  <Grid container justifyContent='space-between' alignItems='center'>
-                    <Grid item xs={12} md={6}>
-                      <PhoneWrapper background={Triangle}>
+                <PhoneWrapperL background={Triangle}>
+                  <SectionWrapper>
+                    <Grid container justifyContent='space-between' alignItems='center'>
+                      <Grid item xs={12} md={6}>
                         <div>
                           <SImg progress={progress} background={CreateEvent[pageIndex]} />
                         </div>
-                      </PhoneWrapper>
+                      </Grid>
+                      <Grid item xs={12} md={6}>
+                        <div>
+                          <h3>Organizers create games</h3>
+                          <TagWrapper>
+                            <TagElement>ONLINE</TagElement>
+                            <TagElement>OFLINE</TagElement>
+                          </TagWrapper>
+                        </div>
+                      </Grid>
                     </Grid>
-                    <Grid item xs={12} md={6}>
-                      <div>
-                        <h3>Organizers create games</h3>
-                        <TagWrapper>
-                          <TagElement>ONLINE</TagElement>
-                          <TagElement>OFLINE</TagElement>
-                        </TagWrapper>
-                      </div>
-                    </Grid>
-                  </Grid>
-                </SectionWrapper>
+                  </SectionWrapper>
+                </PhoneWrapperL>
               </Section>
             );
           }}
@@ -100,28 +107,28 @@ const Home: React.FC = () => {
           {({ page, pageIndex, pages, progress }) => {
             return (
               <Section>
-                <SectionWrapper>
-                  <Grid container justifyContent='space-between' alignItems='center'>
-                    <Grid item xs={12} md={6}>
-                      <div>
-                        <h3>Professional players get funds for their games</h3>
-                        <TagWrapper>
-                          <TagElement>0%</TagElement>
-                          <TagElement>CASH-IN</TagElement>
-                          <TagElement>0%</TagElement>
-                          <TagElement>CASH-OUT</TagElement>
-                        </TagWrapper>
-                      </div>
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                      <PhoneWrapper background={Rhombus}>
+                <PhoneWrapperR background={Rhombus}>
+                  <SectionWrapper>
+                    <Grid container justifyContent='space-between' alignItems='center'>
+                      <Grid item xs={12} md={6}>
+                        <div>
+                          <h3>Professional players get funds for their games</h3>
+                          <TagWrapper>
+                            <TagElement>0%</TagElement>
+                            <TagElement>CASH-IN</TagElement>
+                            <TagElement>0%</TagElement>
+                            <TagElement>CASH-OUT</TagElement>
+                          </TagWrapper>
+                        </div>
+                      </Grid>
+                      <Grid item xs={12} md={6}>
                         <div>
                           <SImg progress={progress} background={Network[pageIndex]} />
                         </div>
-                      </PhoneWrapper>
+                      </Grid>
                     </Grid>
-                  </Grid>
-                </SectionWrapper>
+                  </SectionWrapper>
+                </PhoneWrapperR>
               </Section>
             );
           }}
@@ -130,40 +137,44 @@ const Home: React.FC = () => {
           {({ page, pageIndex, pages, progress }) => {
             return (
               <Section>
-                <SectionWrapper>
-                  <Grid container justifyContent='space-between'>
-                    <Grid item xs={12} md={6}>
-                      <PhoneWrapper background={Square}>
+                <PhoneWrapperL background={Square}>
+                  <SectionWrapper>
+                    <Grid container justifyContent='space-between'>
+                      <Grid item xs={12} md={6}>
                         <div>
                           <SImg progress={progress} background={Register[pageIndex]} />
                         </div>
-                      </PhoneWrapper>
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                      <div>
-                        <h3>
-                          Facilitate match
-                          <br />
-                          Manage finance
-                          <br />
-                          Ensure trust
-                          <br />
-                        </h3>
-                        <div className='submenu5 --flex-row'>
-                          <div className='submenu5__item'>
-                            <span>CASH-IN</span>
-                          </div>
-                          <img className='submenu5__item --arrowed' src={ArrowRight} alt='arrow' />
-                          <img className='submenu5__item --arrowed_logo' src={Logo} alt='logo' />
-                          <img className='submenu5__item --arrowed' src={ArrowLeft} alt='arrow' />
-                          <div className='submenu5__item'>
-                            <span>CASH-OUT</span>
+                      </Grid>
+                      <Grid item xs={12} md={6}>
+                        <div>
+                          <h3>
+                            Facilitate match
+                            <br />
+                            Manage finance
+                            <br />
+                            Ensure trust
+                            <br />
+                          </h3>
+                          <div className='submenu5 --flex-row'>
+                            <div className='submenu5__item'>
+                              <span>CASH-IN</span>
+                            </div>
+                            <img
+                              className='submenu5__item --arrowed'
+                              src={ArrowRight}
+                              alt='arrow'
+                            />
+                            <img className='submenu5__item --arrowed_logo' src={Logo} alt='logo' />
+                            <img className='submenu5__item --arrowed' src={ArrowLeft} alt='arrow' />
+                            <div className='submenu5__item'>
+                              <span>CASH-OUT</span>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      </Grid>
                     </Grid>
-                  </Grid>
-                </SectionWrapper>
+                  </SectionWrapper>
+                </PhoneWrapperL>
               </Section>
             );
           }}
