@@ -30,19 +30,19 @@ const Header: React.FC = () => {
     <div>
       <menu className='menu  --invisible'>
         <li className='menu__item'>
-          <a className='menu__ref' href='/home'>
+          <Link className='menu__ref' to='/home'>
             HOME
-          </a>
+          </Link>
         </li>
         <li className='menu__item'>
-          <a className='menu__ref' href='/team'>
+          <Link className='menu__ref' to='/team'>
             TEAM
-          </a>
+          </Link>
         </li>
         <li className='menu__item'>
-          <a className='menu__ref' href='/about'>
+          <Link className='menu__ref' to='/about'>
             ABOUT
-          </a>
+          </Link>
         </li>
       </menu>
 

@@ -1,5 +1,5 @@
 {
-  "name": "CryptoDesk",
+  "name": "straddle.web",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -10,7 +10,8 @@
     "lint": "eslint './src/**/*.{ts,tsx}'",
     "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
     "test": "jest --config ./jest.config.json",
-    "test:watch": "yarn test --watch"
+    "test:watch": "yarn test --watch",
+    "production": "webpack --mode=production --env production --progress && sudo scp -r ./dist/* /var/www/web.straddle.pro/html && sudo systemctl restart nginx"
   },
   "devDependencies": {
     "@emotion/react": "^11.7.1",
