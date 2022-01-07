@@ -44,14 +44,13 @@ export const SImg: React.FC<SImgProps> = ({ progress, background }) => {
 const StyledContainer = styled.div<ContainerProps>`
   position: relative;
   left: calc(50% - 155px);
-  max-height: inherit;
   background: ${(props) => `url(${props.background}) 50% ${props.offset}% no-repeat`};
   justify-content: center;
   display: flex;
-  min-height: 80vh;
+  min-height: 796px;
   width: 337px;
   border-radius: 45px;
-  z-index: 9;
+  max-height: 896px;
   @media (max-width: 768px) {
     width: 33vw;
     min-height: 30vh;
@@ -64,6 +63,7 @@ const StyledContainer = styled.div<ContainerProps>`
 
 const StyledImg = styled.img`
   max-width: 85vw;
+  max-height: 796px;
   @media (max-width: 768px) {
     position: relative;
     width: 34vw;
