@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import IPhone from 'public/images/home/iPhone2.png';
 interface SImgProps {
   progress: number;
@@ -12,8 +12,30 @@ interface ContainerProps {
 }
 
 export const SImg: React.FC<SImgProps> = ({ progress, background }) => {
+  const [offset, setOffset] = useState(-1);
+  const [condition, setCondition] = useState(-1);
+  const fetchData = useCallback(() => {
+    if (offset === 100) {
+      setCondition(condition * -1);
+      return setOffset(99);
+    }
+    if (offset === 0) {
+      setCondition(condition * -1);
+      return setOffset(1);
+    }
+    if (offset === -1) {
+      setOffset(1);
+    } else {
+      setOffset(offset + 1 * condition);
+    }
+  }, [offset, condition, setCondition, setOffset]);
+  useEffect(() => {
+    const interval = setInterval(fetchData, 100);
+    return () => clearInterval(interval);
+  }, [fetchData]);
+
   return (
-    <StyledContainer offset={progress} background={background}>
+    <StyledContainer offset={offset} background={background}>
       <StyledImg src={IPhone} />
     </StyledContainer>
   );
@@ -23,7 +45,7 @@ const StyledContainer = styled.div<ContainerProps>`
   position: relative;
   left: calc(50% - 155px);
   max-height: inherit;
-  background: ${(props) => `url(${props.background}) 50% ${props.offset * 100}% no-repeat`};
+  background: ${(props) => `url(${props.background}) 50% ${props.offset}% no-repeat`};
   justify-content: center;
   display: flex;
   min-height: 80vh;
