@@ -9,22 +9,24 @@ export const SectionWrapper = styled.div`
   display: flex;
   padding: 40px;
   align-items: center;
-  min-height: 100vh;
   max-height: 100vh;
+  min-height: 100vh;
   @media (max-width: 768px) {
     display: none;
+    width: 0px;
   }
 `;
 
 export const MobileWrapper = styled.div`
   justify-content: center;
   display: none;
-  padding: 40px;
+  padding: 0px;
   align-items: center;
-  min-height: 100vh;
-  max-height: 100vh;
   @media (max-width: 768px) {
     display: flex;
+    padding: 40px;
+    min-height: 100vh;
+    max-height: 100vh;
   }
 `;
 
@@ -79,7 +81,7 @@ export const TagWrapper = styled.div`
   align-items: center;
   flex-flow: row nowrap;
   @media (max-width: 768px) {
-    margin-top: 0px;
+    margin-top: 30px;
   }
 `;
 
