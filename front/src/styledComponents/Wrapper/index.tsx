@@ -51,7 +51,7 @@ export const StyledWrapper = styled.div`
 `;
 
 export const PhoneWrapperR = styled.div<WrapperProps>`
-  background: ${(props) => `url(${props.background}) calc(75vw - 533px) 50% no-repeat`};
+  background: ${(props) => `url(${props.background}) calc(74vw - 533px) 50% no-repeat`};
   @media (max-width: 768px) {
     background: ${(props) => `url(${props.background}) 0% 50% no-repeat`};
     background-size: 100vw 100vw;
@@ -74,12 +74,30 @@ export const PhoneWrapperM = styled.div<WrapperProps>`
 `;
 
 export const TagWrapper = styled.div`
-  margin-top: 70px;
-  display: flex;
-  justify-content: center;
+  /* margin-top: 70px; */
+  /* display: flex; */
+  /* justify-content: center; */
   gap: 10px;
-  align-items: center;
-  flex-flow: row nowrap;
+  /* align-items: center; */
+  /* flex-flow: row nowrap; */
+  /* margin: 0px 24px 0px 30px !important; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
   @media (max-width: 768px) {
     margin-top: 30px;
   }

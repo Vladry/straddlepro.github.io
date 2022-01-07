@@ -20,7 +20,6 @@ const TopSection: React.FC<TopSectionProps> = ({ message }) => {
   const dispatch = useDispatch<AppThunkDispatch>();
   return (
     <StyledSection image={Background}>
-      {/* <Header /> */}
       <div className='logo-container'>
         <a className='menu__ref' href='/home'>
           <img className='logo-img' src={Logo} alt='logo' />
@@ -34,10 +33,11 @@ const TopSection: React.FC<TopSectionProps> = ({ message }) => {
 
 const StyledSection = styled(Section)<SectionProps>`
   height: 100vh;
-  background-position: center;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-  margin: 0 auto;
+  margin: 0;
   background-image: ${(props) => `url(${props.image})`};
+  background-size: cover;
 `;
 
 export default TopSection;
