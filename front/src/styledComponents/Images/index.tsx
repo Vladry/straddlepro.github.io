@@ -31,13 +31,21 @@ const StyledContainer = styled.div<ContainerProps>`
   border-radius: 45px;
   z-index: 9;
   @media (max-width: 768px) {
-    width: -webkit-fill-available;
-    min-height: 50vh;
-    max-height: 70vh;
-    left: 0px;
+    width: 33vw;
+    min-height: 30vh;
+    max-height: 30vh;
+    left: calc(50% - 16vw);
+    background-size: 33vw auto;
+    border-radius: 35px;
   }
 `;
 
 const StyledImg = styled.img`
   max-width: 85vw;
+  @media (max-width: 768px) {
+    position: relative;
+    width: 34vw;
+    max-height: 30vh;
+    /* left: calc(50% - 84px); */
+  }
 `;
