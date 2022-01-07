@@ -33,12 +33,12 @@ import Create1 from 'public/images/home/create_event.png';
 import Create2 from 'public/images/home/create_event_2.png';
 import Create3 from 'public/images/home/create_event_3.png';
 import Create4 from 'public/images/home/create_event_4.png';
-import { Stickyroll } from '@stickyroll/stickyroll';
+import { FullPage, Slide } from 'react-full-page';
 import { SImg } from 'src/styledComponents/Images';
-const CreateEvent = [Create1, Create2, Create3, Create4];
-const Lobby = [Lobby1];
-const Network = [Network1];
-const Register = [Register1];
+const CreateEvent = Create1;
+const Lobby = Lobby1;
+const Network = Network1;
+const Register = Register1;
 const Home: React.FC = () => {
   const dispatch = useDispatch<AppThunkDispatch>();
   const className = (progress) => `custom-trigger custom-trigger--${Math.round(progress * 3)}`;
@@ -46,201 +46,160 @@ const Home: React.FC = () => {
     <>
       <Header />
       <div className='overlay'>
-        <TopSection message='Straddle is your trusted gaming assistant' />
-        <Stickyroll pages={Lobby} factor={2} throttle={0} anchors=''>
-          {({ page, pageIndex, pages, progress }) => {
-            return (
-              <Section>
-                <PhoneWrapperR background={Circle}>
-                  <SectionWrapper>
-                    <Grid container justifyContent='space-between' alignItems='center'>
-                      <Grid item xs={12} md={6}>
-                        <h3>Players find best game</h3>
-                        <TagWrapper>
-                          <TagElement>CS:GO</TagElement>
-                          <TagElement>POKER</TagElement>
-                          <TagElement>DOTA</TagElement>
-                          <TagElement>FIFA</TagElement>
-                          <TagElement>FORTNITE</TagElement>
-                        </TagWrapper>
-                      </Grid>
-                      <Grid item xs={12} md={6}>
-                        <div>
-                          <SImg progress={progress} background={Lobby[pageIndex]} />
-                        </div>
-                      </Grid>
+        <FullPage>
+          <Slide>
+            <TopSection message='Straddle is your trusted gaming assistant' />
+          </Slide>
+          <Slide>
+            <Section>
+              <PhoneWrapperR background={Circle}>
+                <SectionWrapper>
+                  <Grid container justifyContent='space-between' alignItems='center'>
+                    <Grid item xs={12} md={6}>
+                      <h3>Players find best game</h3>
+                      <TagWrapper>
+                        <TagElement>CS:GO</TagElement>
+                        <TagElement>POKER</TagElement>
+                        <TagElement>DOTA</TagElement>
+                        <TagElement>FIFA</TagElement>
+                        <TagElement>FORTNITE</TagElement>
+                      </TagWrapper>
                     </Grid>
-                  </SectionWrapper>
-                  <MobileWrapper>
-                    <Grid container justifyContent='space-between' alignItems='center'>
-                      <Grid item xs={12} md={6}>
-                        <h3>Players find best game</h3>
-                      </Grid>
-                      <Grid item xs={12} md={6}>
-                        <div>
-                          <SImg progress={progress} background={Lobby[pageIndex]} />
-                        </div>
-                      </Grid>
-                      <Grid item xs={12} md={6}>
-                        <TagWrapper>
-                          <TagElement>CS:GO</TagElement>
-                          <TagElement>POKER</TagElement>
-                          <TagElement>DOTA</TagElement>
-                          <TagElement>FIFA</TagElement>
-                          <TagElement>FORTNITE</TagElement>
-                        </TagWrapper>
-                      </Grid>
+                    <Grid item xs={12} md={6}>
+                      <div>
+                        <SImg progress={0} background={Lobby} />
+                      </div>
                     </Grid>
-                  </MobileWrapper>
-                </PhoneWrapperR>
-              </Section>
-            );
-          }}
-        </Stickyroll>
-        <Stickyroll pages={CreateEvent} factor={2} throttle={0} anchors=''>
-          {({ page, pageIndex, pages, progress }) => {
-            return (
-              <Section>
-                <PhoneWrapperL background={Triangle}>
-                  <SectionWrapper>
-                    <Grid container justifyContent='space-between' alignItems='center'>
-                      <Grid item xs={12} md={6}>
-                        <div>
-                          <SImg progress={progress} background={CreateEvent[pageIndex]} />
-                        </div>
-                      </Grid>
-                      <Grid item xs={12} md={6}>
-                        <div>
-                          <h3>Organizers create games</h3>
-                          <TagWrapper>
-                            <TagElement>ONLINE</TagElement>
-                            <TagElement>OFFLINE</TagElement>
-                          </TagWrapper>
-                        </div>
-                      </Grid>
+                  </Grid>
+                </SectionWrapper>
+                <MobileWrapper>
+                  <Grid container justifyContent='space-between' alignItems='center'>
+                    <Grid item xs={12} md={6}>
+                      <h3>Players find best game</h3>
                     </Grid>
-                  </SectionWrapper>
-                  <MobileWrapper>
-                    <Grid container justifyContent='space-between' alignItems='center'>
-                      <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={6}>
+                      <div>
+                        <SImg progress={0} background={Lobby} />
+                      </div>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                      <TagWrapper>
+                        <TagElement>CS:GO</TagElement>
+                        <TagElement>POKER</TagElement>
+                        <TagElement>DOTA</TagElement>
+                        <TagElement>FIFA</TagElement>
+                        <TagElement>FORTNITE</TagElement>
+                      </TagWrapper>
+                    </Grid>
+                  </Grid>
+                </MobileWrapper>
+              </PhoneWrapperR>
+            </Section>
+          </Slide>
+          <Slide>
+            <Section>
+              <PhoneWrapperL background={Triangle}>
+                <SectionWrapper>
+                  <Grid container justifyContent='space-between' alignItems='center'>
+                    <Grid item xs={12} md={6}>
+                      <div>
+                        <SImg progress={0} background={CreateEvent} />
+                      </div>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                      <div>
                         <h3>Organizers create games</h3>
-                      </Grid>
-                      <Grid item xs={12} md={6}>
-                        <div>
-                          <SImg progress={progress} background={CreateEvent[pageIndex]} />
-                        </div>
-                      </Grid>
-                      <Grid item xs={12} md={6}>
-                        <div>
-                          <TagWrapper>
-                            <TagElement>ONLINE</TagElement>
-                            <TagElement>OFFLINE</TagElement>
-                          </TagWrapper>
-                        </div>
-                      </Grid>
+                        <TagWrapper>
+                          <TagElement>ONLINE</TagElement>
+                          <TagElement>OFFLINE</TagElement>
+                        </TagWrapper>
+                      </div>
                     </Grid>
-                  </MobileWrapper>
-                </PhoneWrapperL>
-              </Section>
-            );
-          }}
-        </Stickyroll>
-        <Stickyroll pages={Network} factor={2} throttle={0} anchors=''>
-          {({ page, pageIndex, pages, progress }) => {
-            return (
-              <Section>
-                <PhoneWrapperR background={Rhombus}>
-                  <SectionWrapper>
-                    <Grid container justifyContent='space-between' alignItems='center'>
-                      <Grid item xs={12} md={6}>
-                        <div>
-                          <h3>Professional players get funds for their games</h3>
-                          <TagWrapper>
-                            <TagElement>0%</TagElement>
-                            <TagElement>CASH-IN</TagElement>
-                            <TagElement>0%</TagElement>
-                            <TagElement>CASH-OUT</TagElement>
-                          </TagWrapper>
-                        </div>
-                      </Grid>
-                      <Grid item xs={12} md={6}>
-                        <div>
-                          <SImg progress={progress} background={Network[pageIndex]} />
-                        </div>
-                      </Grid>
+                  </Grid>
+                </SectionWrapper>
+                <MobileWrapper>
+                  <Grid container justifyContent='space-between' alignItems='center'>
+                    <Grid item xs={12} md={6}>
+                      <h3>Organizers create games</h3>
                     </Grid>
-                  </SectionWrapper>
-                  <MobileWrapper>
-                    <Grid container justifyContent='space-between' alignItems='center'>
-                      <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={6}>
+                      <div>
+                        <SImg progress={0} background={CreateEvent} />
+                      </div>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                      <div>
+                        <TagWrapper>
+                          <TagElement>ONLINE</TagElement>
+                          <TagElement>OFFLINE</TagElement>
+                        </TagWrapper>
+                      </div>
+                    </Grid>
+                  </Grid>
+                </MobileWrapper>
+              </PhoneWrapperL>
+            </Section>
+          </Slide>
+          <Slide>
+            <Section>
+              <PhoneWrapperR background={Rhombus}>
+                <SectionWrapper>
+                  <Grid container justifyContent='space-between' alignItems='center'>
+                    <Grid item xs={12} md={6}>
+                      <div>
                         <h3>Professional players get funds for their games</h3>
-                      </Grid>
-                      <Grid item xs={12} md={6}>
-                        <div>
-                          <SImg progress={progress} background={Network[pageIndex]} />
-                        </div>
-                      </Grid>
-                      <Grid item xs={12} md={6}>
-                        <div>
-                          <TagWrapper>
-                            <TagElement>0%</TagElement>
-                            <TagElement>CASH-IN</TagElement>
-                            <TagElement>0%</TagElement>
-                            <TagElement>CASH-OUT</TagElement>
-                          </TagWrapper>
-                        </div>
-                      </Grid>
+                        <TagWrapper>
+                          <TagElement>0%</TagElement>
+                          <TagElement>CASH-IN</TagElement>
+                          <TagElement>0%</TagElement>
+                          <TagElement>CASH-OUT</TagElement>
+                        </TagWrapper>
+                      </div>
                     </Grid>
-                  </MobileWrapper>
-                </PhoneWrapperR>
-              </Section>
-            );
-          }}
-        </Stickyroll>
-        <Stickyroll pages={Register} factor={2} throttle={0} anchors=''>
-          {({ page, pageIndex, pages, progress }) => {
-            return (
-              <Section>
-                <PhoneWrapperL background={Square}>
-                  <SectionWrapper>
-                    <Grid container justifyContent='space-between'>
-                      <Grid item xs={12} md={6}>
-                        <div>
-                          <SImg progress={progress} background={Register[pageIndex]} />
-                        </div>
-                      </Grid>
-                      <Grid item xs={12} md={6}>
-                        <div>
-                          <h3>
-                            Facilitate match
-                            <br />
-                            Manage finance
-                            <br />
-                            Ensure trust
-                            <br />
-                          </h3>
-                          <div className='submenu5 --flex-row'>
-                            <div className='submenu5__item'>
-                              <span>CASH-IN</span>
-                            </div>
-                            <img
-                              className='submenu5__item --arrowed'
-                              src={ArrowRight}
-                              alt='arrow'
-                            />
-                            <img className='submenu5__item --arrowed_logo' src={Logo} alt='logo' />
-                            <img className='submenu5__item --arrowed' src={ArrowLeft} alt='arrow' />
-                            <div className='submenu5__item'>
-                              <span>CASH-OUT</span>
-                            </div>
-                          </div>
-                        </div>
-                      </Grid>
+                    <Grid item xs={12} md={6}>
+                      <div>
+                        <SImg progress={0} background={Network} />
+                      </div>
                     </Grid>
-                  </SectionWrapper>
-                  <MobileWrapper>
-                    <Grid container justifyContent='space-between'>
-                      <Grid item xs={12} md={6}>
+                  </Grid>
+                </SectionWrapper>
+                <MobileWrapper>
+                  <Grid container justifyContent='space-between' alignItems='center'>
+                    <Grid item xs={12} md={6}>
+                      <h3>Professional players get funds for their games</h3>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                      <div>
+                        <SImg progress={0} background={Network} />
+                      </div>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                      <div>
+                        <TagWrapper>
+                          <TagElement>0%</TagElement>
+                          <TagElement>CASH-IN</TagElement>
+                          <TagElement>0%</TagElement>
+                          <TagElement>CASH-OUT</TagElement>
+                        </TagWrapper>
+                      </div>
+                    </Grid>
+                  </Grid>
+                </MobileWrapper>
+              </PhoneWrapperR>
+            </Section>
+          </Slide>
+          <Slide>
+            <Section>
+              <PhoneWrapperL background={Square}>
+                <SectionWrapper>
+                  <Grid container justifyContent='space-between'>
+                    <Grid item xs={12} md={6}>
+                      <div>
+                        <SImg progress={0} background={Register} />
+                      </div>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                      <div>
                         <h3>
                           Facilitate match
                           <br />
@@ -249,72 +208,87 @@ const Home: React.FC = () => {
                           Ensure trust
                           <br />
                         </h3>
-                      </Grid>
-                      <Grid item xs={12} md={6}>
-                        <div>
-                          <SImg progress={progress} background={Register[pageIndex]} />
-                        </div>
-                      </Grid>
-                      <Grid item xs={12} md={6}>
-                        <div>
-                          <div className='submenu5 --flex-row'>
-                            <div className='submenu5__item'>
-                              <span>CASH-IN</span>
-                            </div>
-                            <img
-                              className='submenu5__item --arrowed'
-                              src={ArrowRight}
-                              alt='arrow'
-                            />
-                            <img className='submenu5__item --arrowed_logo' src={Logo} alt='logo' />
-                            <img className='submenu5__item --arrowed' src={ArrowLeft} alt='arrow' />
-                            <div className='submenu5__item'>
-                              <span>CASH-OUT</span>
-                            </div>
+                        <div className='submenu5 --flex-row'>
+                          <div className='submenu5__item'>
+                            <span>CASH-IN</span>
+                          </div>
+                          <img className='submenu5__item --arrowed' src={ArrowRight} alt='arrow' />
+                          <img className='submenu5__item --arrowed_logo' src={Logo} alt='logo' />
+                          <img className='submenu5__item --arrowed' src={ArrowLeft} alt='arrow' />
+                          <div className='submenu5__item'>
+                            <span>CASH-OUT</span>
                           </div>
                         </div>
-                      </Grid>
-                    </Grid>
-                  </MobileWrapper>
-                </PhoneWrapperL>
-              </Section>
-            );
-          }}
-        </Stickyroll>
-        <Stickyroll pages={['']} factor={1} throttle={0} anchors=''>
-          {({ page, pageIndex, pages, progress }) => {
-            return (
-              <Section>
-                <SectionWrapper>
-                  <Grid container justifyContent='center' alignItems='center'>
-                    <Grid item xs={12}>
-                      <h3>Games & Series enable ecosystem</h3>
-                    </Grid>
-                    <Grid item xs={10}>
-                      <StyledImg src={Section6} alt='scheme' />
+                      </div>
                     </Grid>
                   </Grid>
                 </SectionWrapper>
                 <MobileWrapper>
-                  <Grid container justifyContent='center' alignItems='center'>
-                    <Grid item xs={12}>
-                      <h3>Games & Series enable ecosystem</h3>
+                  <Grid container justifyContent='space-between'>
+                    <Grid item xs={12} md={6}>
+                      <h3>
+                        Facilitate match
+                        <br />
+                        Manage finance
+                        <br />
+                        Ensure trust
+                        <br />
+                      </h3>
                     </Grid>
-                    <Grid item xs={10}>
-                      <StyledImg src={Section6} alt='scheme' />
+                    <Grid item xs={12} md={6}>
+                      <div>
+                        <SImg progress={0} background={Register} />
+                      </div>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                      <div>
+                        <div className='submenu5 --flex-row'>
+                          <div className='submenu5__item'>
+                            <span>CASH-IN</span>
+                          </div>
+                          <img className='submenu5__item --arrowed' src={ArrowRight} alt='arrow' />
+                          <img className='submenu5__item --arrowed_logo' src={Logo} alt='logo' />
+                          <img className='submenu5__item --arrowed' src={ArrowLeft} alt='arrow' />
+                          <div className='submenu5__item'>
+                            <span>CASH-OUT</span>
+                          </div>
+                        </div>
+                      </div>
                     </Grid>
                   </Grid>
                 </MobileWrapper>
-              </Section>
-            );
-          }}
-        </Stickyroll>
-        <Stickyroll pages={['']} factor={1} throttle={0} anchors=''>
-          {({ page, pageIndex, pages, progress }) => {
-            return (
-              <Section>
-                <SectionWrapper>
-                  <div>
+              </PhoneWrapperL>
+            </Section>
+          </Slide>
+          <Slide>
+            <Section>
+              <SectionWrapper>
+                <Grid container justifyContent='center' alignItems='center'>
+                  <Grid item xs={12}>
+                    <h3>Games & Series enable ecosystem</h3>
+                  </Grid>
+                  <Grid item xs={10}>
+                    <StyledImg src={Section6} alt='scheme' />
+                  </Grid>
+                </Grid>
+              </SectionWrapper>
+              <MobileWrapper>
+                <Grid container justifyContent='center' alignItems='center'>
+                  <Grid item xs={12}>
+                    <h3>Games & Series enable ecosystem</h3>
+                  </Grid>
+                  <Grid item xs={10}>
+                    <StyledImg src={Section6} alt='scheme' />
+                  </Grid>
+                </Grid>
+              </MobileWrapper>
+            </Section>
+          </Slide>
+          <Slide>
+            <Section>
+              <SectionWrapper>
+                <Grid container justifyContent='center' alignItems='center'>
+                  <Grid item xs={12}>
                     <h3 className='section7__h3'>Join the beta</h3>
                     <SInput
                       id='email-input'
@@ -323,11 +297,15 @@ const Home: React.FC = () => {
                       placeholder='Your e-mail'
                     />
                     <SButton>REQUEST</SButton>
-                  </div>
-                  <Footer />
-                </SectionWrapper>
-                <MobileWrapper>
-                  <div>
+                  </Grid>
+                  <Grid item xs={12}>
+                    <Footer />
+                  </Grid>
+                </Grid>
+              </SectionWrapper>
+              <MobileWrapper>
+                <Grid container justifyContent='center' alignItems='center'>
+                  <Grid item xs={12}>
                     <h3 className='section7__h3'>Join the beta</h3>
                     <SInput
                       id='email-input'
@@ -336,13 +314,15 @@ const Home: React.FC = () => {
                       placeholder='Your e-mail'
                     />
                     <SButton>REQUEST</SButton>
-                  </div>
-                  <Footer />
-                </MobileWrapper>
-              </Section>
-            );
-          }}
-        </Stickyroll>
+                  </Grid>
+                  <Grid item xs={12}>
+                    <Footer />
+                  </Grid>
+                </Grid>
+              </MobileWrapper>
+            </Section>
+          </Slide>
+        </FullPage>
       </div>
     </>
   );
