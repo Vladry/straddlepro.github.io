@@ -12,9 +12,22 @@ export const SectionWrapper = styled.div`
   min-height: 100vh;
   max-height: 100vh;
   @media (max-width: 768px) {
-    padding-top: 10px;
+    display: none;
   }
 `;
+
+export const MobileWrapper = styled.div`
+  justify-content: center;
+  display: none;
+  padding: 40px;
+  align-items: center;
+  min-height: 100vh;
+  max-height: 100vh;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`;
+
 export const SimpleWrapper = styled.div`
   justify-content: center;
   display: flex;
@@ -35,34 +48,19 @@ export const StyledWrapper = styled.div`
   top: 200px;
 `;
 
-export const SectionTwoLeft = styled.div`
-  position: relative;
-  max-width: 40%;
-  top: -310px;
-  left: -140px;
-`;
-
-export const SectionTwoRight = styled.div`
-  position: relative;
-  max-width: 40%;
-`;
-
-export const SectionReverseLeft = styled.div`
-  position: relative;
-  max-width: 40%;
-`;
-
 export const PhoneWrapperR = styled.div<WrapperProps>`
   background: ${(props) => `url(${props.background}) calc(75vw - 533px) 50% no-repeat`};
   @media (max-width: 768px) {
-    background: none;
+    background: ${(props) => `url(${props.background}) 0% 50% no-repeat`};
+    background-size: 100vw 100vw;
   }
 `;
 
 export const PhoneWrapperL = styled.div<WrapperProps>`
   background: ${(props) => `url(${props.background}) calc(27vw - 533px) 50% no-repeat`};
   @media (max-width: 768px) {
-    background: none;
+    background: ${(props) => `url(${props.background}) 0% 50% no-repeat`};
+    background-size: 100vw 100vw;
   }
 `;
 
@@ -71,12 +69,6 @@ export const PhoneWrapperM = styled.div<WrapperProps>`
   @media (max-width: 768px) {
     background: none;
   }
-`;
-
-export const SectionReverseRight = styled.div`
-  position: relative;
-  max-width: 40%;
-  left: -140px;
 `;
 
 export const TagWrapper = styled.div`
