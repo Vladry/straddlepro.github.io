@@ -25,19 +25,21 @@ const About: React.FC = () => {
           <Slide>
             <Section>
               <SectionWrapper>
-                <Grid container justifyContent='space-evenly'>
+                <Grid container justifyContent='space-evenly' alignItems='center'>
                   <Grid item xs={12} md={5}>
                     <StyledImg src={Two} alt='figure1' />
                   </Grid>
                   <Grid item xs={12} md={6}>
                     <div>
-                      <h3 className='about__section2-h3'>
-                        Merging game &
-                        <br />
-                        tech to control
-                        <br />
-                        finance
-                      </h3>
+                      <StyledCenter>
+                        <h3 className='about__section2-h3'>
+                          Merging game &
+                          <br />
+                          tech to control
+                          <br />
+                          finance
+                        </h3>
+                      </StyledCenter>
                       <p className='about__section2-text'>
                         Fish text is used by designers, planners and front-end
                         <br />
@@ -79,14 +81,16 @@ const About: React.FC = () => {
           <Slide>
             <Section>
               <SectionWrapper>
-                <Grid container justifyContent='space-evenly'>
+                <Grid container justifyContent='space-evenly' alignItems='center'>
                   <Grid item xs={12} md={6}>
                     <div>
-                      <h3 className='about__section3-h3'>
-                        <span>Imminent ledger</span>
-                        <br />
-                        for trust
-                      </h3>
+                      <StyledCenter>
+                        <h3 className='about__section3-h3'>
+                          <span>Imminent ledger</span>
+                          <br />
+                          for trust
+                        </h3>
+                      </StyledCenter>
                       <p className='about__section3-text'>
                         Fish text is used by designers, planners and front-end
                         <br />
@@ -131,7 +135,9 @@ const About: React.FC = () => {
               <SectionWrapper>
                 <Grid container justifyContent='center' alignItems='center'>
                   <Grid item xs={12}>
-                    <h3>Download</h3>
+                    <StyledCenter>
+                      <h3>Download</h3>
+                    </StyledCenter>
                     <div className='about__section4-container --flex-column'>
                       <AboutButton className='about__submit-btn1' type='submit'>
                         WHITE PAPER
@@ -150,7 +156,9 @@ const About: React.FC = () => {
               <MobileWrapper>
                 <Grid container justifyContent='center' alignItems='center'>
                   <Grid item xs={12}>
-                    <h3 className='section4__h3'>Download</h3>
+                    <StyledCenter>
+                      <h3 className='section4__h3'>Download</h3>
+                    </StyledCenter>
                   </Grid>
                   <Grid item xs={12}>
                     <div className='about__section4-container --flex-column'>
@@ -175,6 +183,11 @@ const About: React.FC = () => {
     </>
   );
 };
+
+const StyledCenter = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
 const StyledImg = styled.img`
   width: -webkit-fill-available;

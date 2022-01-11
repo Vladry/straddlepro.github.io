@@ -7,12 +7,12 @@ interface WrapperProps {
 export const SectionWrapper = styled.div`
   justify-content: center;
   display: flex;
-  align-items: center;
   max-height: 100vh;
   min-height: 100vh;
   @media (max-width: 768px) {
     display: none;
     width: 0px;
+    padding: 8px;
   }
 `;
 

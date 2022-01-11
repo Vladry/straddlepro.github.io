@@ -81,7 +81,7 @@ const Team: React.FC = () => {
         <TopSection message='Our team is addicted to trust' />
         <Section>
           <SectionWrapper>
-            <Grid container justifyContent='space-between' alignItems='center'>
+            <Grid container justifyContent='space-evenly' alignItems='center'>
               <Grid item xs={12} md={6}>
                 <div>
                   <h3 className='team__section2-h3'>
@@ -98,13 +98,13 @@ const Team: React.FC = () => {
                   </p>
                 </div>
               </Grid>
-              <Grid item xs={12} md={6}>
+              <Grid item xs={12} md={5}>
                 <StyledImg src={Money} alt='figure1' />
               </Grid>
             </Grid>
           </SectionWrapper>
           <MobileWrapper>
-            <Grid container justifyContent='space-between' alignItems='center'>
+            <Grid container justifyContent='space-evenly' alignItems='center'>
               <Grid item xs={12} md={6}>
                 <div>
                   <h3 className='team__section2-h3'>
