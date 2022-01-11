@@ -7,7 +7,6 @@ interface WrapperProps {
 export const SectionWrapper = styled.div`
   justify-content: center;
   display: flex;
-  padding: 40px;
   align-items: center;
   max-height: 100vh;
   min-height: 100vh;
@@ -21,12 +20,11 @@ export const MobileWrapper = styled.div`
   justify-content: center;
   display: none;
   padding: 0px;
-  align-items: center;
   @media (max-width: 768px) {
     display: flex;
-    padding: 40px;
+    padding: 8px;
     min-height: 100vh;
-    max-height: 100vh;
+    /* max-height: 100vh; */
   }
 `;
 
@@ -38,6 +36,7 @@ export const SimpleWrapper = styled.div`
   min-height: 100vh;
   @media (max-width: 768px) {
     padding-top: 10px;
+    display: none;
   }
 `;
 

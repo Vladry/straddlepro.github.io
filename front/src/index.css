@@ -15,6 +15,7 @@ body {
   line-height: 1;
   padding: 0px;
   margin: 0px;
+  background-color: black;
 }
 html {
   padding: 0px;
@@ -1570,25 +1571,15 @@ button {
 
 .about__section4-container {
   gap: 40px;
-  transform: translate(8px, -20px); }
+  padding-bottom: 50px;
+}
 
 .about__section4-text {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px; }
 
-.about__btn {
-  padding: 40px 140px;
-  border-radius: 46px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  color: #DADADA;
-  transition: filter 0.4s; }
-  .about__btn:hover {
-    cursor: pointer;
-    filter: brightness(150%);
-    transition: filter 0.6s; }
+
 
 .about__submit-btn1 {
   background: linear-gradient(270deg, #EC1B59 0%, #72147E 100%); }

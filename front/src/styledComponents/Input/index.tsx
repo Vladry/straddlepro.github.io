@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const SInput = styled.input`
   padding: 34px 20px;
-  width: -webkit-fill-available;
+  width: 60vw;
   margin: 60px 0px;
   font-weight: 500;
   font-size: 24px;
-  justify-self: center;
-  display: flex;
+  /* justify-self: center; */
+  /* display: flex; */
   line-height: 29px;
   color: #DADADA;
   border: 3px solid #8D039E;
