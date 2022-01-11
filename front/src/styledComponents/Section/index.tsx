@@ -6,4 +6,7 @@ export const Section = styled.div`
   font-family: 'Monserrat', serif;
   min-height: 100vh;
   max-height: 100vh;
+  @media (max-width: 768px) {
+    max-height: fit-content;
+  }
 `;

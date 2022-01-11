@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React, { useCallback, useEffect, useState } from 'react';
 import IPhone from 'public/images/home/iPhone2.png';
 interface SImgProps {
-  progress: number;
+  delta: number;
   background: string;
 }
 
@@ -11,7 +11,7 @@ interface ContainerProps {
   background: string;
 }
 
-export const SImg: React.FC<SImgProps> = ({ progress, background }) => {
+export const SImg: React.FC<SImgProps> = ({ delta, background }) => {
   const [offset, setOffset] = useState(-1);
   const [condition, setCondition] = useState(-1);
   const fetchData = useCallback(() => {
@@ -26,7 +26,7 @@ export const SImg: React.FC<SImgProps> = ({ progress, background }) => {
     if (offset === -1) {
       setOffset(1);
     } else {
-      setOffset(offset + 1 * condition);
+      setOffset(offset + 0.5 * condition);
     }
   }, [offset, condition, setCondition, setOffset]);
   useEffect(() => {
@@ -53,8 +53,8 @@ const StyledContainer = styled.div<ContainerProps>`
   max-height: 896px;
   @media (max-width: 768px) {
     width: 33vw;
-    min-height: 30vh;
-    max-height: 30vh;
+    min-height: 35vh;
+    max-height: 35vh;
     left: calc(50% - 16vw);
     background-size: 33vw auto;
     border-radius: 35px;
@@ -67,7 +67,7 @@ const StyledImg = styled.img`
   @media (max-width: 768px) {
     position: relative;
     width: 34vw;
-    max-height: 30vh;
+    max-height: 35vh;
     /* left: calc(50% - 84px); */
   }
 `;

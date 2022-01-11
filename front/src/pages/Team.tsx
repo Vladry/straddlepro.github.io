@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import { AppThunkDispatch } from '../types/AppState';
 import Carousel from 'react-elastic-carousel';
-import { FullPage, Slide } from 'react-full-page';
 import Grid from '@mui/material/Grid';
 import Money from 'public/images/team/icon_money.png';
 import Member_1 from 'public/images/team/t1.png';
@@ -16,9 +15,8 @@ import Footer from 'components/Footer';
 import TopSection from 'components/TopSection';
 import { SInput } from 'src/styledComponents/Input';
 import { SButton } from 'src/styledComponents/Button';
-import { SectionWrapper, SimpleWrapper } from 'src/styledComponents/Wrapper';
+import { MobileWrapper, SectionWrapper, SimpleWrapper } from 'src/styledComponents/Wrapper';
 import { Section } from 'src/styledComponents/Section';
-import { Stickyroll } from '@stickyroll/stickyroll';
 import Instagram from './icons/instagram.svg';
 import LinkedIn from './icons/linkedin.svg';
 import Telegram from './icons/telegram.svg';
@@ -44,205 +42,268 @@ const Team: React.FC = () => {
       lastName: 'Favorov',
       photo: Member_2,
       description: 'Hands-on and delivery oriented tech expert',
-      socialMedia: ['instagram', 'linkedin', 'telegram']
+      socialMedia: ['instagram', 'whatsup', 'skype']
     },
     {
       firstName: 'Sergei',
       lastName: 'Boichun',
       photo: Member_3,
       description: 'IT-Developer and strategist',
-      socialMedia: ['instagram', 'linkedin', 'telegram']
+      socialMedia: ['instagram', 'facebook', 'viber']
     },
     {
       firstName: 'Natasha',
       lastName: 'Pirak',
       photo: Member_4,
       description: ' Marketer, reputation management specialist',
-      socialMedia: ['instagram', 'linkedin', 'telegram']
+      socialMedia: ['instagram', 'facebook', 'youtube']
     },
     {
       firstName: 'Vadim',
       lastName: 'Sushalskiy',
       photo: Member_5,
       description: 'Project manager, Scrum Master',
-      socialMedia: ['instagram', 'linkedin', 'telegram']
+      socialMedia: ['instagram', 'telegram', 'slack']
     }
   ];
+  const breakPoints = [
+    { width: 800, itemsToShow: 2, itemsToScroll: 1 },
+    { width: 1000, itemsToShow: 3, itemsToScroll: 1 },
+    { width: 1200, itemsToShow: 4, itemsToScroll: 1 },
+    { width: 1500, itemsToShow: 5, itemsToScroll: 1 },
+    { width: 1800, itemsToShow: 6, itemsToScroll: 1 }
+  ];
+
   return (
     <>
       <Header />
       <div className='overlay'>
-        <FullPage>
-          <Slide>
-            <TopSection message='Our team is addicted to trust' />
-          </Slide>
-          <Slide>
-            <Section>
-              <SectionWrapper>
-                <Grid container justifyContent='space-between' alignItems='center'>
-                  <Grid item xs={12} md={6}>
-                    <div>
-                      <h3 className='team__section2-h3'>
-                        We build your skills
-                        <br />
-                        to get finance!
-                      </h3>
-                      <p className='team__section2-text'>
-                        Fish text is used by designers, planners and front-end
-                        <br />
-                        developers when they need to quickly fill mock-ups
-                        <br />
-                        or prototypes with content.
-                      </p>
-                    </div>
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <StyledImg src={Money} alt='figure1' />
-                  </Grid>
-                </Grid>
-              </SectionWrapper>
-            </Section>
-          </Slide>
-          <Slide>
-          <Section>
-            <SimpleWrapper>
-              <Grid container justifyContent='center' alignItems='center'>
-                <Grid item xs={12}>
-                  <h3>Our team</h3>
-                </Grid>
-                <Grid item xs={12}>
-                  
-                    <Carousel itemsToShow={5}>
-                      {/* <div className='team__section3-slider-container --flex-row'> */}
-                        {members.map((el, index) => (
-                          <div key={index} className='team__section3-slider-item'>
-                            <img className='team__section3-image' src={el.photo} alt='avatar' />
-                            <div className='team__section3-text-container'>
-                              <h4 className='team__section3-h4'>
-                                {el.firstName}
-                                <br />
-                                {el.lastName}
-                              </h4>
-                              <p className='team__section3-text'>{el.description}</p>
-                              <div className='team__section3-slider-icons-container  --flex-row --drop'>
-                                <Instagram className='team_section3-slider-icon-item' />
-                                <LinkedIn className='team_section3-slider-icon-item' />
-                                <Telegram className='team_section3-slider-icon-item' />
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      {/* </div> */}
-                    </Carousel>
-                    {/* <div className='team__section3-slider-item'>
-                      <img className='team__section3-image' src={Member_2} alt='avatar' />
-                      <div className='team__section3-text-container'>
-                        <h4 className='team__section3-h4'>
-                          Pavel
-                          <br />
-                          Favorov
-                        </h4>
-                        <p className='team__section3-text'>
-                          Hands-on and delivery
-                          <br />
-                          oriented tech expert
-                        </p>
-                        <div className='team__section3-slider-icons-container  --flex-row'>
-                          <Instagram className='team_section3-slider-icon-item' />
-                          <WhatsUp className='team_section3-slider-icon-item' />
-                          <Skype className='team_section3-slider-icon-item' />
-                        </div>
-                      </div>
-                    </div> */}
-                    {/* <div className='team__section3-slider-item'>
-                      <img className='team__section3-image' src={Member_3} alt='avatar' />
-                      <div className='team__section3-text-container'>
-                        <h4 className='team__section3-h4'>
-                          Sergei
-                          <br />
-                          Boichun
-                        </h4>
-                        <p className='team__section3-text'>IT-Developer and strategist</p>
-                        <div className='team__section3-slider-icons-container  --flex-row --drop'>
-                          <Instagram className='team_section3-slider-icon-item' />
-                          <FaceBook className='team_section3-slider-icon-item' />
-                          <Viber className='team_section3-slider-icon-item' />
-                        </div>
-                      </div>
-                    </div> */}
-                    {/* <div className='team__section3-slider-item'>
-                      <img className='team__section3-image' src={Member_4} alt='avatar' />
-                      <div className='team__section3-text-container'>
-                        <h4 className='team__section3-h4'>
-                          Natasha
-                          <br />
-                          Pirak
-                        </h4>
-                        <p className='team__section3-text'>
-                          Marketer, reputation
-                          <br />
-                          management specialist
-                        </p>
-                        <div className='team__section3-slider-icons-container  --flex-row'>
-                          <Instagram className='team_section3-slider-icon-item' />
-                          <FaceBook className='team_section3-slider-icon-item' />
-                          <YouTube className='team_section3-slider-icon-item' />
-                        </div>
-                      </div>
-                    </div> */}
-
-                    {/* <div className='team__section3-slider-item'>
-                      <img className='team__section3-image' src={Member_5} alt='avatar' />
-                      <div className='team__section3-text-container'>
-                        <h4 className='team__section3-h4'>
-                          Vadim
-                          <br />
-                          Sushalskiy
-                        </h4>
-                        <p className='team__section3-text'>
-                          Project manager, Scrum
-                          <br />
-                          Master
-                        </p>
-                        <div className='team__section3-slider-icons-container  --flex-row'>
-                          <Instagram className='team_section3-slider-icon-item' />
-                          <Telegram className='team_section3-slider-icon-item' />
-                          <Slack className='team_section3-slider-icon-item' />
-                        </div>
-                      </div>
-                    </div> */}
-                  {/* </div> */}
-                </Grid>
+        <TopSection message='Our team is addicted to trust' />
+        <Section>
+          <SectionWrapper>
+            <Grid container justifyContent='space-between' alignItems='center'>
+              <Grid item xs={12} md={6}>
+                <div>
+                  <h3 className='team__section2-h3'>
+                    We build your skills
+                    <br />
+                    to get finance!
+                  </h3>
+                  <p className='team__section2-text'>
+                    Fish text is used by designers, planners and front-end
+                    <br />
+                    developers when they need to quickly fill mock-ups
+                    <br />
+                    or prototypes with content.
+                  </p>
+                </div>
               </Grid>
-            </SimpleWrapper>
-          </Section>
-        </Slide>
-        <Slide>
-          <Section>
-            <SectionWrapper>
-              <Grid container justifyContent='center' alignItems='center'>
-                <Grid item xs={12}>
+              <Grid item xs={12} md={6}>
+                <StyledImg src={Money} alt='figure1' />
+              </Grid>
+            </Grid>
+          </SectionWrapper>
+          <MobileWrapper>
+            <Grid container justifyContent='space-between' alignItems='center'>
+              <Grid item xs={12} md={6}>
+                <div>
+                  <h3 className='team__section2-h3'>
+                    We build your skills
+                    <br />
+                    to get finance!
+                  </h3>
+                  <p className='team__section2-text'>
+                    Fish text is used by designers, planners and front-end
+                    <br />
+                    developers when they need to quickly fill mock-ups
+                    <br />
+                    or prototypes with content.
+                  </p>
+                </div>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <StyledImg src={Money} alt='figure1' />
+              </Grid>
+            </Grid>
+          </MobileWrapper>
+        </Section>
+        <Section>
+          <MobileWrapper>
+            <Grid container justifyContent='center' alignItems='center'>
+              <Grid item xs={12}>
+                <h3>Our team</h3>
+              </Grid>
+              <Grid item xs={12}>
+                <div className='team__section3-slider-container --flex-row'>
+                  {members.map((el, index) => (
+                    <div
+                      key={index}
+                      className='team__section3-slider-item'
+                      style={{ paddingBottom: '30px' }}
+                    >
+                      <img className='team__section3-image' src={el.photo} alt='avatar' />
+                      <div className='team__section3-text-container'>
+                        <h4 className='team__section3-h4'>
+                          {el.firstName}
+                          <br />
+                          {el.lastName}
+                        </h4>
+                        <p className='team__section3-text'>{el.description}</p>
+                        <div className='team__section3-slider-icons-container  --flex-row'>
+                          {el.socialMedia.map((social, index) => {
+                            switch (social) {
+                              case 'instagram':
+                                return <Instagram className='team_section3-slider-icon-item' />;
+                              case 'linkedin':
+                                return <LinkedIn className='team_section3-slider-icon-item' />;
+                              case 'telegram':
+                                return <Telegram className='team_section3-slider-icon-item' />;
+                              case 'whatsup':
+                                return <WhatsUp className='team_section3-slider-icon-item' />;
+                              case 'skype':
+                                return <Skype className='team_section3-slider-icon-item' />;
+                              case 'facebook':
+                                return <FaceBook className='team_section3-slider-icon-item' />;
+                              case 'viber':
+                                return <Viber className='team_section3-slider-icon-item' />;
+                              case 'youtube':
+                                return <YouTube className='team_section3-slider-icon-item' />;
+                              case 'slack':
+                                return <YouTube className='team_section3-slider-icon-item' />;
+                            }
+                          })}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </Grid>
+            </Grid>
+          </MobileWrapper>
+          <SimpleWrapper>
+            <Grid container justifyContent='center' alignItems='center'>
+              <Grid item xs={12}>
+                <h3>Our team</h3>
+              </Grid>
+              <Grid item xs={12}>
+                <Carousel
+                  isRTL={false}
+                  pagination={false}
+                  breakPoints={breakPoints}
+                  disableArrowsOnEnd={false}
+                  itemPadding={[0, 0, 40, 0]}
+                >
+                  {members.map((el, index) => (
+                    <div
+                      key={index}
+                      className='team__section3-slider-item'
+                      style={{ paddingBottom: '30px' }}
+                    >
+                      <img className='team__section3-image' src={el.photo} alt='avatar' />
+                      <div className='team__section3-text-container'>
+                        <h4 className='team__section3-h4'>
+                          {el.firstName}
+                          <br />
+                          {el.lastName}
+                        </h4>
+                        <p className='team__section3-text'>{el.description}</p>
+                        <div className='team__section3-slider-icons-container  --flex-row'>
+                          {el.socialMedia.map((social, index) => {
+                            switch (social) {
+                              case 'instagram':
+                                return <Instagram className='team_section3-slider-icon-item' />;
+                              case 'linkedin':
+                                return <LinkedIn className='team_section3-slider-icon-item' />;
+                              case 'telegram':
+                                return <Telegram className='team_section3-slider-icon-item' />;
+                              case 'whatsup':
+                                return <WhatsUp className='team_section3-slider-icon-item' />;
+                              case 'skype':
+                                return <Skype className='team_section3-slider-icon-item' />;
+                              case 'facebook':
+                                return <FaceBook className='team_section3-slider-icon-item' />;
+                              case 'viber':
+                                return <Viber className='team_section3-slider-icon-item' />;
+                              case 'youtube':
+                                return <YouTube className='team_section3-slider-icon-item' />;
+                              case 'slack':
+                                return <YouTube className='team_section3-slider-icon-item' />;
+                            }
+                          })}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </Carousel>
+              </Grid>
+            </Grid>
+          </SimpleWrapper>
+        </Section>
+        <Section>
+          <SectionWrapper>
+            <Grid container justifyContent='center' alignItems='center'>
+              <Grid item xs={12}>
+                <StyledCenter>
                   <h3 className='section7__h3'>Ask us anythings!</h3>
+                </StyledCenter>
+              </Grid>
+              <Grid item xs={12}>
+                <StyledCenter>
                   <SInput
                     id='email-input'
                     name='email-input'
                     type='email'
                     placeholder='Your question'
                   />
-                  <SButton>Send</SButton>
-                </Grid>
-                <Grid item xs={12}>
-                  <Footer />
-                </Grid>
+                </StyledCenter>
               </Grid>
-            </SectionWrapper>
-          </Section>
-        </Slide>
-        </FullPage>
+              <Grid item xs={12}>
+                <StyledCenter>
+                  <SButton>Send</SButton>
+                </StyledCenter>
+              </Grid>
+              <Grid item xs={12}>
+                <Footer />
+              </Grid>
+            </Grid>
+          </SectionWrapper>
+          <MobileWrapper>
+            <Grid container justifyContent='center' alignItems='center'>
+              <Grid item xs={12}>
+                <StyledCenter>
+                  <h3 className='section7__h3'>Ask us anythings!</h3>
+                </StyledCenter>
+              </Grid>
+              <Grid item xs={12}>
+                <StyledCenter>
+                  <SInput
+                    id='email-input'
+                    name='email-input'
+                    type='email'
+                    placeholder='Your question'
+                  />
+                </StyledCenter>
+              </Grid>
+              <Grid item xs={12}>
+                <StyledCenter>
+                  <SButton>Send</SButton>
+                </StyledCenter>
+              </Grid>
+              <Grid item xs={12}>
+                <Footer />
+              </Grid>
+            </Grid>
+          </MobileWrapper>
+        </Section>
       </div>
     </>
   );
 };
+
+const StyledCenter = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
 const StyledImg = styled.img`
   width: -webkit-fill-available;

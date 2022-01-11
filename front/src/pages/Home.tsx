@@ -30,9 +30,6 @@ import Lobby1 from 'public/images/home/lobby.png';
 import Network1 from 'public/images/home/network.png';
 import Register1 from 'public/images/home/register.png';
 import Create1 from 'public/images/home/create_event.png';
-import Create2 from 'public/images/home/create_event_2.png';
-import Create3 from 'public/images/home/create_event_3.png';
-import Create4 from 'public/images/home/create_event_4.png';
 import { FullPage, Slide } from 'react-full-page';
 import { SImg } from 'src/styledComponents/Images';
 const CreateEvent = Create1;
@@ -41,7 +38,6 @@ const Network = Network1;
 const Register = Register1;
 const Home: React.FC = () => {
   const dispatch = useDispatch<AppThunkDispatch>();
-  const className = (progress) => `custom-trigger custom-trigger--${Math.round(progress * 3)}`;
   return (
     <>
       <Header />
@@ -67,7 +63,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <div>
-                        <SImg progress={0} background={Lobby} />
+                        <SImg delta={0.5} background={Lobby} />
                       </div>
                     </Grid>
                   </Grid>
@@ -79,7 +75,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <div>
-                        <SImg progress={0} background={Lobby} />
+                        <SImg delta={0.5} background={Lobby} />
                       </div>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -103,7 +99,7 @@ const Home: React.FC = () => {
                   <Grid container justifyContent='space-between' alignItems='center'>
                     <Grid item xs={12} md={6}>
                       <div>
-                        <SImg progress={0} background={CreateEvent} />
+                        <SImg delta={0.2} background={CreateEvent} />
                       </div>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -124,7 +120,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <div>
-                        <SImg progress={0} background={CreateEvent} />
+                        <SImg delta={0} background={CreateEvent} />
                       </div>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -158,7 +154,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <div>
-                        <SImg progress={0} background={Network} />
+                        <SImg delta={0} background={Network} />
                       </div>
                     </Grid>
                   </Grid>
@@ -170,7 +166,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <div>
-                        <SImg progress={0} background={Network} />
+                        <SImg delta={0} background={Network} />
                       </div>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -195,7 +191,7 @@ const Home: React.FC = () => {
                   <Grid container justifyContent='space-between'>
                     <Grid item xs={12} md={6}>
                       <div>
-                        <SImg progress={0} background={Register} />
+                        <SImg delta={0} background={Register} />
                       </div>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -237,7 +233,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <div>
-                        <SImg progress={0} background={Register} />
+                        <SImg delta={0} background={Register} />
                       </div>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -289,14 +285,24 @@ const Home: React.FC = () => {
               <SectionWrapper>
                 <Grid container justifyContent='center' alignItems='center'>
                   <Grid item xs={12}>
-                    <h3 className='section7__h3'>Join the beta</h3>
-                    <SInput
-                      id='email-input'
-                      name='email-input'
-                      type='email'
-                      placeholder='Your e-mail'
-                    />
-                    <SButton>REQUEST</SButton>
+                    <StyledCenter>
+                      <h3 className='section7__h3'>Join the beta</h3>
+                    </StyledCenter>
+                  </Grid>
+                  <Grid item xs={12}>
+                    <StyledCenter>
+                      <SInput
+                        id='email-input'
+                        name='email-input'
+                        type='email'
+                        placeholder='Your e-mail'
+                      />
+                    </StyledCenter>
+                  </Grid>
+                  <Grid item xs={12}>
+                    <StyledCenter>
+                      <SButton>REQUEST</SButton>
+                    </StyledCenter>
                   </Grid>
                   <Grid item xs={12}>
                     <Footer />
@@ -306,14 +312,24 @@ const Home: React.FC = () => {
               <MobileWrapper>
                 <Grid container justifyContent='center' alignItems='center'>
                   <Grid item xs={12}>
-                    <h3 className='section7__h3'>Join the beta</h3>
-                    <SInput
-                      id='email-input'
-                      name='email-input'
-                      type='email'
-                      placeholder='Your e-mail'
-                    />
-                    <SButton>REQUEST</SButton>
+                    <StyledCenter>
+                      <h3 className='section7__h3'>Join the beta</h3>
+                    </StyledCenter>
+                  </Grid>
+                  <Grid item xs={12}>
+                    <StyledCenter>
+                      <SInput
+                        id='email-input'
+                        name='email-input'
+                        type='email'
+                        placeholder='Your e-mail'
+                      />
+                    </StyledCenter>
+                  </Grid>
+                  <Grid item xs={12}>
+                    <StyledCenter>
+                      <SButton>REQUEST</SButton>
+                    </StyledCenter>
                   </Grid>
                   <Grid item xs={12}>
                     <Footer />
@@ -327,6 +343,11 @@ const Home: React.FC = () => {
     </>
   );
 };
+
+const StyledCenter = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
 const StyledImg = styled.img`
   max-width: 85vw;
