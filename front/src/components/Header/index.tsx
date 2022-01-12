@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { AppThunkDispatch } from '../../types/AppState';
 
 import BurgerMenu from 'public/images/home/burger-menu-open-tab.png';
-import Close from 'public/images/home/menu-close-btn.jpg';
+import Close from 'public/images/home/menu-close-btn.png';
 import Open from 'public/images/home/burger-menu-open-tab.png';
 
 const Header: React.FC = () => {

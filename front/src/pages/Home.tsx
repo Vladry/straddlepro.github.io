@@ -188,7 +188,7 @@ const Home: React.FC = () => {
             <Section>
               <PhoneWrapperL background={Square}>
                 <SectionWrapper>
-                  <Grid container justifyContent='space-between'>
+                  <Grid container justifyContent='space-between' alignItems='center'>
                     <Grid item xs={12} md={6}>
                       <div>
                         <SImg delta={0} background={Register} />
