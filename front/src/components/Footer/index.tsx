@@ -14,23 +14,20 @@ const Footer: React.FC = () => {
   return (
     <>
       <StyledFooter>
-        <div className='footer__social-icon-container --flex-row'>
+        <IconsWrapper>
           <Twitter className='footer__social-icon-item' />
           <Facebook className='footer__social-icon-item' />
           <Linkedin className='footer__social-icon-item' />
-        </div>
+        </IconsWrapper>
 
         <div className='footer__logo-container'>
           <img className='logo-img' src={Logo} alt='logo' />
           <p className='footer__logo-text'>STRADDLE</p>
         </div>
         <div className='footer__copyright'>
-          <p>
-            Copyright 2021-2022 by
-            <br />
-            Straddle.
-          </p>
-          <p>All rights reserved</p>
+          Copyright 2021-2022 by Straddle.
+          <br />
+          All rights reserved
         </div>
       </StyledFooter>
       <MobileFooter>
@@ -42,11 +39,11 @@ const Footer: React.FC = () => {
             </div>
           </Grid>
           <Grid item xs={12}>
-            <div className='footer__social-icon-container --flex-row'>
+            <IconsWrapper>
               <Twitter className='footer__social-icon-item' />
               <Facebook className='footer__social-icon-item' />
               <Linkedin className='footer__social-icon-item' />
-            </div>
+            </IconsWrapper>
           </Grid>
           <Grid item xs={12}>
             <MobileFooterText>
@@ -91,6 +88,22 @@ const MobileFooter = styled.footer`
     align-items: center;
   }
 `;
+
+const IconsWrapper = styled.div`
+  justify-content: space-around;
+  gap: 50px;
+  width: 270px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+    width: -webkit-fill-available;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 50px;
+  }
+`;
 const StyledFooter = styled.footer`
   /* position: relative;
   bottom: 0; */
@@ -107,7 +120,7 @@ const StyledFooter = styled.footer`
   height: auto;
   background-color: none;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   @media (max-width: 768px) {
     display: none;

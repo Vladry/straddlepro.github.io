@@ -12,7 +12,7 @@ export const SInput = styled.input`
   color: #DADADA;
   border: 3px solid #8D039E;
   border-radius: 6px;
-  background: #34052e;
+  background: none;
   transition: background 0.2s; }
   :hover {
     cursor: pointer;

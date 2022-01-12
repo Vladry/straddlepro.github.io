@@ -50,7 +50,7 @@ export const StyledWrapper = styled.div`
 `;
 
 export const PhoneWrapperR = styled.div<WrapperProps>`
-  background: ${(props) => `url(${props.background}) calc(74vw - 533px) 50% no-repeat`};
+  background: ${(props) => `url(${props.background}) calc(75vw - 533px) 50% no-repeat`};
   @media (max-width: 768px) {
     background: ${(props) => `url(${props.background}) 0% 50% no-repeat`};
     background-size: 100vw 100vw;
@@ -58,7 +58,7 @@ export const PhoneWrapperR = styled.div<WrapperProps>`
 `;
 
 export const PhoneWrapperL = styled.div<WrapperProps>`
-  background: ${(props) => `url(${props.background}) calc(27vw - 533px) 50% no-repeat`};
+  background: ${(props) => `url(${props.background}) calc(25vw - 533px) 50% no-repeat`};
   @media (max-width: 768px) {
     background: ${(props) => `url(${props.background}) 0% 50% no-repeat`};
     background-size: 100vw 100vw;

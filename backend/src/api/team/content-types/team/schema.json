@@ -4,7 +4,8 @@
   "info": {
     "singularName": "team",
     "pluralName": "teams",
-    "displayName": "Team"
+    "displayName": "Team",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,24 @@
     },
     "LastName": {
       "type": "string"
+    },
+    "photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "socialMedia": {
+      "displayName": "socialMedia",
+      "type": "component",
+      "repeatable": true,
+      "component": "social-media.social-media"
     }
   }
 }
