@@ -105,8 +105,6 @@ const IconsWrapper = styled.div`
   }
 `;
 const StyledFooter = styled.footer`
-  /* position: relative;
-  bottom: 0; */
   width: 100%;
   margin: 0;
   padding: 0;

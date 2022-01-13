@@ -3,10 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { AppThunkDispatch } from '../../types/AppState';
-
+import Grid from '@mui/material/Grid';
 import BurgerMenu from 'public/images/home/burger-menu-open-tab.png';
 import Close from 'public/images/home/menu-close-btn.png';
 import Open from 'public/images/home/burger-menu-open-tab.png';
+import { StyledWrapper } from 'src/styledComponents/Wrapper';
 
 const Header: React.FC = () => {
   const dispatch = useDispatch<AppThunkDispatch>();
@@ -29,21 +30,25 @@ const Header: React.FC = () => {
   return (
     <div>
       <menu className='menu  --invisible'>
-        <li className='menu__item'>
-          <Link className='menu__ref' to='/home'>
-            HOME
-          </Link>
-        </li>
-        <li className='menu__item'>
-          <Link className='menu__ref' to='/team'>
-            TEAM
-          </Link>
-        </li>
-        <li className='menu__item'>
-          <Link className='menu__ref' to='/about'>
-            ABOUT
-          </Link>
-        </li>
+        <StyledMenuWrapper>
+          <Grid container justifyContent='center' alignItems='center'>
+            <Grid item xs={12}>
+              <Link className='menu__ref' to='/home'>
+                HOME
+              </Link>
+            </Grid>
+            <Grid item xs={12}>
+              <Link className='menu__ref' to='/team'>
+                TEAM
+              </Link>
+            </Grid>
+            <Grid item xs={12}>
+              <Link className='menu__ref' to='/about'>
+                ABOUT
+              </Link>
+            </Grid>
+          </Grid>
+        </StyledMenuWrapper>
       </menu>
 
       <div className='menu__burger' onClick={() => toggleMenu()}>
@@ -52,5 +57,14 @@ const Header: React.FC = () => {
     </div>
   );
 };
+
+const StyledMenuWrapper = styled.div`
+  position: relative;
+  left: 30%;
+  top: 30%;
+  @media (max-width: 768px) {
+    left: 5%;
+  }
+`;
 
 export default Header;

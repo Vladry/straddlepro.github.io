@@ -261,11 +261,12 @@ button {
 
 .--menu-active {
   top: 11px;
-  display: block;
+  display: flex;
   right: 15px;
-  width: 440px;
-  height: 1081px;
-  z-index: 1; }
+  width: 30vw;
+  margin: 0px !important;
+  height: 100vh;
+  z-index: 1;}
 
 .menu__item {
   margin: 60px 180px 60px 140px; }
@@ -297,9 +298,6 @@ button {
   .menu {
     top: 0;
     right: 0; }
-  .--menu-active {
-    width: 300px;
-    height: 1081px; }
   .menu__item:first-child {
     margin-top: 409px; } }
 
@@ -310,9 +308,6 @@ button {
   .menu {
     top: 0;
     right: 0; }
-  .--menu-active {
-    width: 200px;
-    height: 799px; }
   .menu__item {
     margin: 60px 44px; }
     .menu__item:first-child {
@@ -325,9 +320,6 @@ button {
   .menu__burger {
     top: 50px;
     right: 30px; }
-  .--menu-active {
-    width: 200px;
-    height: 799px; }
   .menu__item {
     margin: 60px 44px; }
     .menu__item:first-child {
@@ -341,8 +333,8 @@ button {
 }
 
 .logo-img {
-  width: 60px;
-  height: 71px; }
+  width: 70px;
+  height: 85px; }
 
 .logo-text {
   margin-left: 25px;
@@ -1672,12 +1664,6 @@ button {
 .team__section3-slider-container:hover:after {
   opacity: 0.7; }
 
-.team__section3-text {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 30px;
-  margin-top: 40px; }
-
 .team__section3-slider-icons-container {
   justify-content: flex-start;
   gap: 50px;
@@ -1714,7 +1700,7 @@ button {
   font-weight: 800;
   font-size: 30px;
   line-height: 37px;
-  margin: 0px;
+  margin-bottom: 20px;
 }
 
 .footer__copyright {

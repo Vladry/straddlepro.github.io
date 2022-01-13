@@ -261,9 +261,7 @@ const Home: React.FC = () => {
               <SectionWrapper>
                 <Grid container justifyContent='center' alignItems='center'>
                   <Grid item xs={12}>
-                    <h3>Games & Series enable ecosystem</h3>
-                  </Grid>
-                  <Grid item xs={10}>
+                    <h3 style={{ margin: '0px' }}>Games & Series enable ecosystem</h3>
                     <StyledImg src={Section6} alt='scheme' />
                   </Grid>
                 </Grid>
@@ -283,26 +281,30 @@ const Home: React.FC = () => {
           <Slide>
             <Section>
               <SectionWrapper>
-                <Grid container justifyContent='center' alignItems='center'>
+                <Grid container justifyContent='center' alignItems='flex-end'>
                   <Grid item xs={12}>
-                    <StyledCenter>
-                      <h3 className='section7__h3'>Join the beta</h3>
-                    </StyledCenter>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <StyledCenter>
-                      <SInput
-                        id='email-input'
-                        name='email-input'
-                        type='email'
-                        placeholder='Your e-mail'
-                      />
-                    </StyledCenter>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <StyledCenter>
-                      <SButton>REQUEST</SButton>
-                    </StyledCenter>
+                    <Grid container justifyContent='center' alignItems='flex-start'>
+                      <Grid item xs={12}>
+                        <StyledCenter>
+                          <h3 className='section7__h3'>Join the beta</h3>
+                        </StyledCenter>
+                      </Grid>
+                      <Grid item xs={12}>
+                        <StyledCenter>
+                          <SInput
+                            id='email-input'
+                            name='email-input'
+                            type='email'
+                            placeholder='Your e-mail'
+                          />
+                        </StyledCenter>
+                      </Grid>
+                      <Grid item xs={12}>
+                        <StyledCenter>
+                          <SButton>REQUEST</SButton>
+                        </StyledCenter>
+                      </Grid>
+                    </Grid>
                   </Grid>
                   <Grid item xs={12}>
                     <Footer />
@@ -350,9 +352,8 @@ const StyledCenter = styled.div`
 `;
 
 const StyledImg = styled.img`
-  max-width: 85vw;
-  position: relative;
-  right: 5vw;
+  max-width: 90vw;
+  padding-left: 20px;
 `;
 
 export default Home;

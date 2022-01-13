@@ -81,10 +81,10 @@ const Team: React.FC = () => {
         <TopSection message='Our team is addicted to trust' />
         <Section>
           <SectionWrapper>
-            <Grid container justifyContent='space-evenly' alignItems='center'>
+            <Grid container justifyContent='space-evenly' alignItems='center' textAlign='end'>
               <Grid item xs={12} md={6}>
                 <div>
-                  <h3 className='team__section2-h3'>
+                  <h3 style={{ textAlign: 'end' }} className='team__section2-h3'>
                     We build your skills
                     <br />
                     to get finance!
@@ -136,11 +136,7 @@ const Team: React.FC = () => {
               <Grid item xs={12}>
                 <div className='team__section3-slider-container --flex-row'>
                   {members.map((el, index) => (
-                    <div
-                      key={index}
-                      className='team__section3-slider-item'
-                      style={{ paddingBottom: '30px' }}
-                    >
+                    <MemberWrapper key={index}>
                       <img className='team__section3-image' src={el.photo} alt='avatar' />
                       <div className='team__section3-text-container'>
                         <h4 className='team__section3-h4'>
@@ -148,7 +144,7 @@ const Team: React.FC = () => {
                           <br />
                           {el.lastName}
                         </h4>
-                        <p className='team__section3-text'>{el.description}</p>
+                        <StyledDescription>{el.description}</StyledDescription>
                         <div className='team__section3-slider-icons-container  --flex-row'>
                           {el.socialMedia.map((social, index) => {
                             switch (social) {
@@ -174,7 +170,7 @@ const Team: React.FC = () => {
                           })}
                         </div>
                       </div>
-                    </div>
+                    </MemberWrapper>
                   ))}
                 </div>
               </Grid>
@@ -194,11 +190,7 @@ const Team: React.FC = () => {
                   itemPadding={[0, 0, 40, 0]}
                 >
                   {members.map((el, index) => (
-                    <div
-                      key={index}
-                      className='team__section3-slider-item'
-                      style={{ paddingBottom: '30px' }}
-                    >
+                    <MemberWrapper key={index}>
                       <img className='team__section3-image' src={el.photo} alt='avatar' />
                       <div className='team__section3-text-container'>
                         <h4 className='team__section3-h4'>
@@ -206,7 +198,7 @@ const Team: React.FC = () => {
                           <br />
                           {el.lastName}
                         </h4>
-                        <p className='team__section3-text'>{el.description}</p>
+                        <StyledDescription>{el.description}</StyledDescription>
                         <div className='team__section3-slider-icons-container  --flex-row'>
                           {el.socialMedia.map((social, index) => {
                             switch (social) {
@@ -232,7 +224,7 @@ const Team: React.FC = () => {
                           })}
                         </div>
                       </div>
-                    </div>
+                    </MemberWrapper>
                   ))}
                 </Carousel>
               </Grid>
@@ -299,6 +291,19 @@ const Team: React.FC = () => {
     </>
   );
 };
+
+const StyledDescription = styled.p`
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 40px;
+  min-height: 90px;
+`;
+
+const MemberWrapper = styled.div`
+  max-width: 264px;
+  padding-bottom: 30px;
+`;
 
 const StyledCenter = styled.div`
   display: flex;

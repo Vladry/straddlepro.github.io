@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home-page",
     "pluralName": "home-pages",
-    "displayName": "HomePage"
+    "displayName": "HomePage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,15 +13,34 @@
   "pluginOptions": {},
   "attributes": {
     "HeaderBackground": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "HeaderText": {
+      "type": "string"
+    },
+    "SectionTitle1": {
+      "type": "string"
+    },
+    "SectionTitle2": {
+      "type": "string"
+    },
+    "SectionTitle3": {
+      "type": "string"
+    },
+    "SectionTitle4": {
+      "type": "string"
+    },
+    "SectionTitle5": {
+      "type": "string"
+    },
+    "SectionTitle6": {
       "type": "string"
     }
   }
