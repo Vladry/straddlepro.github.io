@@ -6,7 +6,7 @@ export const SButton = styled.button`
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  max-width: 40vw;
+  max-width: 20vw;
   display: flex;
   width: -webkit-fill-available;
   color: #dadada;

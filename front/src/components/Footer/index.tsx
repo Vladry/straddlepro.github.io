@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
           <Linkedin className='footer__social-icon-item' />
         </IconsWrapper>
 
-        <div className='footer__logo-container'>
+        <div style={{paddingLeft: '10%', paddingRight: '10%'}}className='footer__logo-container'>
           <img className='logo-img' src={Logo} alt='logo' />
           <StyledP>STRADDLE</StyledP>
         </div>
@@ -126,7 +126,7 @@ const StyledFooter = styled.footer`
   height: auto;
   background-color: none;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 10%;
   @media (max-width: 768px) {
