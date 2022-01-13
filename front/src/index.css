@@ -1138,7 +1138,9 @@ button {
   align-items: center; }
 
 .submenu5 {
-  gap: 10px; }
+  gap: 10px;
+  justify-content: flex-start;
+}
 
 .submenu5__item {
   margin-top: 50px;
@@ -1149,7 +1151,8 @@ button {
   font-weight: 600;
   font-size: 24px;
   line-height: 26px;
-  text-align: center; }
+  text-align: center;
+}
   .submenu5__item:nth-child(2n) {
     color: white; }
 

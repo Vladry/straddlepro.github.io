@@ -31,7 +31,7 @@ const About: React.FC = () => {
                   </Grid>
                   <Grid item xs={12} md={6}>
                     <div>
-                      <h3 style={{textAlign: 'start'}} className='about__section2-h3'>
+                      <h3 style={{ textAlign: 'start' }} className='about__section2-h3'>
                         Merging game &
                         <br />
                         tech to control
