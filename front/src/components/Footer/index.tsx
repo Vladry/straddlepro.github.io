@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
 
         <div className='footer__logo-container'>
           <img className='logo-img' src={Logo} alt='logo' />
-          <p className='footer__logo-text'>STRADDLE</p>
+          <StyledP>STRADDLE</StyledP>
         </div>
         <div className='footer__copyright'>
           Copyright 2021-2022 by Straddle.
@@ -58,6 +58,14 @@ const Footer: React.FC = () => {
     </>
   );
 };
+
+const StyledP = styled.p`
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+`;
 
 const MobileFooterText = styled.div`
   font-size: 8px;
@@ -118,8 +126,9 @@ const StyledFooter = styled.footer`
   height: auto;
   background-color: none;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  margin-top: 10%;
   @media (max-width: 768px) {
     display: none;
   }
