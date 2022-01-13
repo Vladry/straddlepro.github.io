@@ -4,7 +4,8 @@
   "info": {
     "singularName": "about-page",
     "pluralName": "about-pages",
-    "displayName": "AboutPage"
+    "displayName": "AboutPage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,13 +16,32 @@
       "type": "string"
     },
     "HeaderBackground": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "SectionTitle1": {
+      "type": "string"
+    },
+    "SectionText1": {
+      "type": "text"
+    },
+    "SectionTitle2": {
+      "type": "string"
+    },
+    "SectionText2": {
+      "type": "text"
+    },
+    "WhitePaperLink": {
+      "type": "string"
+    },
+    "YellowPaperLink": {
+      "type": "string"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "team-page",
     "pluralName": "team-pages",
-    "displayName": "TeamPage"
+    "displayName": "TeamPage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,15 +13,25 @@
   "pluginOptions": {},
   "attributes": {
     "HeaderBackground": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "HeaderText": {
+      "type": "string"
+    },
+    "SectionTitle1": {
+      "type": "string"
+    },
+    "SectionText1": {
+      "type": "text"
+    },
+    "SectionTitle3": {
       "type": "string"
     }
   }
