@@ -356,7 +356,7 @@ const StyledCenter = styled.div`
 `;
 
 const StyledImg = styled.img`
-  max-width: 90vw;
+  max-width: 80vw;
   padding-left: 20px;
 `;
 
