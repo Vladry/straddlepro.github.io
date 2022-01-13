@@ -4,6 +4,10 @@ interface WrapperProps {
   background: string;
 }
 
+interface TagWrapperProps {
+  side: string;
+}
+
 export const SectionWrapper = styled.div`
   justify-content: center;
   display: flex;
@@ -72,7 +76,7 @@ export const PhoneWrapperM = styled.div<WrapperProps>`
   }
 `;
 
-export const TagWrapper = styled.div`
+export const TagWrapper = styled.div<TagWrapperProps>`
   /* margin-top: 70px; */
   /* display: flex; */
   /* justify-content: center; */
@@ -91,7 +95,7 @@ export const TagWrapper = styled.div`
   flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: ${(props) => props.side};
   list-style: none;
   margin: 0;
   padding: 0;

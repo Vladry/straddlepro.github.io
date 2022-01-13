@@ -50,10 +50,12 @@ const Home: React.FC = () => {
             <Section>
               <PhoneWrapperR background={Circle}>
                 <SectionWrapper>
-                  <Grid container justifyContent='space-between' alignItems='center'>
-                    <Grid item xs={12} md={6}>
-                      <h3>Players find best game</h3>
-                      <TagWrapper>
+                  <Grid container justifyContent='flex-end' alignItems='center'>
+                    <Grid item xs={5}>
+                      <h3 style={{ textAlign: 'start', maxWidth: '80%' }}>
+                        Players find best game
+                      </h3>
+                      <TagWrapper side='flex-start'>
                         <TagElement>CS:GO</TagElement>
                         <TagElement>POKER</TagElement>
                         <TagElement>DOTA</TagElement>
@@ -61,7 +63,7 @@ const Home: React.FC = () => {
                         <TagElement>FORTNITE</TagElement>
                       </TagWrapper>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={6}>
                       <div>
                         <SImg delta={0.5} background={Lobby} />
                       </div>
@@ -79,7 +81,7 @@ const Home: React.FC = () => {
                       </div>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <TagWrapper>
+                      <TagWrapper side='center'>
                         <TagElement>CS:GO</TagElement>
                         <TagElement>POKER</TagElement>
                         <TagElement>DOTA</TagElement>
@@ -97,15 +99,15 @@ const Home: React.FC = () => {
               <PhoneWrapperL background={Triangle}>
                 <SectionWrapper>
                   <Grid container justifyContent='space-between' alignItems='center'>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={6}>
                       <div>
                         <SImg delta={0.2} background={CreateEvent} />
                       </div>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={5}>
                       <div>
-                        <h3>Organizers create games</h3>
-                        <TagWrapper>
+                        <h3 style={{ textAlign: 'start' }}>Organizers create games</h3>
+                        <TagWrapper side='flex-start'>
                           <TagElement>ONLINE</TagElement>
                           <TagElement>OFFLINE</TagElement>
                         </TagWrapper>
@@ -125,7 +127,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <div>
-                        <TagWrapper>
+                        <TagWrapper side='center'>
                           <TagElement>ONLINE</TagElement>
                           <TagElement>OFFLINE</TagElement>
                         </TagWrapper>
@@ -140,11 +142,13 @@ const Home: React.FC = () => {
             <Section>
               <PhoneWrapperR background={Rhombus}>
                 <SectionWrapper>
-                  <Grid container justifyContent='space-between' alignItems='center'>
-                    <Grid item xs={12} md={6}>
+                  <Grid container justifyContent='flex-end' alignItems='center'>
+                    <Grid item xs={5}>
                       <div>
-                        <h3>Professional players get funds for their games</h3>
-                        <TagWrapper>
+                        <h3 style={{ textAlign: 'start' }}>
+                          Professional players get funds for their games
+                        </h3>
+                        <TagWrapper side='flex-start'>
                           <TagElement>0%</TagElement>
                           <TagElement>CASH-IN</TagElement>
                           <TagElement>0%</TagElement>
@@ -152,7 +156,7 @@ const Home: React.FC = () => {
                         </TagWrapper>
                       </div>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={6}>
                       <div>
                         <SImg delta={0} background={Network} />
                       </div>
@@ -171,7 +175,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <div>
-                        <TagWrapper>
+                        <TagWrapper side='center'>
                           <TagElement>0%</TagElement>
                           <TagElement>CASH-IN</TagElement>
                           <TagElement>0%</TagElement>
@@ -189,14 +193,14 @@ const Home: React.FC = () => {
               <PhoneWrapperL background={Square}>
                 <SectionWrapper>
                   <Grid container justifyContent='space-between' alignItems='center'>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={6}>
                       <div>
                         <SImg delta={0} background={Register} />
                       </div>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={5}>
                       <div>
-                        <h3>
+                        <h3 style={{ textAlign: 'start' }}>
                           Facilitate match
                           <br />
                           Manage finance
