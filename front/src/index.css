@@ -1699,19 +1699,14 @@ button {
   color: #DADADA;
   transition: color 0.3s; }
 
-.footer__logo-text {
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 37px;
-  margin-bottom: 20px;
-}
-
 .footer__copyright {
   text-align: right;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #DADADA; }
+  color: #DADADA;
+  padding-right: 8px;
+}
 
 @media (min-width: 481px) and (max-width: 768px) {
   .footer__logo-text {

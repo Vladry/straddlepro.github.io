@@ -265,8 +265,12 @@ const Home: React.FC = () => {
               <SectionWrapper>
                 <Grid container justifyContent='center' alignItems='center'>
                   <Grid item xs={12}>
-                    <h3 style={{ margin: '0px' }}>Games & Series enable ecosystem</h3>
-                    <StyledImg src={Section6} alt='scheme' />
+                    <h3 style={{ marginTop: '10%' }}>Games & Series enable ecosystem</h3>
+                  </Grid>
+                  <Grid item xs={12}>
+                    <div>
+                      <StyledImg src={Section6} alt='scheme' />
+                    </div>
                   </Grid>
                 </Grid>
               </SectionWrapper>
@@ -356,8 +360,10 @@ const StyledCenter = styled.div`
 `;
 
 const StyledImg = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 80vw;
-  padding-left: 20px;
 `;
 
 export default Home;
