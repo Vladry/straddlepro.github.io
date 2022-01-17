@@ -4,14 +4,16 @@ import IPhone from 'public/images/home/iPhone2.png';
 interface SImgProps {
   delta: number;
   background: string;
+  rotate: string;
 }
 
 interface ContainerProps {
-  offset: number;
-  background: string;
+  offset?: number;
+  background?: string;
+  rotate?: number;
 }
 
-export const SImg: React.FC<SImgProps> = ({ delta, background }) => {
+export const SImg: React.FC<SImgProps> = ({ delta, background, rotate }) => {
   const [offset, setOffset] = useState(-1);
   const [condition, setCondition] = useState(-1);
   const fetchData = useCallback(() => {
@@ -35,15 +37,27 @@ export const SImg: React.FC<SImgProps> = ({ delta, background }) => {
   }, [fetchData]);
 
   return (
-    <StyledContainer offset={offset} background={background}>
-      <StyledImg src={IPhone} />
-    </StyledContainer>
+    <StyledBox rotate={rotate === 'L' ? 75 : 25}>
+      <StyledContainer offset={offset} background={background} >
+        <StyledImg src={IPhone} />
+      </StyledContainer>
+    </StyledBox>
   );
 };
 
+const StyledBox = styled.div<ContainerProps>`
+  position: absolute;
+  left: ${(props) => `calc(${props.rotate}vw - 168px)`};
+  @media (max-width: 768px) {
+    position: relative;
+    left: 0px;
+  }
+`;
+
+
 const StyledContainer = styled.div<ContainerProps>`
   position: relative;
-  left: calc(50% - 168px);
+  bottom: 350px;
   background: ${(props) => `url(${props.background}) 50% ${props.offset}% no-repeat`};
   justify-content: center;
   display: flex;
@@ -52,7 +66,9 @@ const StyledContainer = styled.div<ContainerProps>`
   border-radius: 45px;
   max-height: 896px;
   @media (max-width: 768px) {
+    position: relative;
     width: 33vw;
+    bottom: 0px;
     min-height: 200px;
     max-height: 250px;
     left: calc(50% - 16vw);
