@@ -324,6 +324,7 @@ const StyledCenter = styled.div`
 
 const StyledImg = styled.img`
   width: -webkit-fill-available;
+  max-width: 90vw;
 `;
 
 export default Team;
