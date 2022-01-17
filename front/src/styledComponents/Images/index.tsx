@@ -38,7 +38,7 @@ export const SImg: React.FC<SImgProps> = ({ delta, background, rotate }) => {
 
   return (
     <StyledBox rotate={rotate === 'L' ? 75 : 25}>
-      <StyledContainer offset={offset} background={background} >
+      <StyledContainer offset={offset} background={background}>
         <StyledImg src={IPhone} />
       </StyledContainer>
     </StyledBox>
@@ -53,7 +53,6 @@ const StyledBox = styled.div<ContainerProps>`
     left: 0px;
   }
 `;
-
 
 const StyledContainer = styled.div<ContainerProps>`
   position: relative;
