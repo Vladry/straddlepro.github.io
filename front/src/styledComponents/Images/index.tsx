@@ -76,7 +76,7 @@ const StyledContainer = styled.div<ContainerProps>`
   }
   @media (max-height: 400px) {
     width: 33vw;
-    min-height: 200px;
+    min-height: 249px;
     max-height: 250px;
     left: calc(50% - 16vw);
     background-size: 33vw auto;
