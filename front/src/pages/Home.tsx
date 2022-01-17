@@ -76,9 +76,9 @@ const Home: React.FC = () => {
                       <h3>Players find best game</h3>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <div>
+                      <PhoneWrapperM background={Circle}>
                         <SImg delta={0.5} background={Lobby} />
-                      </div>
+                      </PhoneWrapperM>
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <TagWrapper side='center'>
@@ -121,9 +121,9 @@ const Home: React.FC = () => {
                       <h3>Organizers create games</h3>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <div>
+                      <PhoneWrapperM background={Triangle}>
                         <SImg delta={0} background={CreateEvent} />
-                      </div>
+                      </PhoneWrapperM>
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <div>
@@ -169,9 +169,9 @@ const Home: React.FC = () => {
                       <h3>Professional players get funds for their games</h3>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <div>
+                      <PhoneWrapperM background={Rhombus}>
                         <SImg delta={0} background={Network} />
-                      </div>
+                      </PhoneWrapperM>
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <div>
@@ -236,9 +236,9 @@ const Home: React.FC = () => {
                       </h3>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <div>
+                      <PhoneWrapperM background={Square}>
                         <SImg delta={0} background={Register} />
-                      </div>
+                      </PhoneWrapperM>
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <div>

@@ -47,14 +47,14 @@ const StyledContainer = styled.div<ContainerProps>`
   background: ${(props) => `url(${props.background}) 50% ${props.offset}% no-repeat`};
   justify-content: center;
   display: flex;
-  min-height: 796px;
+  min-height: 700px;
   width: 337px;
   border-radius: 45px;
   max-height: 896px;
   @media (max-width: 768px) {
     width: 33vw;
-    min-height: 35vh;
-    max-height: 35vh;
+    min-height: 200px;
+    max-height: 250px;
     left: calc(50% - 16vw);
     background-size: 33vw auto;
     border-radius: 35px;
@@ -62,12 +62,11 @@ const StyledContainer = styled.div<ContainerProps>`
 `;
 
 const StyledImg = styled.img`
-  max-width: 85vw;
-  max-height: 796px;
+  max-width: 80vw;
+  max-height: 700px;
   @media (max-width: 768px) {
     position: relative;
     width: 34vw;
-    max-height: 35vh;
-    /* left: calc(50% - 84px); */
+    max-height: 250px;
   }
 `;
