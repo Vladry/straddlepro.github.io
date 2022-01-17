@@ -56,24 +56,25 @@ export const StyledWrapper = styled.div`
 export const PhoneWrapperR = styled.div<WrapperProps>`
   background: ${(props) => `url(${props.background}) calc(75vw - 533px) 50% no-repeat`};
   @media (max-width: 768px) {
-    background: ${(props) => `url(${props.background}) 0% 50% no-repeat`};
-    background-size: 100vw 100vw;
+    /* background: ${(props) => `url(${props.background}) 0% 50% no-repeat`}; */
+    /* background-size: 100vw 100vw; */
+    background: none;
   }
 `;
 
 export const PhoneWrapperL = styled.div<WrapperProps>`
   background: ${(props) => `url(${props.background}) calc(25vw - 523px) 50% no-repeat`};
   @media (max-width: 768px) {
-    background: ${(props) => `url(${props.background}) 0% 50% no-repeat`};
-    background-size: 100vw 100vw;
+    /* background: ${(props) => `url(${props.background}) 0% 50% no-repeat`};
+    background-size: 100vw 100vw; */
+    background: none;
   }
 `;
 
 export const PhoneWrapperM = styled.div<WrapperProps>`
-  background: ${(props) => `url(${props.background}) calc(50vw - 533px) 50% no-repeat`};
-  @media (max-width: 768px) {
-    background: none;
-  }
+  background-image: ${(props) => `url(${props.background})`};
+  background-size: cover;
+  background-position: center;
 `;
 
 export const TagWrapper = styled.div<TagWrapperProps>`
