@@ -8,5 +8,7 @@ export const Section = styled.div`
   max-height: 100vh;
   @media (max-width: 768px) {
     max-height: fit-content;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 `;

@@ -20,6 +20,11 @@ export const SButton = styled.button`
     filter: brightness(150%);
     transition: filter 0.6s;
   }
+  @media (max-width: 768px) {
+    width: 120px;
+    max-width: 40vw;
+    margin-bottom: 40px;
+  }
 `;
 
 export const AboutButton = styled.button`
