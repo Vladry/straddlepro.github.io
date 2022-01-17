@@ -157,15 +157,27 @@ const About: React.FC = () => {
                     </StyledCenter>
                   </Grid>
                   <Grid item xs={12}>
-                    <div className='about__section4-container --flex-column'>
-                      <AboutButton className='about__submit-btn1' type='submit'>
-                        WHITE PAPER
-                      </AboutButton>
-                      <StyledP>OR</StyledP>
-                      <AboutButton className='about__submit-btn2' type='submit'>
-                        YELLOW PAPER
-                      </AboutButton>
-                    </div>
+                    <Grid container justifyContent='center' alignItems='center'>
+                      <Grid item xs={12}>
+                        <StyledCenter>
+                          <AboutButton className='about__submit-btn1' type='submit'>
+                            WHITE PAPER
+                          </AboutButton>
+                        </StyledCenter>
+                      </Grid>
+                      <Grid item xs={12}>
+                        <StyledCenter>
+                          <StyledP>OR</StyledP>
+                        </StyledCenter>
+                      </Grid>
+                      <Grid item xs={12}>
+                        <StyledCenter>
+                          <AboutButton className='about__submit-btn2' type='submit'>
+                            YELLOW PAPER
+                          </AboutButton>
+                        </StyledCenter>
+                      </Grid>
+                    </Grid>
                   </Grid>
                   <Grid item xs={12}>
                     <Footer />
