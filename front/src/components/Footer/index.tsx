@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
           <Linkedin className='footer__social-icon-item' />
         </IconsWrapper>
 
-        <div style={{paddingLeft: '10%', paddingRight: '10%'}}className='footer__logo-container'>
+        <div style={{ paddingLeft: '10%', paddingRight: '10%' }} className='footer__logo-container'>
           <img className='logo-img' src={Logo} alt='logo' />
           <StyledP>STRADDLE</StyledP>
         </div>

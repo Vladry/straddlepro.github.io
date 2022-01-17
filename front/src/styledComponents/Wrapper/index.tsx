@@ -27,7 +27,7 @@ export const MobileWrapper = styled.div`
   @media (max-width: 768px) {
     display: flex;
     padding: 8px;
-    min-height: 100vh;
+    min-height: 90vh;
     /* max-height: 100vh; */
   }
 `;

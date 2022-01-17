@@ -23,4 +23,7 @@ export const SInput = styled.input`
     color: #DADADA;
     text-align: center;
   }
+  @media (max-width: 768px) {
+    margin: 30px 0px;
+  }
 `;

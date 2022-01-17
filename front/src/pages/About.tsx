@@ -38,13 +38,13 @@ const About: React.FC = () => {
                         <br />
                         finance
                       </h3>
-                      <p className='about__section2-text'>
+                      <StyledP>
                         Fish text is used by designers, planners and front-end
                         <br />
                         developers when they need to quickly fill mock-ups
                         <br />
                         or prototypes with content.
-                      </p>
+                      </StyledP>
                     </div>
                   </Grid>
                 </Grid>
@@ -63,13 +63,13 @@ const About: React.FC = () => {
                         <br />
                         finance
                       </h3>
-                      <p className='about__section2-text'>
+                      <StyledP>
                         Fish text is used by designers, planners and front-end
                         <br />
                         developers when they need to quickly fill mock-ups
                         <br />
                         or prototypes with content.
-                      </p>
+                      </StyledP>
                     </div>
                   </Grid>
                 </Grid>
@@ -87,13 +87,13 @@ const About: React.FC = () => {
                         <br />
                         for trust
                       </h3>
-                      <p className='about__section3-text'>
+                      <StyledP>
                         Fish text is used by designers, planners and front-end
                         <br />
                         developers when they need to quickly fill mock-ups
                         <br />
                         or prototypes with content.
-                      </p>
+                      </StyledP>
                     </div>
                   </Grid>
                   <Grid item xs={12} md={5}>
@@ -110,13 +110,13 @@ const About: React.FC = () => {
                         <br />
                         for trust
                       </h3>
-                      <p className='about__section3-text'>
+                      <StyledP>
                         Fish text is used by designers, planners and front-end
                         <br />
                         developers when they need to quickly fill mock-ups
                         <br />
                         or prototypes with content.
-                      </p>
+                      </StyledP>
                     </div>
                   </Grid>
                   <Grid item xs={12} md={6}>
@@ -184,7 +184,17 @@ const StyledCenter = styled.div`
   display: flex;
   justify-content: center;
 `;
-
+const StyledP = styled.p`
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 48px;
+  color: #dadada;
+  margin-top: 55px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+`;
 const StyledImg = styled.img`
   width: -webkit-fill-available;
   max-width: 60%;

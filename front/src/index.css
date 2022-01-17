@@ -378,8 +378,7 @@ button {
 
 @media (min-width: 481px) and (max-width: 768px) {
   .logo-container {
-    margin-left: 20px;
-    padding-top: 40px; }
+    margin-left: 20px;}
   .section1__title {
     width: 85%;
     margin: 130px auto 10px;
@@ -389,15 +388,13 @@ button {
   .section1 {
     height: 800px; }
   .logo-container {
-    margin-left: 15px;
-    padding-top: 40px; }
+    margin-left: 15px;}
   .section1__title {
     width: 85%;
     margin: 130px auto 10px;
     text-align: center; }
   .logo-container {
-    margin-left: 20px;
-    padding-top: 40px; }
+    margin-left: 20px;}
   .logo-text {
     margin-left: 25px;
     display: inline-block;
@@ -1524,13 +1521,6 @@ button {
 .about__section2-text-container {
   margin-left: 190px; }
 
-.about__section2-text {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 48px;
-  color: #DADADA;
-  margin-top: 55px; }
-
 .about__section3 {
   background-position: center;
   background-repeat: no-repeat;
@@ -1547,13 +1537,6 @@ button {
 .about__section3-left-container {
   margin-left: 190px;
   transform: translate(129px, 34px); }
-
-.about__section3-text {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 48px;
-  color: #DADADA;
-  margin-top: 55px; }
 
 .about__section3-image {
   transform: translate(12px, -2px);
