@@ -43,7 +43,7 @@ export const SImg: React.FC<SImgProps> = ({ delta, background }) => {
 
 const StyledContainer = styled.div<ContainerProps>`
   position: relative;
-  left: calc(50% - 155px);
+  left: calc(50% - 168px);
   background: ${(props) => `url(${props.background}) 50% ${props.offset}% no-repeat`};
   justify-content: center;
   display: flex;
@@ -59,12 +59,25 @@ const StyledContainer = styled.div<ContainerProps>`
     background-size: 33vw auto;
     border-radius: 35px;
   }
+  @media (max-height: 400px) {
+    width: 33vw;
+    min-height: 200px;
+    max-height: 250px;
+    left: calc(50% - 16vw);
+    background-size: 33vw auto;
+    border-radius: 35px;
+  }
 `;
 
 const StyledImg = styled.img`
   max-width: 80vw;
   max-height: 700px;
   @media (max-width: 768px) {
+    position: relative;
+    width: 34vw;
+    max-height: 250px;
+  }
+  @media (max-height: 400px) {
     position: relative;
     width: 34vw;
     max-height: 250px;
