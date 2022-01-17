@@ -138,7 +138,7 @@ const About: React.FC = () => {
                       <AboutButton className='about__submit-btn1' type='submit'>
                         WHITE PAPER
                       </AboutButton>
-                      <p className='about__section4-text'>OR</p>
+                      <StyledP>OR</StyledP>
                       <AboutButton className='about__submit-btn2' type='submit'>
                         YELLOW PAPER
                       </AboutButton>
@@ -153,7 +153,7 @@ const About: React.FC = () => {
                 <Grid container justifyContent='center' alignItems='center'>
                   <Grid item xs={12}>
                     <StyledCenter>
-                      <h3 className='section4__h3'>Download</h3>
+                      <h3>Download</h3>
                     </StyledCenter>
                   </Grid>
                   <Grid item xs={12}>
@@ -161,7 +161,7 @@ const About: React.FC = () => {
                       <AboutButton className='about__submit-btn1' type='submit'>
                         WHITE PAPER
                       </AboutButton>
-                      <p className='about__section4-text'>OR</p>
+                      <StyledP>OR</StyledP>
                       <AboutButton className='about__submit-btn2' type='submit'>
                         YELLOW PAPER
                       </AboutButton>
@@ -193,6 +193,7 @@ const StyledP = styled.p`
   @media (max-width: 768px) {
     font-size: 14px;
     line-height: 16px;
+    margin: 10px 0px;
   }
 `;
 const StyledImg = styled.img`
