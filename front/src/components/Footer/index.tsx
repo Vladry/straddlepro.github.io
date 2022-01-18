@@ -20,10 +20,10 @@ const Footer: React.FC = () => {
           <Linkedin className='footer__social-icon-item' />
         </IconsWrapper>
 
-        <div style={{ paddingLeft: '10%', paddingRight: '10%' }} className='footer__logo-container'>
+        <FooterLogoContainer style={{ paddingLeft: '10%', paddingRight: '10%' }}>
           <img className='logo-img' src={Logo} alt='logo' />
           <StyledP>STRADDLE</StyledP>
-        </div>
+        </FooterLogoContainer>
         <div className='footer__copyright'>
           Copyright 2021-2022 by Straddle.
           <br />
@@ -33,31 +33,40 @@ const Footer: React.FC = () => {
       <MobileFooter>
         <Grid container justifyContent='center'>
           <Grid item xs={12}>
-            <div className='footer__logo-container'>
+            <FooterLogoContainer>
               <img className='logo-img' src={Logo} alt='logo' />
-              <p className='footer__logo-text'>STRADDLE</p>
-            </div>
-          </Grid>
-          <Grid item xs={12}>
-            <IconsWrapper>
-              <Twitter className='footer__social-icon-item' />
-              <Facebook className='footer__social-icon-item' />
-              <Linkedin className='footer__social-icon-item' />
-            </IconsWrapper>
-          </Grid>
-          <Grid item xs={12}>
-            <MobileFooterText>
-              <div>
-                <p>Copyright 2021-2022 by Straddle.</p>
-                <p>All rights reserved</p>
-              </div>
-            </MobileFooterText>
+              <p className='footer__logo-text' style={{ margin: '0px' }}>STRADDLE</p>
+              <IconsWrapper>
+                <Twitter className='footer__social-icon-item' />
+                <Facebook className='footer__social-icon-item' />
+                <Linkedin className='footer__social-icon-item' />
+              </IconsWrapper>
+              <MobileFooterText>
+                <div>
+                  <p>Copyright 2021-2022 by Straddle.</p>
+                  <p>All rights reserved</p>
+                </div>
+              </MobileFooterText>
+            </FooterLogoContainer>
           </Grid>
         </Grid>
       </MobileFooter>
     </>
   );
 };
+
+const FooterLogoContainer = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #DADADA;
+  transition: color 0.3s;
+  @media (max-width: 768px) {
+    gap: 10px;
+  }
+`;
 
 const StyledP = styled.p`
   font-weight: 800;

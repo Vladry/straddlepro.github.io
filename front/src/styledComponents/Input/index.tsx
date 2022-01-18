@@ -24,6 +24,7 @@ export const SInput = styled.input`
     text-align: center;
   }
   @media (max-width: 768px) {
+    width: 65vw;
     margin: 30px 0px;
     padding: 20px 20px;
   }

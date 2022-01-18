@@ -1650,15 +1650,6 @@ button {
     fill: red;
     transition: fill 0.2s; }
 
-.footer__logo-container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  color: #DADADA;
-  transition: color 0.3s; }
-
 .footer__copyright {
   text-align: right;
   font-weight: 500;
