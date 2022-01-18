@@ -106,6 +106,9 @@ const Team: React.FC = () => {
           <MobileWrapper>
             <Grid container justifyContent='space-evenly' alignItems='center'>
               <Grid item xs={12} md={6}>
+                <StyledImg src={Money} alt='figure1' />
+              </Grid>
+              <Grid item xs={12} md={6}>
                 <div>
                   <h3 className='team__section2-h3'>
                     We build your skills
@@ -121,9 +124,6 @@ const Team: React.FC = () => {
                   </StyledP>
                 </div>
               </Grid>
-              <Grid item xs={12} md={6}>
-                <StyledImg src={Money} alt='figure1' />
-              </Grid>
             </Grid>
           </MobileWrapper>
         </Section>
@@ -137,15 +137,11 @@ const Team: React.FC = () => {
                 <div className='team__section3-slider-container --flex-row'>
                   {members.map((el, index) => (
                     <MemberWrapper key={index}>
-                      <img className='team__section3-image' src={el.photo} alt='avatar' />
-                      <div className='team__section3-text-container'>
-                        <h4 className='team__section3-h4'>
-                          {el.firstName}
-                          <br />
-                          {el.lastName}
-                        </h4>
+                      <StyledAvatar src={el.photo} alt='avatar' />
+                      <div>
+                        <h4 className='team__section3-h4'>{`${el.firstName} ${el.lastName}`}</h4>
                         <StyledDescription>{el.description}</StyledDescription>
-                        <div className='team__section3-slider-icons-container  --flex-row'>
+                        <IconsContainer className='--flex-row'>
                           {el.socialMedia.map((social, index) => {
                             switch (social) {
                               case 'instagram':
@@ -168,7 +164,7 @@ const Team: React.FC = () => {
                                 return <YouTube className='team_section3-slider-icon-item' />;
                             }
                           })}
-                        </div>
+                        </IconsContainer>
                       </div>
                     </MemberWrapper>
                   ))}
@@ -191,15 +187,15 @@ const Team: React.FC = () => {
                 >
                   {members.map((el, index) => (
                     <MemberWrapper key={index}>
-                      <img className='team__section3-image' src={el.photo} alt='avatar' />
-                      <div className='team__section3-text-container'>
+                      <img src={el.photo} alt='avatar' />
+                      <div>
                         <h4 className='team__section3-h4'>
                           {el.firstName}
                           <br />
                           {el.lastName}
                         </h4>
                         <StyledDescription>{el.description}</StyledDescription>
-                        <div className='team__section3-slider-icons-container  --flex-row'>
+                        <IconsContainer className='--flex-row'>
                           {el.socialMedia.map((social, index) => {
                             switch (social) {
                               case 'instagram':
@@ -222,7 +218,7 @@ const Team: React.FC = () => {
                                 return <YouTube className='team_section3-slider-icon-item' />;
                             }
                           })}
-                        </div>
+                        </IconsContainer>
                       </div>
                     </MemberWrapper>
                   ))}
@@ -292,12 +288,22 @@ const Team: React.FC = () => {
   );
 };
 
+const StyledAvatar = styled.img`
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
 const StyledDescription = styled.p`
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
   margin-top: 40px;
   min-height: 90px;
+  @media (max-width: 768px) {
+    min-height: 60px;
+    text-align: center;
+  }
 `;
 
 const StyledP = styled.p`
@@ -309,12 +315,23 @@ const StyledP = styled.p`
   @media (max-width: 768px) {
     font-size: 14px;
     line-height: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
-
+const IconsContainer = styled.div`
+  justify-content: flex-start;
+  gap: 50px;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+`;
 const MemberWrapper = styled.div`
   max-width: 264px;
   padding-bottom: 30px;
+  @media (max-width: 480px) {
+    max-width: none;
+  }
 `;
 
 const StyledCenter = styled.div`
