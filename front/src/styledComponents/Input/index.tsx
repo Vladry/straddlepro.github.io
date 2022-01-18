@@ -25,5 +25,6 @@ export const SInput = styled.input`
   }
   @media (max-width: 768px) {
     margin: 30px 0px;
+    padding: 20px 20px;
   }
 `;

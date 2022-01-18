@@ -242,7 +242,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <div>
-                        <div className='submenu5 --flex-row'>
+                        <div className='submenu5 --flex-row' style={{ justifyContent: 'center' }}>
                           <div className='submenu5__item'>
                             <span>CASH-IN</span>
                           </div>
