@@ -66,19 +66,19 @@ const StyledContainer = styled.div<ContainerProps>`
   max-height: 896px;
   @media (max-width: 768px) {
     position: relative;
-    width: 33vw;
+    width: 115px;
     bottom: 0px;
     min-height: 200px;
     max-height: 250px;
-    left: calc(50% - 16vw);
+    left: calc(50% - 57px - 0.5px);
     background-size: 33vw auto;
     border-radius: 25px;
   }
   @media (max-height: 400px) {
-    width: 33vw;
+    width: 115px;
     min-height: 249px;
     max-height: 250px;
-    left: calc(50% - 16vw);
+    left: calc(50% - 57px - 0.5px);
     background-size: 33vw auto;
     border-radius: 35px;
   }
@@ -89,12 +89,12 @@ const StyledImg = styled.img`
   max-height: 700px;
   @media (max-width: 768px) {
     position: relative;
-    width: 34vw;
+    width: 125px;
     max-height: 250px;
   }
   @media (max-height: 400px) {
     position: relative;
-    width: 34vw;
+    width: 125px;
     max-height: 250px;
   }
 `;
