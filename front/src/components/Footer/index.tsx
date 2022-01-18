@@ -61,7 +61,7 @@ const FooterLogoContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
-  color: #DADADA;
+  color: #dadada;
   transition: color 0.3s;
   @media (max-width: 768px) {
     gap: 10px;
