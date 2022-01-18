@@ -206,6 +206,8 @@ const StyledP = styled.p`
     font-size: 14px;
     line-height: 16px;
     margin: 10px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
 const StyledImg = styled.img`
