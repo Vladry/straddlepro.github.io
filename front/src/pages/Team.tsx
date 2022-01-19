@@ -26,6 +26,7 @@ import FaceBook from './icons/facebook.svg';
 import Viber from './icons/viber.svg';
 import YouTube from './icons/youtube.svg';
 import Slack from './icons/slack.svg';
+import { StyledH3 } from 'src/styledComponents/Text';
 
 const Team: React.FC = () => {
   const dispatch = useDispatch<AppThunkDispatch>();
@@ -83,11 +84,11 @@ const Team: React.FC = () => {
             <Grid container justifyContent='space-evenly' alignItems='center' textAlign='end'>
               <Grid item xs={12} md={6}>
                 <div>
-                  <h3 style={{ textAlign: 'end' }} className='team__section2-h3'>
+                  <StyledH3 style={{ textAlign: 'end' }} className='team__section2-h3'>
                     We build your skills
                     <br />
                     to get finance!
-                  </h3>
+                  </StyledH3>
                   <StyledP>
                     Fish text is used by designers, planners and front-end
                     <br />
@@ -109,11 +110,11 @@ const Team: React.FC = () => {
               </Grid>
               <Grid item xs={12} md={6}>
                 <div>
-                  <h3 className='team__section2-h3'>
+                  <StyledH3 className='team__section2-h3'>
                     We build your skills
                     <br />
                     to get finance!
-                  </h3>
+                  </StyledH3>
                   <StyledP>
                     Fish text is used by designers, planners and front-end
                     <br />
@@ -130,7 +131,7 @@ const Team: React.FC = () => {
           <MobileWrapper>
             <Grid container justifyContent='center' alignItems='center'>
               <Grid item xs={12}>
-                <h3>Our team</h3>
+                <StyledH3>Our team</StyledH3>
               </Grid>
               <Grid item xs={12}>
                 <div className='team__section3-slider-container --flex-row'>
@@ -174,7 +175,7 @@ const Team: React.FC = () => {
           <SimpleWrapper>
             <Grid container justifyContent='center' alignItems='center'>
               <Grid item xs={12}>
-                <h3>Our team</h3>
+                <StyledH3>Our team</StyledH3>
               </Grid>
               <Grid item xs={12}>
                 <Carousel
@@ -231,7 +232,7 @@ const Team: React.FC = () => {
             <Grid container justifyContent='center' alignItems='center'>
               <Grid item xs={12}>
                 <StyledCenter>
-                  <h3 className='section7__h3'>Ask us anythings!</h3>
+                  <StyledH3 className='section7__h3'>Ask us anythings!</StyledH3>
                 </StyledCenter>
               </Grid>
               <Grid item xs={12}>
@@ -258,7 +259,7 @@ const Team: React.FC = () => {
             <Grid container justifyContent='center' alignItems='center'>
               <Grid item xs={12}>
                 <StyledCenter>
-                  <h3 className='section7__h3'>Ask us anythings!</h3>
+                  <StyledH3 className='section7__h3'>Ask us anythings!</StyledH3>
                 </StyledCenter>
               </Grid>
               <Grid item xs={12}>

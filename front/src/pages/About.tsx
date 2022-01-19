@@ -12,6 +12,7 @@ import { Section } from 'src/styledComponents/Section';
 import { MobileWrapper, SectionWrapper } from 'src/styledComponents/Wrapper';
 import { FullPage, Slide } from 'react-full-page';
 import { AboutButton } from 'src/styledComponents/Button';
+import { StyledH3 } from 'src/styledComponents/Text';
 const About: React.FC = () => {
   const dispatch = useDispatch<AppThunkDispatch>();
   return (
@@ -31,13 +32,13 @@ const About: React.FC = () => {
                   </Grid>
                   <Grid item xs={12} md={6}>
                     <div>
-                      <h3 style={{ textAlign: 'start' }} className='about__section2-h3'>
+                      <StyledH3 style={{ textAlign: 'start' }} className='about__section2-h3'>
                         Merging game &
                         <br />
                         tech to control
                         <br />
                         finance
-                      </h3>
+                      </StyledH3>
                       <StyledP>
                         Fish text is used by designers, planners and front-end
                         <br />
@@ -50,19 +51,19 @@ const About: React.FC = () => {
                 </Grid>
               </SectionWrapper>
               <MobileWrapper>
-                <Grid container justifyContent='space-between'>
-                  <Grid item xs={12} md={5}>
+                <Grid container direction='column' justifyContent='space-evenly'>
+                  <Grid item xs={4}>
                     <StyledImg src={Two} alt='figure1' />
                   </Grid>
-                  <Grid item xs={12} md={6}>
+                  <Grid item xs={5}>
                     <div>
-                      <h3 className='about__section2-h3'>
+                      <StyledH3 className='about__section2-h3'>
                         Merging game &
                         <br />
                         tech to control
                         <br />
                         finance
-                      </h3>
+                      </StyledH3>
                       <StyledP>
                         Fish text is used by designers, planners and front-end
                         <br />
@@ -82,11 +83,11 @@ const About: React.FC = () => {
                 <Grid container justifyContent='space-evenly' alignItems='center' textAlign='end'>
                   <Grid item xs={12} md={6}>
                     <div>
-                      <h3 style={{ textAlign: 'end' }} className='about__section3-h3'>
+                      <StyledH3 style={{ textAlign: 'end' }} className='about__section3-h3'>
                         <span>Imminent ledger</span>
                         <br />
                         for trust
-                      </h3>
+                      </StyledH3>
                       <StyledP>
                         Fish text is used by designers, planners and front-end
                         <br />
@@ -102,14 +103,17 @@ const About: React.FC = () => {
                 </Grid>
               </SectionWrapper>
               <MobileWrapper>
-                <Grid container justifyContent='space-between'>
-                  <Grid item xs={12} md={6}>
+                <Grid container direction='column' justifyContent='space-evenly'>
+                  <Grid item xs={4}>
+                    <StyledImg src={Three} alt='figure1' />
+                  </Grid>
+                  <Grid item xs={5}>
                     <div>
-                      <h3 className='about__section3-h3'>
+                      <StyledH3 className='about__section3-h3'>
                         <span>Imminent ledger</span>
                         <br />
                         for trust
-                      </h3>
+                      </StyledH3>
                       <StyledP>
                         Fish text is used by designers, planners and front-end
                         <br />
@@ -118,9 +122,6 @@ const About: React.FC = () => {
                         or prototypes with content.
                       </StyledP>
                     </div>
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <StyledImg src={Three} alt='figure1' />
                   </Grid>
                 </Grid>
               </MobileWrapper>
@@ -132,7 +133,7 @@ const About: React.FC = () => {
                 <Grid container direction='row' justifyContent='center' alignItems='center'>
                   <Grid item xs={12}>
                     <StyledCenter>
-                      <h3>Download</h3>
+                      <StyledH3>Download</StyledH3>
                     </StyledCenter>
                   </Grid>
                   <Grid item xs={12}>
@@ -155,7 +156,7 @@ const About: React.FC = () => {
                 <Grid container justifyContent='center' alignItems='center'>
                   <Grid item xs={12}>
                     <StyledCenter>
-                      <h3>Download</h3>
+                      <StyledH3>Download</StyledH3>
                     </StyledCenter>
                   </Grid>
                   <Grid item xs={12}>
