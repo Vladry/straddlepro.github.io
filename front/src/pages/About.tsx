@@ -129,11 +129,13 @@ const About: React.FC = () => {
           <Slide>
             <Section>
               <SectionWrapper>
-                <Grid container justifyContent='center' alignItems='center'>
+                <Grid container direction='row' justifyContent='center' alignItems='center'>
                   <Grid item xs={12}>
                     <StyledCenter>
                       <h3>Download</h3>
                     </StyledCenter>
+                  </Grid>
+                  <Grid item xs={12}>
                     <div className='about__section4-container --flex-column'>
                       <AboutButton className='about__submit-btn1' type='submit'>
                         WHITE PAPER
@@ -201,7 +203,7 @@ const StyledP = styled.p`
   font-size: 24px;
   line-height: 48px;
   color: #dadada;
-  margin-top: 55px;
+  margin-top: 10px;
   @media (max-width: 768px) {
     font-size: 14px;
     line-height: 16px;

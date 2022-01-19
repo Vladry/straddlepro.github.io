@@ -68,6 +68,12 @@ button {
   font-weight: bold;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Monserrat-Regular';
+  src: url("../public/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
 .wrapper {
   /* width: 100%; */
   overflow-x: hidden;
@@ -1148,7 +1154,6 @@ button {
 }
 
 .submenu5__item {
-  margin-top: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
   width: 140px;
@@ -1651,8 +1656,9 @@ button {
     transition: fill 0.2s; }
 
 .footer__copyright {
+  font-family: 'Monserrat-Regular';
   text-align: right;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: #DADADA;

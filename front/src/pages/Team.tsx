@@ -67,11 +67,10 @@ const Team: React.FC = () => {
     }
   ];
   const breakPoints = [
-    { width: 800, itemsToShow: 2, itemsToScroll: 1 },
-    { width: 1000, itemsToShow: 3, itemsToScroll: 1 },
-    { width: 1200, itemsToShow: 4, itemsToScroll: 1 },
-    { width: 1500, itemsToShow: 5, itemsToScroll: 1 },
-    { width: 1800, itemsToShow: 6, itemsToScroll: 1 }
+    { width: 800, itemsToShow: 3, itemsToScroll: 1 },
+    { width: 1000, itemsToShow: 4, itemsToScroll: 1 },
+    { width: 1200, itemsToShow: 5, itemsToScroll: 1 },
+    { width: 1500, itemsToShow: 5, itemsToScroll: 1 }
   ];
 
   return (
@@ -187,13 +186,13 @@ const Team: React.FC = () => {
                 >
                   {members.map((el, index) => (
                     <MemberWrapper key={index}>
-                      <img src={el.photo} alt='avatar' />
+                      <StyledAvatar src={el.photo} alt='avatar' />
                       <div>
-                        <h4 className='team__section3-h4'>
+                        <StyledMemberName>
                           {el.firstName}
                           <br />
                           {el.lastName}
-                        </h4>
+                        </StyledMemberName>
                         <StyledDescription>{el.description}</StyledDescription>
                         <IconsContainer className='--flex-row'>
                           {el.socialMedia.map((social, index) => {
@@ -288,7 +287,16 @@ const Team: React.FC = () => {
   );
 };
 
+const StyledMemberName = styled.h4`
+  @media (max-width: 1440px) {
+    margin: 15px 0px;
+  }
+`;
+
 const StyledAvatar = styled.img`
+  @media (max-width: 1440px) {
+    width: 200px;
+  }
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -300,6 +308,9 @@ const StyledDescription = styled.p`
   line-height: 30px;
   margin-top: 40px;
   min-height: 90px;
+  @media (max-width: 1440px) {
+    margin: 20px 0px;
+  }
   @media (max-width: 768px) {
     min-height: 60px;
     text-align: center;
@@ -329,6 +340,9 @@ const IconsContainer = styled.div`
 const MemberWrapper = styled.div`
   max-width: 264px;
   padding-bottom: 30px;
+  @media (max-width: 1440px) {
+    max-width: 200px;
+  }
   @media (max-width: 480px) {
     max-width: none;
   }

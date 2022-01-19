@@ -35,7 +35,9 @@ const Footer: React.FC = () => {
           <Grid item xs={12}>
             <FooterLogoContainer>
               <img className='logo-img' src={Logo} alt='logo' />
-              <p className='footer__logo-text' style={{ margin: '0px' }}>STRADDLE</p>
+              <p className='footer__logo-text' style={{ margin: '0px' }}>
+                STRADDLE
+              </p>
               <IconsWrapper>
                 <Twitter className='footer__social-icon-item' />
                 <Facebook className='footer__social-icon-item' />
@@ -137,7 +139,6 @@ const StyledFooter = styled.footer`
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 10%;
   @media (max-width: 768px) {
     display: none;
   }
