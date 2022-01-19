@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
   host: '0.0.0.0',
   port: 1337,
-  url: 'http://web.straddle.pro/api',
+  url: 'http://web.straddle.pro/admin',
   admin: {
     url: 'http://web.straddle.pro/dashboard',
     auth: {
