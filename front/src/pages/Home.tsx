@@ -24,6 +24,7 @@ import {
   PhoneWrapperM,
   MobileWrapper
 } from 'src/styledComponents/Wrapper';
+import { StyledH3 } from 'src/styledComponents/Text';
 import { SInput } from 'src/styledComponents/Input';
 import { SButton } from 'src/styledComponents/Button';
 import Lobby1 from 'public/images/home/lobby.png';
@@ -52,9 +53,9 @@ const Home: React.FC = () => {
                 <SectionWrapper>
                   <Grid container justifyContent='flex-end' alignItems='center'>
                     <Grid item xs={5}>
-                      <h3 style={{ textAlign: 'start', maxWidth: '80%' }}>
+                      <StyledH3 style={{ textAlign: 'start', maxWidth: '80%' }}>
                         Players find best game
-                      </h3>
+                      </StyledH3>
                       <TagWrapper side='flex-start'>
                         <TagElement>CS:GO</TagElement>
                         <TagElement>POKER</TagElement>
@@ -73,7 +74,7 @@ const Home: React.FC = () => {
                 <MobileWrapper>
                   <Grid container justifyContent='space-between' alignItems='center'>
                     <Grid item xs={12} md={6}>
-                      <h3>Players find best game</h3>
+                      <StyledH3>Players find best game</StyledH3>
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <PhoneWrapperM background={Circle}>
@@ -106,7 +107,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={5}>
                       <div>
-                        <h3 style={{ textAlign: 'start' }}>Organizers create games</h3>
+                        <StyledH3 style={{ textAlign: 'start' }}>Organizers create games</StyledH3>
                         <TagWrapper side='flex-start'>
                           <TagElement>ONLINE</TagElement>
                           <TagElement>OFFLINE</TagElement>
@@ -118,7 +119,7 @@ const Home: React.FC = () => {
                 <MobileWrapper>
                   <Grid container justifyContent='space-between' alignItems='center'>
                     <Grid item xs={12} md={6}>
-                      <h3>Organizers create games</h3>
+                      <StyledH3>Organizers create games</StyledH3>
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <PhoneWrapperM background={Triangle}>
@@ -145,9 +146,9 @@ const Home: React.FC = () => {
                   <Grid container justifyContent='flex-end' alignItems='center'>
                     <Grid item xs={5}>
                       <div>
-                        <h3 style={{ textAlign: 'start' }}>
+                        <StyledH3 style={{ textAlign: 'start' }}>
                           Professional players get funds for their games
-                        </h3>
+                        </StyledH3>
                         <TagWrapper side='flex-start'>
                           <TagElement>0%</TagElement>
                           <TagElement>CASH-IN</TagElement>
@@ -166,7 +167,7 @@ const Home: React.FC = () => {
                 <MobileWrapper>
                   <Grid container justifyContent='space-between' alignItems='center'>
                     <Grid item xs={12} md={6}>
-                      <h3>Professional players get funds for their games</h3>
+                      <StyledH3>Professional players get funds for their games</StyledH3>
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <PhoneWrapperM background={Rhombus}>
@@ -200,14 +201,14 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={5}>
                       <div>
-                        <h3 style={{ textAlign: 'start' }}>
+                        <StyledH3 style={{ textAlign: 'start' }}>
                           Facilitate match
                           <br />
                           Manage finance
                           <br />
                           Ensure trust
                           <br />
-                        </h3>
+                        </StyledH3>
                         <div className='submenu5 --flex-row'>
                           <div className='submenu5__item'>
                             <span>CASH-IN</span>
@@ -226,14 +227,14 @@ const Home: React.FC = () => {
                 <MobileWrapper>
                   <Grid container justifyContent='space-between'>
                     <Grid item xs={12} md={6}>
-                      <h3>
+                      <StyledH3>
                         Facilitate match
                         <br />
                         Manage finance
                         <br />
                         Ensure trust
                         <br />
-                      </h3>
+                      </StyledH3>
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <PhoneWrapperM background={Square}>
@@ -265,7 +266,9 @@ const Home: React.FC = () => {
               <SectionWrapper>
                 <Grid container justifyContent='center' alignItems='center'>
                   <Grid item xs={12}>
-                    <h3 style={{ marginTop: '10%' }}>Games & Series enable ecosystem</h3>
+                    <StyledH3 style={{ marginTop: '10%' }}>
+                      Games & Series enable ecosystem
+                    </StyledH3>
                   </Grid>
                   <Grid item xs={12}>
                     <div>
@@ -275,11 +278,11 @@ const Home: React.FC = () => {
                 </Grid>
               </SectionWrapper>
               <MobileWrapper>
-                <Grid container justifyContent='center' alignItems='center'>
-                  <Grid item xs={12}>
-                    <h3>Games & Series enable ecosystem</h3>
+                <Grid container direction='column' justifyContent='flex-end' alignItems='center'>
+                  <Grid item xs={2}>
+                    <StyledH3>Games & Series enable ecosystem</StyledH3>
                   </Grid>
-                  <Grid item xs={10}>
+                  <Grid item xs={6}>
                     <StyledImg src={Section6} alt='scheme' />
                   </Grid>
                 </Grid>
@@ -294,7 +297,7 @@ const Home: React.FC = () => {
                     <Grid container justifyContent='center' alignItems='flex-start'>
                       <Grid item xs={12}>
                         <StyledCenter>
-                          <h3 className='section7__h3'>Join the beta</h3>
+                          <StyledH3 className='section7__h3'>Join the beta</StyledH3>
                         </StyledCenter>
                       </Grid>
                       <Grid item xs={12}>
@@ -323,7 +326,7 @@ const Home: React.FC = () => {
                 <Grid container justifyContent='center' alignItems='center'>
                   <Grid item xs={12}>
                     <StyledCenter>
-                      <h3 className='section7__h3'>Join the beta</h3>
+                      <StyledH3 className='section7__h3'>Join the beta</StyledH3>
                     </StyledCenter>
                   </Grid>
                   <Grid item xs={12}>

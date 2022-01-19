@@ -7,6 +7,7 @@ import Logo from 'public/images/home/logo.png';
 import Background from 'public/images/home/1.jpg';
 import { Section } from 'src/styledComponents/Section';
 import Header from 'components/Header';
+import { StyledH2 } from 'src/styledComponents/Text';
 
 interface SectionProps {
   image: string;
@@ -26,7 +27,7 @@ const TopSection: React.FC<TopSectionProps> = ({ message }) => {
         </a>
         <p className='logo-text'>STRADDLE</p>
       </div>
-      <h2 className='section1__title'>{message}</h2>
+      <StyledH2 className='section1__title'>{message}</StyledH2>
     </StyledSection>
   );
 };
