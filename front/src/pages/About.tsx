@@ -137,11 +137,14 @@ const About: React.FC = () => {
                     </StyledCenter>
                   </Grid>
                   <Grid item xs={12}>
-                    <div className='about__section4-container --flex-column'>
+                    <div
+                      style={{ gap: '10px' }}
+                      className='about__section4-container --flex-column'
+                    >
                       <AboutButton className='about__submit-btn1' type='submit'>
                         WHITE PAPER
                       </AboutButton>
-                      <StyledP>OR</StyledP>
+                      <StyledP style={{ fontFamily: 'Monserrat-Regular' }}>OR</StyledP>
                       <AboutButton className='about__submit-btn2' type='submit'>
                         YELLOW PAPER
                       </AboutButton>
