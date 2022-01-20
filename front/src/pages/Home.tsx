@@ -72,7 +72,12 @@ const Home: React.FC = () => {
                   </Grid>
                 </SectionWrapper>
                 <MobileWrapper>
-                  <Grid container direction='column' justifyContent='space-around' alignItems='center'>
+                  <Grid
+                    container
+                    direction='column'
+                    justifyContent='space-around'
+                    alignItems='center'
+                  >
                     <Grid item xs={3}>
                       <StyledH3>Players find best game</StyledH3>
                     </Grid>
@@ -117,11 +122,16 @@ const Home: React.FC = () => {
                   </Grid>
                 </SectionWrapper>
                 <MobileWrapper>
-                  <Grid container direction='column' justifyContent='space-around' alignItems='center'>
+                  <Grid
+                    container
+                    direction='column'
+                    justifyContent='space-around'
+                    alignItems='center'
+                  >
                     <Grid item xs={3}>
                       <StyledH3>Organizers create games</StyledH3>
                     </Grid>
-                    <Grid item xs={4} >
+                    <Grid item xs={4}>
                       <PhoneWrapperM background={Triangle}>
                         <SImg rotate='R' delta={0} background={CreateEvent} />
                       </PhoneWrapperM>
@@ -165,7 +175,12 @@ const Home: React.FC = () => {
                   </Grid>
                 </SectionWrapper>
                 <MobileWrapper>
-                  <Grid container direction='column' justifyContent='space-around' alignItems='center'>
+                  <Grid
+                    container
+                    direction='column'
+                    justifyContent='space-around'
+                    alignItems='center'
+                  >
                     <Grid item xs={3}>
                       <StyledH3>Professional players get funds for their games</StyledH3>
                     </Grid>
