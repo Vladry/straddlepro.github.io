@@ -66,7 +66,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={6}>
                       <div>
-                        <SImg rotate='L' delta={0.5} background={Lobby} />
+                        <SImg rotate='L' delta={5} background={Lobby} />
                       </div>
                     </Grid>
                   </Grid>
@@ -83,7 +83,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={4}>
                       <PhoneWrapperM background={Circle}>
-                        <SImg rotate='L' delta={0.5} background={Lobby} />
+                        <SImg rotate='L' delta={1.5} background={Lobby} />
                       </PhoneWrapperM>
                     </Grid>
                     <Grid item xs={3}>
@@ -107,7 +107,7 @@ const Home: React.FC = () => {
                   <Grid container justifyContent='space-between' alignItems='center'>
                     <Grid item xs={6}>
                       <div>
-                        <SImg rotate='R' delta={0.2} background={CreateEvent} />
+                        <SImg rotate='R' delta={1} background={CreateEvent} />
                       </div>
                     </Grid>
                     <Grid item xs={5}>
@@ -133,7 +133,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={4}>
                       <PhoneWrapperM background={Triangle}>
-                        <SImg rotate='R' delta={0} background={CreateEvent} />
+                        <SImg rotate='R' delta={1} background={CreateEvent} />
                       </PhoneWrapperM>
                     </Grid>
                     <Grid item xs={3}>
@@ -169,7 +169,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={6}>
                       <div>
-                        <SImg rotate='L' delta={0} background={Network} />
+                        <SImg rotate='L' delta={2} background={Network} />
                       </div>
                     </Grid>
                   </Grid>
@@ -186,7 +186,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={4}>
                       <PhoneWrapperM background={Rhombus}>
-                        <SImg rotate='L' delta={0} background={Network} />
+                        <SImg rotate='L' delta={2} background={Network} />
                       </PhoneWrapperM>
                     </Grid>
                     <Grid item xs={3}>
@@ -211,7 +211,7 @@ const Home: React.FC = () => {
                   <Grid container justifyContent='space-between' alignItems='center'>
                     <Grid item xs={6}>
                       <div>
-                        <SImg rotate='R' delta={0} background={Register} />
+                        <SImg rotate='R' delta={5} background={Register} />
                       </div>
                     </Grid>
                     <Grid item xs={5}>
@@ -253,7 +253,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={4}>
                       <PhoneWrapperM background={Square}>
-                        <SImg rotate='R' delta={0} background={Register} />
+                        <SImg rotate='R' delta={5} background={Register} />
                       </PhoneWrapperM>
                     </Grid>
                     <Grid item xs={3}>

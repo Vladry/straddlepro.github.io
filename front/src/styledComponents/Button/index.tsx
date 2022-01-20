@@ -21,8 +21,8 @@ export const SButton = styled.button`
     transition: filter 0.6s;
   }
   @media (max-width: 768px) {
-    width: 120px;
-    max-width: 40vw;
+    width: 320px;
+    max-width: 50vw;
     margin-bottom: 40px;
   }
 `;

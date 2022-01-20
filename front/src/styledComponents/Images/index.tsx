@@ -17,20 +17,20 @@ export const SImg: React.FC<SImgProps> = ({ delta, background, rotate }) => {
   const [offset, setOffset] = useState(-1);
   const [condition, setCondition] = useState(-1);
   const fetchData = useCallback(() => {
-    if (offset === 100) {
+    if (offset >= 100) {
       setCondition(condition * -1);
       return setOffset(99);
     }
-    if (offset === 0) {
+    if (offset <= 0) {
       setCondition(condition * -1);
       return setOffset(1);
     }
-    if (offset === -1) {
+    if (offset <= -1) {
       setOffset(1);
     } else {
-      setOffset(offset + 0.5 * condition);
+      setOffset(offset + delta * condition);
     }
-  }, [offset, condition, setCondition, setOffset]);
+  }, [offset, condition, delta, setCondition, setOffset]);
   useEffect(() => {
     const interval = setInterval(fetchData, 100);
     return () => clearInterval(interval);
@@ -58,6 +58,8 @@ const StyledContainer = styled.div<ContainerProps>`
   position: relative;
   bottom: 350px;
   background: ${(props) => `url(${props.background}) 50% ${props.offset}% no-repeat`};
+  transition: 1s linear;
+  transition-property: background-position;
   justify-content: center;
   display: flex;
   min-height: 700px;
