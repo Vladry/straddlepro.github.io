@@ -26,7 +26,7 @@ import FaceBook from './icons/facebook.svg';
 import Viber from './icons/viber.svg';
 import YouTube from './icons/youtube.svg';
 import Slack from './icons/slack.svg';
-import { StyledH3 } from 'src/styledComponents/Text';
+import { StyledH3, StyledH4 } from 'src/styledComponents/Text';
 
 const Team: React.FC = () => {
   const dispatch = useDispatch<AppThunkDispatch>();
@@ -139,7 +139,7 @@ const Team: React.FC = () => {
                     <MemberWrapper key={index}>
                       <StyledAvatar src={el.photo} alt='avatar' />
                       <div>
-                        <h4 className='team__section3-h4'>{`${el.firstName} ${el.lastName}`}</h4>
+                        <StyledH4 className='team__section3-h4'>{`${el.firstName} ${el.lastName}`}</StyledH4>
                         <StyledDescription>{el.description}</StyledDescription>
                         <IconsContainer className='--flex-row'>
                           {el.socialMedia.map((social, index) => {

@@ -60,14 +60,14 @@ export const StyledH3 = styled.h3`
     text-align: center;
   }
   @media (min-width: 481px) and (max-width: 768px) {
-    height: 100px;
+    /* height: 100px; */
     font-weight: bold;
     font-size: 30px;
     line-height: 44px;
     text-align: center;
   }
   @media (max-width: 480px) {
-    height: 100px;
+    /* height: 100px; */
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
