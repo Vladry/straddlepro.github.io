@@ -104,11 +104,11 @@ const Team: React.FC = () => {
             </Grid>
           </SectionWrapper>
           <MobileWrapper>
-            <Grid container justifyContent='space-evenly' alignItems='center'>
-              <Grid item xs={12} md={6}>
+            <Grid container direction='column' justifyContent='space-evenly'>
+              <Grid item xs={4}>
                 <StyledImg src={Money} alt='figure1' />
               </Grid>
-              <Grid item xs={12} md={6}>
+              <Grid item xs={5}>
                 <div>
                   <StyledH3 className='team__section2-h3'>
                     We build your skills
@@ -131,7 +131,7 @@ const Team: React.FC = () => {
           <MobileWrapper>
             <Grid container justifyContent='center' alignItems='center'>
               <Grid item xs={12}>
-                <StyledH3>Our team</StyledH3>
+                <StyledH3 style={{ marginBottom: '60px' }}>Our team</StyledH3>
               </Grid>
               <Grid item xs={12}>
                 <div className='team__section3-slider-container --flex-row'>
@@ -314,6 +314,7 @@ const StyledDescription = styled.p`
   }
   @media (max-width: 768px) {
     min-height: 60px;
+    font-size: 14px;
     text-align: center;
   }
 `;
@@ -343,6 +344,9 @@ const MemberWrapper = styled.div`
   padding-bottom: 30px;
   @media (max-width: 1440px) {
     max-width: 200px;
+  }
+  @media (max-width: 768px) {
+    padding-bottom: 50px;
   }
   @media (max-width: 480px) {
     max-width: none;

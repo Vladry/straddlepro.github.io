@@ -17,9 +17,9 @@ export const SImg: React.FC<SImgProps> = ({ delta, background, rotate }) => {
   const [offset, setOffset] = useState(-1);
   const [condition, setCondition] = useState(-1);
   const fetchData = useCallback(() => {
-    if (offset >= 100) {
+    if (offset >= 101) {
       setCondition(condition * -1);
-      return setOffset(99);
+      return setOffset(100);
     }
     if (offset <= 0) {
       setCondition(condition * -1);
