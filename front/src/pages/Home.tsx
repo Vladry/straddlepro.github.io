@@ -216,7 +216,7 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={5}>
                       <div>
-                        <StyledH3 style={{ textAlign: 'start' }}>
+                        <StyledH3 style={{ textAlign: 'start', marginBottom: '20px' }}>
                           Facilitate match
                           <br />
                           Manage finance

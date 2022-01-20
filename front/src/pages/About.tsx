@@ -12,7 +12,7 @@ import { Section } from 'src/styledComponents/Section';
 import { MobileWrapper, SectionWrapper } from 'src/styledComponents/Wrapper';
 import { FullPage, Slide } from 'react-full-page';
 import { AboutButton } from 'src/styledComponents/Button';
-import { StyledH3 } from 'src/styledComponents/Text';
+import { StyledH2, StyledH3 } from 'src/styledComponents/Text';
 const About: React.FC = () => {
   const dispatch = useDispatch<AppThunkDispatch>();
   return (
@@ -130,10 +130,10 @@ const About: React.FC = () => {
           <Slide>
             <Section>
               <SectionWrapper>
-                <Grid container direction='row' justifyContent='center' alignItems='center'>
+                <Grid container direction='row' justifyContent='space-between' alignItems='center'>
                   <Grid item xs={12}>
                     <StyledCenter>
-                      <StyledH3>Download</StyledH3>
+                      <StyledH2 style={{ margin: '0px 0px 40px 0px' }}>Download</StyledH2>
                     </StyledCenter>
                   </Grid>
                   <Grid item xs={12}>

@@ -45,7 +45,6 @@ export const StyledH3 = styled.h3`
     font-size: 72px;
     line-height: 88px;
     text-align: center;
-    margin-bottom: 20px;
   }
   @media (min-width: 1225px) and (max-width: 1920px) {
     font-style: normal;
@@ -53,7 +52,6 @@ export const StyledH3 = styled.h3`
     font-size: 56px;
     line-height: 66px;
     text-align: center;
-    margin-bottom: 20px;
   }
   @media (min-width: 769px) and (max-width: 1224px) {
     font-weight: bold;
@@ -103,7 +101,7 @@ export const StyledH4 = styled.h4`
   @media (min-width: 481px) and (max-width: 768px) {
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 32px;
     align-items: center;
     text-align: center;
@@ -111,7 +109,7 @@ export const StyledH4 = styled.h4`
   @media (max-width: 480px) {
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 20px;
     text-align: center;
   }

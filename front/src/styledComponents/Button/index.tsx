@@ -28,13 +28,14 @@ export const SButton = styled.button`
 `;
 
 export const AboutButton = styled.button`
-  padding: 40px 140px;
+  padding: 40px 40px;
   border-radius: 46px;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   color: #dadada;
   transition: filter 0.4s;
+  width: 408px;
   @media (max-width: 768px) {
     padding: 20px 70px;
   }
