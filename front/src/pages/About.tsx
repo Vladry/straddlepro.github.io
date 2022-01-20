@@ -204,10 +204,10 @@ const StyledCenter = styled.div`
 `;
 const StyledP = styled.p`
   font-weight: 600;
-  font-size: 24px;
-  line-height: 48px;
+  font-size: 18px;
+  line-height: 20px;
   color: #dadada;
-  margin-top: 10px;
+  margin: 10px 0px;
   @media (max-width: 768px) {
     font-size: 14px;
     line-height: 16px;

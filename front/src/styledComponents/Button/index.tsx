@@ -28,7 +28,7 @@ export const SButton = styled.button`
 `;
 
 export const AboutButton = styled.button`
-  padding: 40px 40px;
+  padding: 25px 25px;
   border-radius: 46px;
   font-weight: bold;
   font-size: 18px;
