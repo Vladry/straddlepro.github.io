@@ -72,16 +72,16 @@ const Home: React.FC = () => {
                   </Grid>
                 </SectionWrapper>
                 <MobileWrapper>
-                  <Grid container justifyContent='space-between' alignItems='center'>
-                    <Grid item xs={12} md={6}>
+                  <Grid container direction='column' justifyContent='space-around' alignItems='center'>
+                    <Grid item xs={3}>
                       <StyledH3>Players find best game</StyledH3>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={4}>
                       <PhoneWrapperM background={Circle}>
                         <SImg rotate='L' delta={0.5} background={Lobby} />
                       </PhoneWrapperM>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={3}>
                       <TagWrapper side='center'>
                         <TagElement>CS:GO</TagElement>
                         <TagElement>POKER</TagElement>
@@ -117,16 +117,16 @@ const Home: React.FC = () => {
                   </Grid>
                 </SectionWrapper>
                 <MobileWrapper>
-                  <Grid container justifyContent='space-between' alignItems='center'>
-                    <Grid item xs={12} md={6}>
+                  <Grid container direction='column' justifyContent='space-around' alignItems='center'>
+                    <Grid item xs={3}>
                       <StyledH3>Organizers create games</StyledH3>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={4} >
                       <PhoneWrapperM background={Triangle}>
                         <SImg rotate='R' delta={0} background={CreateEvent} />
                       </PhoneWrapperM>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={3}>
                       <div>
                         <TagWrapper side='center'>
                           <TagElement>ONLINE</TagElement>
@@ -165,16 +165,16 @@ const Home: React.FC = () => {
                   </Grid>
                 </SectionWrapper>
                 <MobileWrapper>
-                  <Grid container justifyContent='space-between' alignItems='center'>
-                    <Grid item xs={12} md={6}>
+                  <Grid container direction='column' justifyContent='space-around' alignItems='center'>
+                    <Grid item xs={3}>
                       <StyledH3>Professional players get funds for their games</StyledH3>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={4}>
                       <PhoneWrapperM background={Rhombus}>
                         <SImg rotate='L' delta={0} background={Network} />
                       </PhoneWrapperM>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={3}>
                       <div>
                         <TagWrapper side='center'>
                           <TagElement>0%</TagElement>
@@ -225,8 +225,8 @@ const Home: React.FC = () => {
                   </Grid>
                 </SectionWrapper>
                 <MobileWrapper>
-                  <Grid container justifyContent='space-between'>
-                    <Grid item xs={12} md={6}>
+                  <Grid container direction='column' justifyContent='space-around'>
+                    <Grid item xs={3}>
                       <StyledH3>
                         Facilitate match
                         <br />
@@ -236,12 +236,12 @@ const Home: React.FC = () => {
                         <br />
                       </StyledH3>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={4}>
                       <PhoneWrapperM background={Square}>
                         <SImg rotate='R' delta={0} background={Register} />
                       </PhoneWrapperM>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={3}>
                       <div>
                         <div className='submenu5 --flex-row' style={{ justifyContent: 'center' }}>
                           <div className='submenu5__item'>
