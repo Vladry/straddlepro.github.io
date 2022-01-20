@@ -45,7 +45,7 @@ export const StyledH3 = styled.h3`
     font-size: 72px;
     line-height: 88px;
     text-align: center;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   @media (min-width: 1225px) and (max-width: 1920px) {
     font-style: normal;
@@ -53,7 +53,7 @@ export const StyledH3 = styled.h3`
     font-size: 56px;
     line-height: 66px;
     text-align: center;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   @media (min-width: 769px) and (max-width: 1224px) {
     font-weight: bold;
