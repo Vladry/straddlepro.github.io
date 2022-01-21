@@ -1,12 +1,5 @@
-module.exports = ({ env }) => ({
+module.exports = ({ env }) => {
+  return ({
   host: '0.0.0.0',
-  port: 1337,
-  url: 'http://web.straddle.pro',
-  admin: {
-    url: 'http://web.straddle.pro/dashboard',
-    auth: {
-      secret: 'fc8ab463-da97-43b8-95c2-9cf4c033d15e',
-    },
-  },
-
-});
+  port: 8080,
+})};
