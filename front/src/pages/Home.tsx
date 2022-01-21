@@ -294,7 +294,7 @@ const Home: React.FC = () => {
               </SectionWrapper>
               <MobileWrapper>
                 <Grid container direction='column' justifyContent='flex-end' alignItems='center'>
-                  <Grid item xs={2}>
+                  <Grid item xs={4}>
                     <StyledH3>Games & Series enable ecosystem</StyledH3>
                   </Grid>
                   <Grid item xs={6}>
@@ -381,7 +381,7 @@ const StyledImg = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 80vw;
+  max-width: 90vw;
 `;
 
 export default Home;
