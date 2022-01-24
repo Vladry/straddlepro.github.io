@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import { AppThunkDispatch } from '../types/AppState';
@@ -33,19 +33,45 @@ import Register1 from 'public/images/home/register.png';
 import Create1 from 'public/images/home/create_event.png';
 import { FullPage, Slide } from 'react-full-page';
 import { SImg } from 'src/styledComponents/Images';
+import { getHomePage } from 'src/store/homePage/reducers';
+import { thunkFetchHome } from 'src/store/homePage/actions';
 const CreateEvent = Create1;
 const Lobby = Lobby1;
 const Network = Network1;
 const Register = Register1;
 const Home: React.FC = () => {
   const dispatch = useDispatch<AppThunkDispatch>();
+  const content = useSelector(getHomePage);
+  const [condition, setCondition] = useState(500);
+  const fetchData = useCallback(() => {
+    setCondition(10000);
+    dispatch(thunkFetchHome());
+  }, [dispatch]);
+  useEffect(() => {
+    const intervalValue = condition;
+    if (content.length === 0) {
+      setCondition(10000);
+      dispatch(thunkFetchHome());
+    }
+    const interval = setInterval(fetchData, intervalValue);
+    return () => clearInterval(interval);
+  }, [content, condition, dispatch, fetchData]);
+  const defaultContent = {
+    HeaderText: content.HeaderText || 'Straddle is your trusted gaming assistant',
+    SectionTitle1: content.SectionTitle1 || 'Players find best game',
+    SectionTitle2: content.SectionTitle2 || 'Organizers create games',
+    SectionTitle3: content.SectionTitle3 || 'Professional players get funds for their games',
+    SectionTitle4: content.SectionTitle4 || 'Facilitate match \n Manage finance \n Ensure trust',
+    SectionTitle5: content.SectionTitle5 || 'Games & Series enable ecosystem',
+    SectionTitle6: content.SectionTitle6 || 'Join the beta'
+  };
   return (
     <>
       <Header />
       <div className='overlay'>
         <FullPage>
           <Slide>
-            <TopSection message='Straddle is your trusted gaming assistant' />
+            <TopSection message={defaultContent.HeaderText} />
           </Slide>
           <Slide>
             <Section>
@@ -54,7 +80,7 @@ const Home: React.FC = () => {
                   <Grid container justifyContent='flex-end' alignItems='center'>
                     <Grid item xs={5}>
                       <StyledH3 style={{ textAlign: 'start', maxWidth: '80%' }}>
-                        Players find best game
+                        {defaultContent.SectionTitle1}
                       </StyledH3>
                       <TagWrapper side='flex-start'>
                         <TagElement>CS:GO</TagElement>
@@ -79,7 +105,7 @@ const Home: React.FC = () => {
                     alignItems='center'
                   >
                     <Grid item xs={3}>
-                      <StyledH3>Players find best game</StyledH3>
+                      <StyledH3>{defaultContent.SectionTitle1}</StyledH3>
                     </Grid>
                     <Grid item xs={4}>
                       <PhoneWrapperM background={Circle}>
@@ -112,7 +138,9 @@ const Home: React.FC = () => {
                     </Grid>
                     <Grid item xs={5}>
                       <div>
-                        <StyledH3 style={{ textAlign: 'start' }}>Organizers create games</StyledH3>
+                        <StyledH3 style={{ textAlign: 'start' }}>
+                          {defaultContent.SectionTitle2}
+                        </StyledH3>
                         <TagWrapper side='flex-start'>
                           <TagElement>ONLINE</TagElement>
                           <TagElement>OFFLINE</TagElement>
@@ -129,7 +157,7 @@ const Home: React.FC = () => {
                     alignItems='center'
                   >
                     <Grid item xs={3}>
-                      <StyledH3>Organizers create games</StyledH3>
+                      <StyledH3>{defaultContent.SectionTitle2}</StyledH3>
                     </Grid>
                     <Grid item xs={4}>
                       <PhoneWrapperM background={Triangle}>
@@ -157,7 +185,7 @@ const Home: React.FC = () => {
                     <Grid item xs={5}>
                       <div>
                         <StyledH3 style={{ textAlign: 'start' }}>
-                          Professional players get funds for their games
+                          {defaultContent.SectionTitle3}
                         </StyledH3>
                         <TagWrapper side='flex-start'>
                           <TagElement>0%</TagElement>
@@ -182,7 +210,7 @@ const Home: React.FC = () => {
                     alignItems='center'
                   >
                     <Grid item xs={3}>
-                      <StyledH3>Professional players get funds for their games</StyledH3>
+                      <StyledH3>{defaultContent.SectionTitle3}</StyledH3>
                     </Grid>
                     <Grid item xs={4}>
                       <PhoneWrapperM background={Rhombus}>
@@ -217,12 +245,7 @@ const Home: React.FC = () => {
                     <Grid item xs={5}>
                       <div>
                         <StyledH3 style={{ textAlign: 'start', marginBottom: '20px' }}>
-                          Facilitate match
-                          <br />
-                          Manage finance
-                          <br />
-                          Ensure trust
-                          <br />
+                          {defaultContent.SectionTitle4}
                         </StyledH3>
                         <div className='submenu5 --flex-row'>
                           <div className='submenu5__item'>
@@ -242,14 +265,7 @@ const Home: React.FC = () => {
                 <MobileWrapper>
                   <Grid container direction='column' justifyContent='space-around'>
                     <Grid item xs={3}>
-                      <StyledH3>
-                        Facilitate match
-                        <br />
-                        Manage finance
-                        <br />
-                        Ensure trust
-                        <br />
-                      </StyledH3>
+                      <StyledH3>{defaultContent.SectionTitle4}</StyledH3>
                     </Grid>
                     <Grid item xs={4}>
                       <PhoneWrapperM background={Square}>
@@ -281,9 +297,7 @@ const Home: React.FC = () => {
               <SectionWrapper>
                 <Grid container justifyContent='center' alignItems='center'>
                   <Grid item xs={12}>
-                    <StyledH3 style={{ marginTop: '10%' }}>
-                      Games & Series enable ecosystem
-                    </StyledH3>
+                    <StyledH3 style={{ marginTop: '10%' }}>{defaultContent.SectionTitle5}</StyledH3>
                   </Grid>
                   <Grid item xs={12}>
                     <div>
@@ -295,7 +309,7 @@ const Home: React.FC = () => {
               <MobileWrapper>
                 <Grid container direction='column' justifyContent='flex-end' alignItems='center'>
                   <Grid item xs={4}>
-                    <StyledH3>Games & Series enable ecosystem</StyledH3>
+                    <StyledH3>{defaultContent.SectionTitle5}</StyledH3>
                   </Grid>
                   <Grid item xs={6}>
                     <StyledImg src={Section6} alt='scheme' />
@@ -312,7 +326,9 @@ const Home: React.FC = () => {
                     <Grid container justifyContent='center' alignItems='flex-start'>
                       <Grid item xs={12}>
                         <StyledCenter>
-                          <StyledH3 className='section7__h3'>Join the beta</StyledH3>
+                          <StyledH3 className='section7__h3'>
+                            {defaultContent.SectionTitle6}
+                          </StyledH3>
                         </StyledCenter>
                       </Grid>
                       <Grid item xs={12}>

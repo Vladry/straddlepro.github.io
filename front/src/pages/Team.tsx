@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import { AppThunkDispatch } from '../types/AppState';
@@ -27,9 +27,34 @@ import Viber from './icons/viber.svg';
 import YouTube from './icons/youtube.svg';
 import Slack from './icons/slack.svg';
 import { StyledH3, StyledH4 } from 'src/styledComponents/Text';
+import { getTeamPage } from 'src/store/teamPage/reducers';
+import { thunkFetchTeam } from 'src/store/teamPage/actions';
 
 const Team: React.FC = () => {
   const dispatch = useDispatch<AppThunkDispatch>();
+  const content = useSelector(getTeamPage);
+  const [condition, setCondition] = useState(500);
+  const fetchData = useCallback(() => {
+    setCondition(10000);
+    dispatch(thunkFetchTeam());
+  }, [dispatch]);
+  useEffect(() => {
+    const intervalValue = condition;
+    if (content.length === 0) {
+      setCondition(10000);
+      dispatch(thunkFetchTeam());
+    }
+    const interval = setInterval(fetchData, intervalValue);
+    return () => clearInterval(interval);
+  }, [content, condition, dispatch, fetchData]);
+  const defaultContent = {
+    HeaderText: content.HeaderText || 'We build better world of trust for gamers',
+    SectionTitle1: content.SectionTitle1 || 'We build your skills to get finance!',
+    SectionText1:
+      content.SectionText1 ||
+      'Fish text is used by designers, planners and front-end developers when they need to quickly fill mock-ups or prototypes with content.',
+    SectionTitle3: content.SectionTitle3 || 'Imminent ledger for trust'
+  };
   const members = [
     {
       firstName: 'Andrey',
@@ -78,24 +103,16 @@ const Team: React.FC = () => {
     <>
       <Header />
       <div className='overlay'>
-        <TopSection message='Our team is addicted to trust' />
+        <TopSection message={defaultContent.HeaderText} />
         <Section>
           <SectionWrapper>
             <Grid container justifyContent='space-evenly' alignItems='center' textAlign='end'>
               <Grid item xs={12} md={6}>
                 <div>
                   <StyledH3 style={{ textAlign: 'end' }} className='team__section2-h3'>
-                    We build your skills
-                    <br />
-                    to get finance!
+                    {defaultContent.SectionTitle1}
                   </StyledH3>
-                  <StyledP>
-                    Fish text is used by designers, planners and front-end
-                    <br />
-                    developers when they need to quickly fill mock-ups
-                    <br />
-                    or prototypes with content.
-                  </StyledP>
+                  <StyledP>{defaultContent.SectionText1}</StyledP>
                 </div>
               </Grid>
               <Grid item xs={12} md={5}>
@@ -110,18 +127,8 @@ const Team: React.FC = () => {
               </Grid>
               <Grid item xs={5}>
                 <div>
-                  <StyledH3 className='team__section2-h3'>
-                    We build your skills
-                    <br />
-                    to get finance!
-                  </StyledH3>
-                  <StyledP>
-                    Fish text is used by designers, planners and front-end
-                    <br />
-                    developers when they need to quickly fill mock-ups
-                    <br />
-                    or prototypes with content.
-                  </StyledP>
+                  <StyledH3 className='team__section2-h3'>{defaultContent.SectionTitle1}</StyledH3>
+                  <StyledP>{defaultContent.SectionText1}</StyledP>
                 </div>
               </Grid>
             </Grid>
@@ -232,7 +239,7 @@ const Team: React.FC = () => {
             <Grid container justifyContent='center' alignItems='center'>
               <Grid item xs={12}>
                 <StyledCenter>
-                  <StyledH3 className='section7__h3'>Ask us anythings!</StyledH3>
+                  <StyledH3 className='section7__h3'>{defaultContent.SectionTitle3}</StyledH3>
                 </StyledCenter>
               </Grid>
               <Grid item xs={12}>
@@ -259,7 +266,7 @@ const Team: React.FC = () => {
             <Grid container justifyContent='center' alignItems='center'>
               <Grid item xs={12}>
                 <StyledCenter>
-                  <StyledH3 className='section7__h3'>Ask us anythings!</StyledH3>
+                  <StyledH3 className='section7__h3'>{defaultContent.SectionTitle3}</StyledH3>
                 </StyledCenter>
               </Grid>
               <Grid item xs={12}>
