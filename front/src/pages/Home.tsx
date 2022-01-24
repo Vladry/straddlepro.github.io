@@ -301,7 +301,11 @@ const Home: React.FC = () => {
                   </Grid>
                   <Grid item xs={12}>
                     <div>
-                      <StyledImg style={{ maxWidth: '80vw' }} src={Section6} alt='scheme' />
+                      <StyledImg
+                        style={{ maxWidth: '80vw', position: 'relative', bottom: '100px' }}
+                        src={Section6}
+                        alt='scheme'
+                      />
                     </div>
                   </Grid>
                 </Grid>
