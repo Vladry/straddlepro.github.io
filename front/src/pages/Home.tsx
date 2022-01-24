@@ -301,7 +301,7 @@ const Home: React.FC = () => {
                   </Grid>
                   <Grid item xs={12}>
                     <div>
-                      <StyledImg src={Section6} alt='scheme' />
+                      <StyledImg style={{ maxWidth: '80vw' }} src={Section6} alt='scheme' />
                     </div>
                   </Grid>
                 </Grid>
@@ -357,7 +357,7 @@ const Home: React.FC = () => {
                 <Grid container justifyContent='center' alignItems='center'>
                   <Grid item xs={12}>
                     <StyledCenter>
-                      <StyledH3 className='section7__h3'>Join the beta</StyledH3>
+                      <StyledH3 className='section7__h3'>{defaultContent.SectionTitle6}</StyledH3>
                     </StyledCenter>
                   </Grid>
                   <Grid item xs={12}>

@@ -48,12 +48,12 @@ const Team: React.FC = () => {
     return () => clearInterval(interval);
   }, [content, condition, dispatch, fetchData]);
   const defaultContent = {
-    HeaderText: content.HeaderText || 'We build better world of trust for gamers',
+    HeaderText: content.HeaderText || 'Our team is addicted to trust',
     SectionTitle1: content.SectionTitle1 || 'We build your skills to get finance!',
     SectionText1:
       content.SectionText1 ||
       'Fish text is used by designers, planners and front-end developers when they need to quickly fill mock-ups or prototypes with content.',
-    SectionTitle3: content.SectionTitle3 || 'Imminent ledger for trust'
+    SectionTitle3: content.SectionTitle3 || 'Ask us anythings!'
   };
   const members = [
     {
