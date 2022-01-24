@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
-import { PageReducer } from './analysis/reducers';
-import { CurrenciesReducer } from './currencies/reducers';
+import { AboutReducer } from './aboutPage/reducers';
+import { TeamReducer } from './teamPage/reducers';
+import { HomeReducer } from './homePage/reducers';
 
 export const rootReducer = combineReducers({
-  crypto: CurrenciesReducer,
-  page: PageReducer
+  team: TeamReducer,
+  home: HomeReducer,
+  about: AboutReducer
 });
 
 export default rootReducer;
