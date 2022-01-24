@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import { AppThunkDispatch } from '../types/AppState';
@@ -13,15 +13,36 @@ import { MobileWrapper, SectionWrapper } from 'src/styledComponents/Wrapper';
 import { FullPage, Slide } from 'react-full-page';
 import { AboutButton } from 'src/styledComponents/Button';
 import { StyledH2, StyledH3 } from 'src/styledComponents/Text';
+import { getAboutPage } from 'src/store/aboutPage/reducers';
+import { thunkFetchAbout } from 'src/store/aboutPage/actions';
 const About: React.FC = () => {
   const dispatch = useDispatch<AppThunkDispatch>();
+  const content = useSelector(getAboutPage);
+  const [condition, setCondition] = useState(500);
+  const fetchData = useCallback(() => {
+    setCondition(10000);
+    dispatch(thunkFetchAbout());
+  }, [dispatch]);
+  useEffect(() => {
+    const intervalValue = condition;
+    if (content.length === 0) {
+      setCondition(10000);
+      dispatch(thunkFetchAbout());
+    }
+    const interval = setInterval(fetchData, intervalValue);
+    return () => clearInterval(interval);
+  }, [content, condition, dispatch, fetchData]);
+  const defaultContent = {
+    HeaderText: content.HeaderText || 'We build better world of trust for gamers',
+    SectionTitle1: 'Merging game & tech to control finance'
+  };
   return (
     <>
       <Header />
       <div className='overlay'>
         <FullPage>
           <Slide>
-            <TopSection message='We build better world of trust for gamers' />
+            <TopSection message={defaultContent.HeaderText} />
           </Slide>
           <Slide>
             <Section>
