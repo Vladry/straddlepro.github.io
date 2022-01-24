@@ -1,8 +1,8 @@
 import { Reducer } from 'redux';
 import { AppState } from '../../types/AppState';
-import { GetHomeActions, AboutHomeTypes } from './actions';
+import { GetHomeActions, HomeActionTypes } from './actions';
 
-export const HomeReducer: Reducer<any> = (state = [], action: AboutHomeTypes) => {
+export const HomeReducer: Reducer<any> = (state = [], action: HomeActionTypes) => {
   switch (action.type) {
     case GetHomeActions.SAVE_HOME_PAGE:
       return action.page;
