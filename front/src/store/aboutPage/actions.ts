@@ -13,9 +13,7 @@ export const savePage = (page: any) => ({
 
 export const thunkFetchAbout = () => async (dispatch: Dispatch) => {
   try {
-    const response = await axios.get(`http://localhost:8080/api/about-page`, {
-      headers: { 'Access-Control-Allow-Origin': '*' }
-    });
+    const response = await axios.get(`http://web.straddle.pro:8080/api/about-page`);
     if (response.data) {
       dispatch(savePage(response.data.data.attributes));
     }
