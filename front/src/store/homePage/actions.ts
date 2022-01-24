@@ -13,9 +13,9 @@ export const savePage = (page: any) => ({
 
 export const thunkFetchHome = () => async (dispatch: Dispatch) => {
   try {
-    const response = await axios.get(`http://web.straddle.pro:8080/api/about-page`);
+    const response = await axios.get(`http://web.straddle.pro:8080/api/home-page`);
     if (response.data) {
-      dispatch(savePage(response.data));
+      dispatch(savePage(response.data.data.attributes));
     }
   } catch (error) {
     console.log(error);
@@ -23,4 +23,4 @@ export const thunkFetchHome = () => async (dispatch: Dispatch) => {
   }
 };
 
-export type AboutHomeTypes = ReduxActionType<typeof savePage>;
+export type HomeActionTypes = ReduxActionType<typeof savePage>;

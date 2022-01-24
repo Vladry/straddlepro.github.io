@@ -13,9 +13,9 @@ export const savePage = (page: any) => ({
 
 export const thunkFetchTeam = () => async (dispatch: Dispatch) => {
   try {
-    const response = await axios.get(`http://web.straddle.pro:8080/api/about-page`);
+    const response = await axios.get(`http://web.straddle.pro:8080/api/team-page`);
     if (response.data) {
-      dispatch(savePage(response.data));
+      dispatch(savePage(response.data.data.attributes));
     }
   } catch (error) {
     console.log(error);
