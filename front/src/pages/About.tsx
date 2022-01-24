@@ -34,7 +34,16 @@ const About: React.FC = () => {
   }, [content, condition, dispatch, fetchData]);
   const defaultContent = {
     HeaderText: content.HeaderText || 'We build better world of trust for gamers',
-    SectionTitle1: 'Merging game & tech to control finance'
+    SectionTitle1: content.SectionTitle1 || 'Merging game & tech to control finance',
+    SectionText1:
+      content.SectionText1 ||
+      'Fish text is used by designers, planners and front-end developers when they need to quickly fill mock-ups or prototypes with content.',
+    SectionTitle2: content.SectionTitle2 || 'Imminent ledger for trust',
+    SectionText2:
+      content.SectionText2 ||
+      'Fish text is used by designers, planners and front-end developers when they need to quickly fill mock-ups or prototypes with content.',
+    WhitePaperLink: content.WhitePaperLink || 'Antata guosa 4',
+    YellowPaperLink: content.YellowPaperLink || 'Antata guosa 7'
   };
   return (
     <>
@@ -54,19 +63,9 @@ const About: React.FC = () => {
                   <Grid item xs={12} md={6}>
                     <div>
                       <StyledH3 style={{ textAlign: 'start' }} className='about__section2-h3'>
-                        Merging game &
-                        <br />
-                        tech to control
-                        <br />
-                        finance
+                        {defaultContent.SectionTitle1}
                       </StyledH3>
-                      <StyledP>
-                        Fish text is used by designers, planners and front-end
-                        <br />
-                        developers when they need to quickly fill mock-ups
-                        <br />
-                        or prototypes with content.
-                      </StyledP>
+                      <StyledP>{defaultContent.SectionText1}</StyledP>
                     </div>
                   </Grid>
                 </Grid>
@@ -79,19 +78,9 @@ const About: React.FC = () => {
                   <Grid item xs={5}>
                     <div>
                       <StyledH3 className='about__section2-h3'>
-                        Merging game &
-                        <br />
-                        tech to control
-                        <br />
-                        finance
+                        {defaultContent.SectionTitle1}
                       </StyledH3>
-                      <StyledP>
-                        Fish text is used by designers, planners and front-end
-                        <br />
-                        developers when they need to quickly fill mock-ups
-                        <br />
-                        or prototypes with content.
-                      </StyledP>
+                      <StyledP>{defaultContent.SectionText1}</StyledP>
                     </div>
                   </Grid>
                 </Grid>
@@ -105,17 +94,9 @@ const About: React.FC = () => {
                   <Grid item xs={12} md={6}>
                     <div>
                       <StyledH3 style={{ textAlign: 'end' }} className='about__section3-h3'>
-                        <span>Imminent ledger</span>
-                        <br />
-                        for trust
+                        {defaultContent.SectionTitle2}
                       </StyledH3>
-                      <StyledP>
-                        Fish text is used by designers, planners and front-end
-                        <br />
-                        developers when they need to quickly fill mock-ups
-                        <br />
-                        or prototypes with content.
-                      </StyledP>
+                      <StyledP>{defaultContent.SectionText2}</StyledP>
                     </div>
                   </Grid>
                   <Grid item xs={12} md={5}>
@@ -131,17 +112,9 @@ const About: React.FC = () => {
                   <Grid item xs={5}>
                     <div>
                       <StyledH3 className='about__section3-h3'>
-                        <span>Imminent ledger</span>
-                        <br />
-                        for trust
+                        {defaultContent.SectionTitle2}
                       </StyledH3>
-                      <StyledP>
-                        Fish text is used by designers, planners and front-end
-                        <br />
-                        developers when they need to quickly fill mock-ups
-                        <br />
-                        or prototypes with content.
-                      </StyledP>
+                      <StyledP>{defaultContent.SectionText2}</StyledP>
                     </div>
                   </Grid>
                 </Grid>
